@@ -1,0 +1,66 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ @font-face {
+   font-family:"Hauser Condensed";
+   src:url("../fonts/hauser/Hauser_Condensed.eot") format("eot"),
+   url("../fonts/hauser/Hauser_Condensed.woff") format("woff"),
+   url("../fonts/hauser/Hauser_Condensed.ttf") format("truetype"),
+   url("../fonts/hauser/Hauser_Condensed.svg#HauserCondensed") format("svg");
+   font-weight:normal;
+   font-style:normal;
+  }
+
+#logo-container {
+  font-family: "Hauser Condensed", sans-serif;
+  font-size: 2.8em;
+  letter-spacing: 2px;
+  transform: skew(160deg);
+}
+
+.line-block {
+  position: absolute;
+  top: 20px;
+  height: 30px;
+}
+
+.line-block-blue {
+  background-color: #007ac2;
+  left: -15px;
+  width: 10px;
+}
+
+.line-block-red-1 {
+  background-color: #e4002b;
+  left: -23px;
+  width: 5px;
+}
+
+.line-block-red-2 {
+  background-color: #e4002b;
+  left: -30px;
+  width: 5px;
+}
+
+.line-block-yellow-1 {
+  background-color: #ffd659;
+  left: -36px;
+  width: 3px;
+}
+
+.line-block-yellow-2 {
+  background-color: #ffd659;
+  left: -41px;
+  width: 3px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
