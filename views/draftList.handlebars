@@ -12,7 +12,15 @@
     </thead>
 
     <tbody>
-      <tr>
+      {{#each drivers}}
+        <tr>
+          <td>{{car_no}}</td>
+          <td>{{driver}}</td>
+          <td>{{team}}</td>
+          <td>{{notable}}</td>
+        </tr>
+      {{/each}}
+      {{!-- <tr>
         <td>1</td>
         <td>Jamie McMurray</td>
         <td>Chip Ganassi Racing</td>
@@ -197,7 +205,7 @@
         <td>Kasey Kahne</td>
         <td>Leavine Family Racing</td>
         <td>Got back to Victory Lane in ’17; takes over for McDowell.</td>
-      </tr>
+      </tr> --}}
     </tbody>
   </table>
   <br />
