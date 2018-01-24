@@ -28,6 +28,12 @@
   height: 30px;
 }
 
+@media (max-width: 600px) {
+  .line-block {
+    top: 15px;
+  }
+}
+
 .line-block-blue {
   background-color: #007ac2;
   left: -15px;
