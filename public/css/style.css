@@ -22,6 +22,12 @@
   transform: skew(160deg);
 }
 
+@media (min-width: 1024px) {
+  #logo-container {
+    left: 50px;
+  }
+}
+
 .line-block {
   position: absolute;
   top: 20px;
