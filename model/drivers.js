@@ -69,7 +69,7 @@ module.exports = [
         car_no: 17, 
         driver: "Ricky Stenhouse Jr.",
         team: "Roush Fenway Racing",
-        notable: "The former Mr. Patrick, until Danica realized she could make more dating a quaterback."
+        notable: "The former Mr. Patrick, until Danica realized she could make more dating a quarterback."
     },
     {
         car_no: 18, 
