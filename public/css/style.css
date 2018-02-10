@@ -22,6 +22,21 @@
   transform: skew(160deg);
 }
 
+.tabs .indicator {
+  background-color:#000;
+} /*Color of underline*/
+
+a.draft-btn {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+a.draft-btn > i {
+  line-height: 20px;
+  font-size: 1.3rem;
+}
+
 @media (min-width: 1024px) {
   #logo-container {
     left: 50px;

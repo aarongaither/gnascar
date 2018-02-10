@@ -3,6 +3,7 @@ const drivers = require('../model/drivers');
 
 router.get('/', (req, res) => res.render('home'));
 router.get('/draft-list', (req, res) => res.render('draftList', {drivers,}));
+router.get('/draft-board', (req, res) => res.render('draftBoard', {drivers,}));
 router.get('/driver-standings', (req, res) => res.render('driverStandings'));
 router.get('/team-standings', (req, res) => res.render('teamStandings'));
 router.get('/rules', (req, res) => res.render('rules'));
