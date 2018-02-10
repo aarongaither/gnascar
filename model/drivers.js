@@ -120,6 +120,12 @@ module.exports = [
         notable: "I think the team name may be ironic."
     },
     {
+        car_no: 33, 
+        driver: "Jeffrey Earnhardt",
+        team: "Circle Sport - TMG",
+        notable: "Jr's nephew. The only Earnhardt still racing, so there's that, I guess..."
+    },
+    {
         car_no: 34, 
         driver: "Michael McDowell",
         team: "Front Row Motorsports",
@@ -166,6 +172,12 @@ module.exports = [
         driver: "Jimmie Johnson",
         team: "Hendrick Motorsports",
         notable: "‘Seven-Time’ at 83 wins, closing in on Waltrip, Allison. AKA JJ."
+    },
+    {
+        car_no: 72, 
+        driver: "Cole Whitt",
+        team: "TriStar Motorsports",
+        notable: "Micah's favorite driver. If you draft him, you'll make him sad. AKA Cool Whip."
     },
     {
         car_no: 78, 
