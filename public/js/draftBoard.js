@@ -1,23 +1,22 @@
 let draftCount = 1;
 
 const draftOrder = [
-    'LA Josh',
-    'True to Truex',
+    'Hollywood Highlife',
+    'Julian Gangsta',
+    'SMiB',
+    'Baby Got Track',
     'Redneck Ghoster',
-    'VC Mom',
-    'Julian Snoozer',
-    'Lazy Dog Mom',
+    'Chasing Cletus',
     'Gator Dad',
-    'Slobber',
-    'Gator Mom',
-    'Lazy Dog Dad'
+    'Hot Johnson',
+    'Everyone Loves Busch',
+    'Upfront',
 ];
 
 const keepers = [
-    {cell: '25', driver: 'Jamie McMurray', car_no: '1'},
     {cell: '26', driver: 'Chase Elliott', car_no: '9'},
     {cell: '27', driver: 'Kyle Larson', car_no: '42'},
-    {cell: '28', driver: 'Kevin Harvick', car_no: '4'},
+    {cell: '28', driver: 'Jimmie Johnson', car_no: '48'},
     {cell: '29', driver: 'Kyle Busch', car_no: '18'},
     {cell: '30', driver: 'Martin Truex Jr.', car_no: '78'}
 ];
