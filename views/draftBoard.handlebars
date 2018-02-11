@@ -1,6 +1,12 @@
 <div class="container">
-  <br />
-  <br />
+  <div class="row">
+    <h5 class="col s6 center" >Round: <span id="round"></span></h5>
+    <h5 class="col s6 center" >Postion: <span id="position"></span></h5>
+  </div>
+  <div class="row">
+    <h5 class="col s6 center" >Current: <span id="current"></span></h5>
+    <h5 class="col s6 center" >On-deck: <span id="ondeck"></span></h5>
+  </div>
   <div class="row">
     <div class="col s12">
       <ul class="tabs">
@@ -11,7 +17,7 @@
     <div id="list" class="col s12">
       <ul class="collection">
         {{#each drivers}}
-          <li class="collection-item">#{{car_no}} - {{driver}}
+          <li id="car-{{car_no}}" class="collection-item">#{{car_no}} - {{driver}}
             <a data-value="{{driver}}" class="draft-btn secondary-content waves-effect waves-light btn-floating black"><i class="material-icons">add</i></a>
           </li>
         {{/each}}
@@ -22,16 +28,16 @@
         <thead>
           <tr>
             <th>Round</th>
-            <th>Team 1</th>
-            <th>Team 2</th>
-            <th>Team 3</th>
-            <th>Team 4</th>
-            <th>Team 5</th>
-            <th>Team 6</th>
-            <th>Team 7</th>
-            <th>Team 8</th>
-            <th>Team 9</th>
-            <th>Team 10</th>
+            <th>LA Josh</th>
+            <th>True to Truex</th>
+            <th>Redneck Ghoster</th>
+            <th>VC Mom</th>
+            <th>Julian Snoozer</th>
+            <th>Lazy Dog Mom</th>
+            <th>Gator Dad</th>
+            <th>Slobber</th>
+            <th>Gator Mom</th>
+            <th>Lazy Dog Dad</th>
           </tr>
         </thead>
         <tbody>
