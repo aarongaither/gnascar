@@ -3,6 +3,7 @@ title: "Summary-2017"
 output: 
   flexdashboard::flex_dashboard:
     vertical_layout: scroll
+    css: ../../public/css/style.css
 ---
 
 ```{r setup, include=FALSE}
