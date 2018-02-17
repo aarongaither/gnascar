@@ -1,20 +1,16 @@
 ---
-title: Summary-2017
-author: Micah and Aaron
-date: February 10, 2018
-output:
-  html_document:
-    fig_height: 50
-    fig_width: 50
-    number_sections: yes
-    theme: cosmo
-    toc: yes
-    toc_depth: 3
-    toc_float: false
+title: "Summary-2017"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
 ---
 
+```{r setup, include=FALSE}
+library(flexdashboard)
 
-```{r libraries, warning=FALSE, message=FALSE, echo=FALSE, results='hide'}
+
+########
+
 require("RPostgreSQL")
 require("plotly")
 require("DT")
@@ -43,40 +39,11 @@ xform <- list(categoryorder = "array",
                                 "Chug",
                                 "Field"))
 
-# 
-# p1 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', 
-#     text = ~Driver, textposition = 'auto', marker = list(color = 'rgb(158,202,225)',
-#     line = list(color = 'rgb(8,48,107)', width = 1.5))) %>%
-#   layout(xaxis = list(title = "", tickangle = 0), barmode = 'stack', 
-#     paper_bgcolor = 'rgba(245, 246, 249, 1)', plot_bgcolor = 'rgba(245, 246, 249, 1)', 
-#     showlegend = FALSE) %>%
-#   layout(xaxis = xform)
-
-
-# p1 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', 
-#     text = ~Driver, textposition = 'auto', marker = list(color = 'rgb(158,202,225)',
-#     line = list(color = 'rgb(8,48,107)', width = 1.5))) %>%
-#   layout(xaxis = list(title = "", tickangle = 0), barmode = 'stack', 
-#     plot_bgcolor = 'rgba(245, 246, 249, 1)', 
-#     showlegend = FALSE) 
-
 p4 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', text=~Driver, 
               color = ~Owner, colors = "Pastel1", 
               textposition = 'auto', marker = list(line = list(color = 'gray36', width = 1))) %>% 
     layout(yaxis = list(title = 'Points'), xaxis = list(title = ""), barmode = 'stack') %>%
   layout(xaxis = xform)
-
-# p2 <- plot_ly(season2017, x = ~AvSt, y = ~AvFn, type = 'scatter', mode = 'markers',
-#   hoverinfo = 'text',
-#   text = ~paste('Driver: ', Driver, '</br>',
-#     '</br> Points: ', Points,
-#     '</br> Wins: ', Win,
-#     '</br> Average Start: ', AvSt, 
-#     '</br> Average Finish:', AvFn),
-#     color = ~Win, size = ~Win) %>%
-#   layout(title = "Scatter Plot of Driver Start to Finish Positions",
-#     xaxis = list(title = "Average Starting Position"),
-#     yaxis = list (title = "Average Finishing Position"))
 
 seasonstandings2017 <- merge(season2017, standings2017,by=c("Driver"))
 
@@ -101,33 +68,26 @@ p3 <- plot_ly(seasonstandings2017, x = ~Rank, y = ~AvSt, type = 'scatter', mode 
 ```
 
 
-# GNASCAR 2017
 
-## Driver Ranking v. Average Starting Position
-```{r, results='asis', echo=FALSE, warning=FALSE}
+-----------------------------------------------------------------------
+
+### Driver Ranking v. Average Starting Position
+
+```{r}
 htmltools::tagList(list(p3))
 ```
 
-
-
-
-
+-----------------------------------------------------------------------
 
 ### Cumulative Driver Points by Team
-```{r, results='asis', echo=FALSE, warning=FALSE}
+
+```{r}
 htmltools::tagList(list(p4))
 ```
 
+### Driver Statistics
+
 ```{r}
-
-```
-  
-# Appendix   
-
-## Driver Statistics
-```{r, results = 'asis', echo=FALSE}
 datatable(standings2017, options = list(pageLength = 10))
-#knitr::kable(standings2017[order(standings2017$Rank),])
 ```
-
 
