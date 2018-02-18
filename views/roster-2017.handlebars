@@ -782,15 +782,6 @@ body {
   font-weight: 500;
 }
 
-@media only screen and (min-width: 768px) {
-html, body {
-  height: 100%;
-}
-
-#dashboard-container {
-  height: 100%;
-}
-}
 </style>
 
 
@@ -2608,16 +2599,13 @@ body {
 }
 
 </style>
-<div id="column" class="section level2">
-<h2>Column</h2>
-<div id="section" class="section level3">
-<h3></h3>
+<div id="roster-2017" class="section level3">
+<h3>Roster 2017</h3>
 <div class="knitr-options" data-fig-width="576" data-fig-height="460">
 
 </div>
-<div id="htmlwidget-0c0e7db7a7faa5ee176c" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0c0e7db7a7faa5ee176c">{"x":{"filter":"none","fillContainer":true,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39"],["Chug","Chug","Chug","Chug","GatorDad","GatorDad","GatorDad","GatorDad","GatorDad","GatorMom","GatorMom","GatorMom","GatorMom","GatorMom","JulianGangsta","JulianGangsta","JulianGangsta","JulianGangsta","JulianGangsta","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogMom","LazyDogMom","LazyDogMom","LazyDogMom","LazyDogMom","RidgeRacing","RidgeRacing","RidgeRacing","RidgeRacing","RidgeRacing","SlobberRacing","SlobberRacing","SlobberRacing","SlobberRacing","SlobberRacing"],["Erik Jones","Clint Bowyer","Reed Sorenson","Derrike Cope","Kyle Larson","Denny Hamlin","Brad Keselowski","Danica Patrick","Landon Cassill","Kyle Busch","Kasey Kahne","Michael McDowell","A.J. Allmendinger","B.J. McLeod","Jamie McMurray","David Ragan","Corey LaJoie","Matt DiBenedetto","Chris Buescher","Dale Earnhardt, Jr.","Ryan Blaney","Ricky Stenhouse, Jr.","Martin Truex, Jr.","Paul Menard","Daniel Suarez","Chase Elliott","Aric Almirola","Trevor Bayne","Gray Gaulding","Joey Logano","Ryan Newman","Kurt Busch","Jeffrey Earnhardt","Matt Kenseth","Jimmie Johnson","Kevin Harvick","Austin Dillon","Ty Dillon","Cole Whitt"]],"container":"<table class=\"display fill-container\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Owner<\/th>\n      <th>Driver<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
-</div>
+<div id="htmlwidget-547c6aaf727ae6d767b6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-547c6aaf727ae6d767b6">{"x":{"filter":"none","fillContainer":true,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39"],["Chug","Chug","Chug","Chug","GatorDad","GatorDad","GatorDad","GatorDad","GatorDad","GatorMom","GatorMom","GatorMom","GatorMom","GatorMom","JulianGangsta","JulianGangsta","JulianGangsta","JulianGangsta","JulianGangsta","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogDad","LazyDogMom","LazyDogMom","LazyDogMom","LazyDogMom","LazyDogMom","RidgeRacing","RidgeRacing","RidgeRacing","RidgeRacing","RidgeRacing","SlobberRacing","SlobberRacing","SlobberRacing","SlobberRacing","SlobberRacing"],["Erik Jones","Clint Bowyer","Reed Sorenson","Derrike Cope","Kyle Larson","Denny Hamlin","Brad Keselowski","Danica Patrick","Landon Cassill","Kyle Busch","Kasey Kahne","Michael McDowell","A.J. Allmendinger","B.J. McLeod","Jamie McMurray","David Ragan","Corey LaJoie","Matt DiBenedetto","Chris Buescher","Dale Earnhardt, Jr.","Ryan Blaney","Ricky Stenhouse, Jr.","Martin Truex, Jr.","Paul Menard","Daniel Suarez","Chase Elliott","Aric Almirola","Trevor Bayne","Gray Gaulding","Joey Logano","Ryan Newman","Kurt Busch","Jeffrey Earnhardt","Matt Kenseth","Jimmie Johnson","Kevin Harvick","Austin Dillon","Ty Dillon","Cole Whitt"]],"container":"<table class=\"display fill-container\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Owner<\/th>\n      <th>Driver<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"dom":"t","order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 </div>
@@ -2642,7 +2630,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   FlexDashboard.init({
     theme: "cosmo",
-    fillPage: true,
+    fillPage: false,
     orientation: "columns",
     storyboard: false,
     defaultFigWidth: 576,
