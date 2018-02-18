@@ -24,7 +24,7 @@ require("RPostgreSQL")
 require("plotly")
 require("DT")
 
-### load roster 2018
+### load roster 2017
 pw <- {""}
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname = "gnascar",
@@ -32,7 +32,7 @@ con <- dbConnect(drv, dbname = "gnascar",
                  user = "mgaither", password = pw)
 
 # query the data from postgreSQL 
-roster2018 <- dbGetQuery(con, "SELECT * from roster_2018")
+roster2017 <- dbGetQuery(con, "SELECT * from roster_2017")
 
 ```
 
@@ -42,5 +42,5 @@ Column
 ###
 
 ```{r}
-datatable(roster2018, options = list(pageLength = 50, dom = 't'))
+datatable(roster2017, options = list(pageLength = 50, dom = 't'))
 ```
