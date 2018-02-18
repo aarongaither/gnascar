@@ -1,0 +1,94 @@
+---
+title: "Summary-2017"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: scroll
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+
+########
+
+require("RPostgreSQL")
+require("plotly")
+require("DT")
+
+pw <- {""}
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname = "gnascar",
+                 host = "localhost", port = 5432,
+                 user = "mgaither", password = pw)
+
+# query the data from postgreSQL 
+season2017 <- dbGetQuery(con, "SELECT * from season_2017")
+
+# query the data from postgreSQL 
+standings2017 <- dbGetQuery(con, "SELECT * from standings_2017")
+
+# 2017 Roster Standings
+xform <- list(categoryorder = "array",
+              categoryarray = c("LazyDogDad", 
+                                "GatorDad", 
+                                "SlobberRacing",
+                                "GatorMom",
+                                "RidgeRacing",
+                                "LazyDogMom",
+                                "JulianGangsta",
+                                "Chug",
+                                "Field"))
+
+p4 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', text=~Driver, 
+              color = ~Owner, colors = "Pastel1", 
+              textposition = 'auto', marker = list(line = list(color = 'gray36', width = 1))) %>% 
+    layout(yaxis = list(title = 'Points'), xaxis = list(title = ""), barmode = 'stack') %>%
+  layout(xaxis = xform)
+
+seasonstandings2017 <- merge(season2017, standings2017,by=c("Driver"))
+
+p3 <- plot_ly(seasonstandings2017, x = ~Rank, y = ~AvSt, type = 'scatter', mode = 'markers',
+  marker = list(line = list(color = 'rgba(152, 0, 0, .8)', width = 2)),
+  hoverinfo = 'text',
+  text = ~paste('Driver: ', Driver, '</br>',
+                '</br>Owner: ', Owner,
+                '</br>Rank: ', Rank,
+                '</br>Points: ', Points.x,
+                '</br>Wins: ', Win,
+                '</br>Poles: ', Poles,
+                '</br>DNF: ', DNF,
+                '</br>Average Start: ', AvSt, 
+                '</br>Average Finish:', AvFn),
+  color = ~Owner, colors = "Paired", size = ~DNF) %>%
+  layout(title = "",
+         xaxis = list(title = "Ranking", zeroline = FALSE),
+         yaxis = list (title = "Average Starting Position", zeroline = FALSE),
+         plot_bgcolor = 'rgba(245, 246, 249, 1)')
+
+```
+
+
+
+-----------------------------------------------------------------------
+
+### Driver Ranking v. Average Starting Position
+
+```{r}
+htmltools::tagList(list(p3))
+```
+
+-----------------------------------------------------------------------
+
+### Cumulative Driver Points by Team
+
+```{r}
+htmltools::tagList(list(p4))
+```
+
+### Driver Statistics
+
+```{r}
+datatable(standings2017, options = list(pageLength = 10))
+```
+

@@ -1,0 +1,44 @@
+---
+title: "gnascar"
+author: "Micah"
+date: "2/5/2018"
+output: html_document
+---
+
+
+```{r libraries, warning=FALSE, message=FALSE, echo=FALSE, results='hide'}
+if (!require("pacman")) install.packages("pacman"); library(pacman)
+p_load("ggplot2","XLConnect","plotly","knitr","corrplot","PerformanceAnalytics")
+
+require(rvest)
+require(stringr)
+require(tidyr)
+require("RPostgreSQL")
+require("XLConnect")
+require("plotly")
+```
+
+
+```{r}
+pw <- {""}
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname = "gnascar",
+                 host = "localhost", port = 5432,
+                 user = "mgaither", password = pw)
+
+# query the data from postgreSQL 
+standings2017 <- dbGetQuery(con, "SELECT * from standings_2017")
+
+p <- plot_ly(
+  x = c("giraffes", "orangutans", "monkeys"),
+  y = c(20, 14, 23),
+  name = "SF Zoo",
+  type = "bar"
+)
+
+chart_link = api_create(p, filename="bar/basic")
+chart_link
+
+```
+
+
