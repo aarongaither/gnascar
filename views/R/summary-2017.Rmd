@@ -1,13 +1,24 @@
 ---
-title: "Summary-2017"
 output: 
   flexdashboard::flex_dashboard:
     vertical_layout: scroll
+    css: ['../../public/css/style.css','../../public/css/materialize.css','../../public/css/materialize.min.css']
 ---
+
+<style>
+
+body {
+  padding-top:0px
+}
+
+.navbar{
+  visibility: hidden
+}
+
+</style>
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
-
 
 ########
 
