@@ -1,0 +1,101 @@
+---
+output: flexdashboard::flex_dashboard
+runtime: shiny
+---
+
+<style>
+
+body {
+  padding-top:0px
+}
+
+.navbar{
+  visibility: hidden
+}
+
+</style>
+
+
+
+```{r global, include=FALSE}
+# load data in 'global' chunk so it can be shared by all users of the dashboard
+
+require("RPostgreSQL")
+
+pw <- {""}
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname = "gnascar",
+                 host = "localhost", port = 5432,
+                 user = "mgaither", password = pw)
+
+# query the data from postgreSQL 
+season2017 <- dbGetQuery(con, "SELECT * from season_2017")
+roster2017 <- dbGetQuery(con, "SELECT * from roster_2017")
+
+# 2018 Roster Standings
+
+seasonstandings2017 <- merge(season2017, roster2017,by=c("Driver"))
+
+seasonstandings2017 <- seasonstandings2017[c("Driver", "Team", "Points","Diff","Ppts","Races","Win","T5","T10","Pole","Laps","Led","AvSt","AvFn","RAF","Miles","LLF")]
+seasonstandings2017 <- seasonstandings2017[order(-seasonstandings2017$Points),]
+
+
+dat <- Filter(is.numeric, seasonstandings2017)
+dat <- na.omit(dat)
+```
+
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+Scatter plot GNASCAR
+
+```{r}
+selectInput('xcol', 'X Variable', names(dat))
+    
+selectInput('ycol', 'Y Variable', names(dat),
+                selected=names(dat)[[2]])
+    
+numericInput('clusters', 'Cluster count', 3,
+              min = 1, max = 9)
+
+```
+
+Column
+-----------------------------------------------------------------------
+
+### K Means
+
+```{r}
+palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3",
+  "#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999"))
+
+# Combine the selected variables into a new data frame
+selectedData <- reactive({
+  dat[, c(input$xcol, input$ycol)]
+})
+
+clusters <- reactive({
+  kmeans(selectedData(), input$clusters)
+})
+
+renderPlot({plot(selectedData(), width = "auto", height = "auto")
+  
+  points(clusters()$centers, pch = 4, cex = 4, lwd = 4)
+  })
+
+
+# renderPlot(plot_ly(selectedData(), type = 'scatter', mode = 'markers',
+#   marker = list(line = list(color = 'rgba(152, 0, 0, .8)', width = 2)),
+#   hoverinfo = 'text',
+#   text = ~paste('Driver: ', Driver, '</br>',
+#                 '</br>Team: ', Team),
+#   color = ~Team, colors = "Paired", size = ~Win) %>%
+#   layout(title = "",
+#          xaxis = list(title = "Points", zeroline = FALSE),
+#          yaxis = list (title = "Average Starting Position", zeroline = FALSE),
+#          plot_bgcolor = 'rgba(245, 246, 249, 1)'), width = "auto", height = "auto"))
+
+
+```
+
