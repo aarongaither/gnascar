@@ -1,0 +1,2862 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.1
+-- Dumped by pg_dump version 10.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: AAA_400_Drive_For_Autism_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "AAA_400_Drive_For_Autism_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "AAA_400_Drive_For_Autism_2017" OWNER TO mgaither;
+
+--
+-- Name: AAA_Texas_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "AAA_Texas_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "AAA_Texas_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Alabama_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Alabama_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Alabama_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Auto_Club_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Auto_Club_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Auto_Club_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Axalta_Presents_the_Pocono_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Axalta_Presents_the_Pocono_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Axalta_Presents_the_Pocono_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Bank_of_America_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Bank_of_America_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Bank_of_America_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Bass_Pro_Shops-NRA_Night_Race_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Bass_Pro_Shops-NRA_Night_Race_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Bass_Pro_Shops-NRA_Night_Race_2017" OWNER TO mgaither;
+
+--
+-- Name: Bojangles_Southern_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Bojangles_Southern_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Bojangles_Southern_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Brickyard_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Brickyard_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Brickyard_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Camping_World_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Camping_World_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Camping_World_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Can-Am_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Can-Am_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Can-Am_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Coca-Cola_600_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Coca-Cola_600_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Coca-Cola_600_2017" OWNER TO mgaither;
+
+--
+-- Name: Coke_Zero_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Coke_Zero_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Coke_Zero_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Delaware_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Delaware_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Delaware_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Federated_Auto_Parts_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Federated_Auto_Parts_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Federated_Auto_Parts_400_2017" OWNER TO mgaither;
+
+--
+-- Name: FireKeepers_Casino_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "FireKeepers_Casino_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "FireKeepers_Casino_400_2017" OWNER TO mgaither;
+
+--
+-- Name: First_Data_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "First_Data_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "First_Data_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Folds_of_Honor_QuikTrip_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Folds_of_Honor_QuikTrip_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Folds_of_Honor_QuikTrip_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Food_City_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Food_City_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Food_City_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Ford_EcoBoost_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Ford_EcoBoost_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Ford_EcoBoost_400_2017" OWNER TO mgaither;
+
+--
+-- Name: GEICO_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "GEICO_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "GEICO_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Go_Bowling_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Go_Bowling_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Go_Bowling_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Hollywood_Casino_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Hollywood_Casino_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Hollywood_Casino_400_2017" OWNER TO mgaither;
+
+--
+-- Name: ISM_Connect_300_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "ISM_Connect_300_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "ISM_Connect_300_2017" OWNER TO mgaither;
+
+--
+-- Name: I_Love_New_York_355_at_the_Glen_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "I_Love_New_York_355_at_the_Glen_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "I_Love_New_York_355_at_the_Glen_2017" OWNER TO mgaither;
+
+--
+-- Name: Kobalt_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Kobalt_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Kobalt_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Oreilly_Auto_Parts_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Oreilly_Auto_Parts_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Oreilly_Auto_Parts_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Overtons_301_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Overtons_301_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Overtons_301_2017" OWNER TO mgaither;
+
+--
+-- Name: Overtons_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Overtons_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Overtons_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Pure_Michigan_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Pure_Michigan_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Pure_Michigan_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Quaker_State_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Quaker_State_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Quaker_State_400_2017" OWNER TO mgaither;
+
+--
+-- Name: STP_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "STP_500_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "STP_500_2017" OWNER TO mgaither;
+
+--
+-- Name: Tales_of_the_Turtles_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Tales_of_the_Turtles_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Tales_of_the_Turtles_400_2017" OWNER TO mgaither;
+
+--
+-- Name: Toyota-Save_Mart_350_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Toyota-Save_Mart_350_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Toyota-Save_Mart_350_2017" OWNER TO mgaither;
+
+--
+-- Name: Toyota_Owners_400_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE "Toyota_Owners_400_2017" (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE "Toyota_Owners_400_2017" OWNER TO mgaither;
+
+--
+-- Name: daytona_500_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE daytona_500_2017 (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE daytona_500_2017 OWNER TO mgaither;
+
+--
+-- Name: daytona_500_2018; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE daytona_500_2018 (
+    "Fin" integer,
+    "St" integer,
+    "#" integer,
+    "Driver" text,
+    "Sponsor / Owner" text,
+    "Car" text,
+    "Laps" integer,
+    "Status" text,
+    "Led" integer,
+    "Pts" integer,
+    "PPts" integer
+);
+
+
+ALTER TABLE daytona_500_2018 OWNER TO mgaither;
+
+--
+-- Name: roster_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE roster_2017 (
+    "Team" text,
+    "Driver" text
+);
+
+
+ALTER TABLE roster_2017 OWNER TO mgaither;
+
+--
+-- Name: roster_2018; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE roster_2018 (
+    "Team" text,
+    "Driver" text
+);
+
+
+ALTER TABLE roster_2018 OWNER TO mgaither;
+
+--
+-- Name: season_2017; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE season_2017 (
+    "Driver" text,
+    "Races" integer,
+    "Win" integer,
+    "T5" integer,
+    "T10" integer,
+    "Pole" integer,
+    "Laps" integer,
+    "Led" integer,
+    "AvSt" double precision,
+    "AvFn" double precision,
+    "RAF" integer,
+    "Miles" double precision,
+    "LLF" integer,
+    "Points" integer,
+    "Diff" text,
+    "Ppts" integer
+);
+
+
+ALTER TABLE season_2017 OWNER TO mgaither;
+
+--
+-- Name: season_2018; Type: TABLE; Schema: public; Owner: mgaither
+--
+
+CREATE TABLE season_2018 (
+    "Driver" text,
+    "Races" integer,
+    "Win" integer,
+    "T5" integer,
+    "T10" integer,
+    "Pole" integer,
+    "Laps" integer,
+    "Led" integer,
+    "AvSt" double precision,
+    "AvFn" double precision,
+    "RAF" integer,
+    "Miles" double precision,
+    "LLF" integer,
+    "Points" integer,
+    "Diff" integer,
+    "Ppts" integer
+);
+
+
+ALTER TABLE season_2018 OWNER TO mgaither;
+
+--
+-- Data for Name: AAA_400_Drive_For_Autism_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "AAA_400_Drive_For_Autism_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	14	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	406	running	7	55	5
+2	5	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	406	running	241	50	0
+3	2	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	406	running	102	54	2
+4	13	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	406	running	1	33	0
+5	16	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	406	running	0	36	0
+6	3	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	406	running	0	32	0
+7	19	1	Jamie McMurray	McDonald's Signature Crafted Recipes   (Chip Ganassi)	Chevrolet	406	running	2	30	0
+8	10	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	406	running	0	29	0
+9	18	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	406	running	0	41	0
+10	31	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	406	running	0	27	0
+11	11	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	406	running	0	26	0
+12	4	20	Matt Kenseth	ToyotaCare   (Joe Gibbs)	Toyota	406	running	0	40	0
+13	9	3	Austin Dillon	AAA   (Richard Childress)	Chevrolet	406	running	0	24	0
+14	21	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	406	running	27	23	0
+15	7	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	405	crash	0	27	0
+16	1	18	Kyle Busch	Pedigree Petcare   (Joe Gibbs)	Toyota	405	running	19	30	0
+17	20	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	404	crash	0	26	0
+18	24	47	A.J. Allmendinger	Kroger ClickList / Heinz / Oscar Meyer   (JTG-Daugherty Racing)	Chevrolet	404	crash	0	19	0
+19	28	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	404	running	4	18	0
+20	36	15	Ross Chastain	Delaware Office of Highway Safety   (Jay Robinson)	Chevrolet	403	running	0	0	0
+21	17	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	402	crash	0	16	0
+22	35	72	Cole Whitt	TriStar Motorsports   (Mark Smith)	Chevrolet	402	crash	0	15	0
+23	29	37	Chris Buescher	Maxwell House MAX   (JTG-Daugherty Racing)	Chevrolet	402	running	0	14	0
+24	32	23	Gray Gaulding	Addiction Campuses   (BK Racing)	Toyota	402	running	0	13	0
+25	26	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	402	running	0	12	0
+26	34	83	Ryan Sieg	JAS Expedited Trucking   (BK Racing)	Toyota	400	running	0	0	0
+27	39	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	400	running	0	10	0
+28	37	66	Timmy Hill	Waltrip Brothers Charity Championship   (Carl Long)	Chevrolet	398	running	0	0	0
+29	25	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	397	running	0	8	0
+30	33	38	David Ragan	Overton's   (Bob Jenkins)	Ford	393	crash	0	7	0
+31	22	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	391	running	0	6	0
+32	15	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	373	running	0	12	0
+33	23	27	Paul Menard	Duracell / Menards   (Richard Childress)	Chevrolet	343	crash	0	4	0
+34	30	43	Regan Smith	Smithfield   (Richard Petty Motorsports)	Ford	329	crash	0	0	0
+35	38	51	Cody Ware	ECU Pirates   (Rick Ware)	Chevrolet	283	handling	0	2	0
+36	27	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	257	crash	0	1	0
+37	6	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	93	crash	0	1	0
+38	8	2	Brad Keselowski	Wurth   (Roger Penske)	Ford	66	crash	0	1	0
+39	12	17	Ricky Stenhouse, Jr.	Little Hug Fruit Barrels   (Jack Roush)	Ford	62	crash	3	1	0
+\.
+
+
+--
+-- Data for Name: AAA_Texas_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "AAA_Texas_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	3	4	Kevin Harvick	Mobil 1   (Stewart Haas Racing)	Ford	334	running	38	59	6
+2	7	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	334	running	107	51	0
+3	2	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	334	running	65	47	0
+4	35	20	Matt Kenseth	XFINITY Team USA   (Joe Gibbs)	Toyota	334	running	29	40	0
+5	10	2	Brad Keselowski	Wurth   (Roger Penske)	Ford	334	running	0	32	0
+6	8	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	334	running	0	42	0
+7	36	22	Joey Logano	AAA   (Roger Penske)	Ford	334	running	1	30	0
+8	34	24	Chase Elliott	Hooters   (Rick Hendrick)	Chevrolet	334	running	1	35	0
+9	1	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	334	running	0	38	0
+10	4	77	Erik Jones	Sport Clips   (Barney Visser)	Toyota	334	running	0	34	0
+11	19	5	Kasey Kahne	Great Clips / Justice League   (Rick Hendrick)	Chevrolet	334	running	3	26	0
+12	12	17	Ricky Stenhouse, Jr.	Fastenal / Loctite   (Jack Roush)	Ford	334	running	0	25	0
+13	15	3	Austin Dillon	Dow / Winter in PyeongChang   (Richard Childress)	Chevrolet	334	running	1	27	0
+14	6	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	334	running	0	24	0
+15	18	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	334	running	0	22	0
+16	16	47	A.J. Allmendinger	Kroger ClickList / Stouffer's / Suave Men   (JTG-Daugherty Racing)	Chevrolet	334	running	0	21	0
+17	14	10	Danica Patrick	Aspen Dental $10M for Veterans   (Stewart Haas Racing)	Ford	333	running	0	20	0
+18	13	1	Jamie McMurray	Cessna / Textron Off-Road   (Chip Ganassi)	Chevrolet	333	running	0	19	0
+19	5	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	333	running	7	18	0
+20	25	31	Ryan Newman	Grainger   (Richard Childress)	Chevrolet	333	running	1	17	0
+21	23	95	Michael McDowell	Rohto Jolt Eyedrops   (Leavine Family Racing)	Chevrolet	333	running	4	16	0
+22	26	37	Chris Buescher	Bush's Chili Beans / Tide / Clorox   (JTG-Daugherty Racing)	Chevrolet	333	running	0	15	0
+23	21	27	Paul Menard	Atlas / Menards   (Richard Childress)	Chevrolet	332	running	0	14	0
+24	27	13	Ty Dillon	GEICO Military   (Germain Racing)	Chevrolet	332	running	0	13	0
+25	28	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	332	running	0	12	0
+26	22	34	Landon Cassill	Love's Travel Stops / SpeedCo   (Bob Jenkins)	Ford	331	running	0	11	0
+27	9	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	331	running	0	10	0
+28	37	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	330	running	0	9	0
+29	29	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	330	running	0	8	0
+30	24	38	David Ragan	TheHouse.com   (Bob Jenkins)	Ford	329	running	0	7	0
+31	38	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	325	running	0	6	0
+32	30	7	Joey Gase	DonateLifeTexas.org   (Tommy Baldwin, Jr.)	Chevrolet	322	running	0	0	0
+33	32	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	322	running	0	4	0
+34	31	51	Ray Black, Jr.	ScubaLife   (Rick Ware)	Chevrolet	305	running	0	0	0
+35	17	88	Dale Earnhardt, Jr.	Nationwide / Justice League   (Rick Hendrick)	Chevrolet	304	running	3	2	0
+36	20	14	Clint Bowyer	Rush Truck Centers / Mobil Delvac 1   (Stewart Haas Racing)	Ford	303	running	0	1	0
+37	11	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	282	crash	74	18	1
+38	33	66	David Starr	Moore Freight Service   (Carl Long)	Chevrolet	237	crash	0	0	0
+39	39	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	227	engine	0	1	0
+40	40	83	Gray Gaulding	Earthwater   (BK Racing)	Toyota	159	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: Alabama_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Alabama_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	6	2	Brad Keselowski	Miller Lite / #Cheers2DaleJr   (Roger Penske)	Ford	188	running	7	59	6
+2	27	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	188	running	3	35	0
+3	10	6	Trevor Bayne	Liberty National   (Jack Roush)	Ford	188	running	0	36	0
+4	3	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	188	running	59	42	0
+5	26	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	188	running	0	32	0
+6	15	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	188	running	4	32	0
+7	1	88	Dale Earnhardt, Jr.	Mountain Dew   (Rick Hendrick)	Chevrolet	188	running	7	30	0
+8	11	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	188	running	5	30	0
+9	39	83	Gray Gaulding	Dustless Blasting   (BK Racing)	Toyota	188	running	0	28	0
+10	33	38	David Ragan	Juice Batteries   (Bob Jenkins)	Ford	188	running	0	27	0
+11	25	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	188	running	0	26	0
+12	20	27	Paul Menard	Knauf / Menards   (Richard Childress)	Chevrolet	188	running	0	25	0
+13	12	42	Kyle Larson	First Data / CardConnect   (Chip Ganassi)	Chevrolet	187	running	0	24	0
+14	19	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	187	running	7	23	0
+15	14	19	Daniel Suarez	Camping World   (Joe Gibbs)	Toyota	184	crash	11	22	0
+16	2	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	182	crash	26	28	0
+17	28	37	Chris Buescher	Bush's Chili Beans / Kingsford / Scott   (JTG-Daugherty Racing)	Chevrolet	182	crash	0	20	0
+18	9	21	Ryan Blaney	Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	177	crash	27	37	1
+19	35	75	Brendan Gaughan	Beard Oil Distributing   (Mark Beard)	Chevrolet	177	crash	6	0	0
+20	22	4	Kevin Harvick	Busch Light Outdoors   (Stewart Haas Racing)	Ford	176	crash	0	20	0
+21	13	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	175	crash	0	16	0
+22	24	47	A.J. Allmendinger	Kroger ClickList / Coffeemate / Hellmann's   (JTG-Daugherty Racing)	Chevrolet	172	crash	1	15	0
+23	21	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	171	crash	0	14	0
+24	8	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	171	parked	0	23	0
+25	4	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	171	crash	3	21	0
+26	5	17	Ricky Stenhouse, Jr.	Sunny D   (Jack Roush)	Ford	171	crash	6	18	0
+27	16	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	171	crash	4	12	0
+28	30	34	Landon Cassill	Love's Travel Stops / CSX "Play It Safe"   (Bob Jenkins)	Ford	171	crash	0	9	0
+29	18	3	Austin Dillon	American Ethanol E15   (Richard Childress)	Chevrolet	171	crash	0	13	0
+30	29	95	Michael McDowell	K-LOVE Radio   (Leavine Family Racing)	Chevrolet	171	crash	0	11	0
+31	32	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	171	parked	12	6	0
+32	37	23	Joey Gase	Dr. Pepper   (BK Racing)	Toyota	164	crash	0	0	0
+33	40	55	D.J. Kennington	Dirt and Rock   (Jay Robinson)	Toyota	164	crash	0	4	0
+34	38	72	Cole Whitt	RTIC Coolers   (Bryan Smith)	Chevrolet	155	crash	0	3	0
+35	7	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	155	crash	0	15	0
+36	23	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	26	crash	0	1	0
+37	17	1	Jamie McMurray	Cessna / Nicholas Air   (Chip Ganassi)	Chevrolet	25	crash	0	1	0
+38	34	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	25	crash	0	1	0
+39	36	15	Mark Thompson	Phoenix Air   (Jay Robinson)	Chevrolet	25	crash	0	0	0
+40	31	7	Justin Marks	Golden Corral / Katerra   (Tommy Baldwin, Jr.)	Chevrolet	16	crash	0	0	0
+\.
+
+
+--
+-- Data for Name: Auto_Club_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Auto_Club_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	202	running	110	59	6
+2	3	2	Brad Keselowski	Wurth   (Roger Penske)	Ford	202	running	0	36	0
+3	17	14	Clint Bowyer	Rush Truck Centers   (Stewart Haas Racing)	Ford	202	running	0	46	0
+4	4	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	202	running	73	52	1
+5	35	22	Joey Logano	AAA Southern California   (Roger Penske)	Ford	202	running	1	39	0
+6	8	1	Jamie McMurray	McDonald's All American Games   (Chip Ganassi)	Chevrolet	202	running	0	43	0
+7	10	19	Daniel Suarez	Subway   (Joe Gibbs)	Toyota	202	running	0	30	0
+8	9	18	Kyle Busch	Interstate Batteries   (Joe Gibbs)	Toyota	202	running	7	39	0
+9	19	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	202	running	0	30	0
+10	13	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	202	running	4	43	0
+11	11	3	Austin Dillon	American Ethanol E15   (Richard Childress)	Chevrolet	202	running	0	26	0
+12	14	77	Erik Jones	Toyota Service Centers   (Barney Visser)	Toyota	202	running	0	34	0
+13	7	4	Kevin Harvick	Busch Beer   (Stewart Haas Racing)	Ford	202	running	0	24	0
+14	2	11	Denny Hamlin	Sport Clips   (Joe Gibbs)	Toyota	202	running	4	26	0
+15	5	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	202	running	0	22	0
+16	18	88	Dale Earnhardt, Jr.	Axalta / Service King   (Rick Hendrick)	Chevrolet	202	running	0	21	0
+17	24	47	A.J. Allmendinger	Ralph's ClickList / Oscar Mayer   (JTG-Daugherty Racing)	Chevrolet	202	running	0	20	0
+18	21	13	Ty Dillon	Twisted Tea   (Germain Racing)	Chevrolet	202	running	1	19	0
+19	31	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	202	running	0	18	0
+20	12	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	202	running	0	17	0
+21	37	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	202	running	0	16	0
+22	16	17	Ricky Stenhouse, Jr.	Fastenal 50th Anniversary   (Jack Roush)	Ford	202	running	0	15	0
+23	36	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	202	running	0	14	0
+24	15	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	201	running	0	13	0
+25	20	37	Chris Buescher	Bush's Beans / Dawn   (JTG-Daugherty Racing)	Chevrolet	201	running	0	12	0
+26	22	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	200	running	0	11	0
+27	26	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	200	running	0	10	0
+28	23	27	Paul Menard	Jack Link's / Menards   (Richard Childress)	Chevrolet	200	running	2	9	0
+29	38	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	200	running	0	8	0
+30	30	83	Corey LaJoie	Bubba Burger   (BK Racing)	Toyota	200	running	0	7	0
+31	27	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	199	running	0	6	0
+32	28	72	Cole Whitt	Southern California Chevy Dealers   (Mark Smith)	Chevrolet	199	running	0	5	0
+33	25	95	Michael McDowell	LFR Woodie Wagon   (Leavine Family Racing)	Chevrolet	198	running	0	4	0
+34	29	15	Reed Sorenson	VIPRacingExperience.com   (Jay Robinson)	Toyota	197	running	0	3	0
+35	34	51	Timmy Hill	Bubba Burger   (Rick Ware)	Chevrolet	193	running	0	0	0
+36	6	20	Matt Kenseth	Peak Antifreeze & Coolant   (Joe Gibbs)	Toyota	184	crash	0	1	0
+37	39	23	Gray Gaulding	SunFrog.com   (BK Racing)	Toyota	173	crash	0	1	0
+38	33	55	Derrike Cope	Premium Motorsports   (Jay Robinson)	Chevrolet	117	running	0	1	0
+39	32	33	Jeffrey Earnhardt	K1Speed   (Joe Falk)	Chevrolet	99	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: Axalta_Presents_the_Pocono_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Axalta_Presents_the_Pocono_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	4	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	160	running	10	40	5
+2	12	4	Kevin Harvick	Busch Beer   (Stewart Haas Racing)	Ford	160	running	0	51	0
+3	15	77	Erik Jones	GameStop / Cars 3   (Barney Visser)	Toyota	160	running	20	39	0
+4	5	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	160	running	0	40	0
+5	6	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	160	running	11	44	0
+6	2	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	160	running	5	39	0
+7	7	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	160	running	9	47	1
+8	25	24	Chase Elliott	Sun Energy 1   (Rick Hendrick)	Chevrolet	160	running	0	40	0
+9	1	18	Kyle Busch	M&M's Red, White & Blue   (Joe Gibbs)	Toyota	160	running	100	47	1
+10	3	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	160	running	0	31	0
+11	23	17	Ricky Stenhouse, Jr.	Little Hug Fruit Barrels   (Jack Roush)	Ford	160	running	3	26	0
+12	18	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	160	running	1	25	0
+13	17	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	160	running	0	25	0
+14	10	31	Ryan Newman	Kalahari Resorts & Conventions   (Richard Childress)	Chevrolet	160	running	0	23	0
+15	14	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	160	running	1	22	0
+16	24	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	160	running	0	21	0
+17	20	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	160	running	0	20	0
+18	27	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	160	running	0	19	0
+19	29	37	Chris Buescher	Scott Products / Clorox / Kingsford   (JTG-Daugherty Racing)	Chevrolet	160	running	0	18	0
+20	13	27	Paul Menard	Dutch Boy / Menards   (Richard Childress)	Chevrolet	160	running	0	17	0
+21	22	6	Trevor Bayne	Ford EcoBoost   (Jack Roush)	Ford	160	running	0	16	0
+22	21	47	A.J. Allmendinger	Kroger ClickList / Heinz / Oscar Mayer   (JTG-Daugherty Racing)	Chevrolet	160	running	0	15	0
+23	9	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	160	running	0	14	0
+24	11	95	Michael McDowell	FDNY Foundation   (Leavine Family Racing)	Chevrolet	160	running	0	13	0
+25	31	38	David Ragan	Overton's   (Bob Jenkins)	Ford	159	running	0	12	0
+26	16	43	Darrell Wallace, Jr.	Smithfield   (Richard Petty Motorsports)	Ford	159	running	0	0	0
+27	34	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	158	running	0	10	0
+28	35	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	157	running	0	9	0
+29	33	23	Gray Gaulding	Addiction Campuses   (BK Racing)	Toyota	156	running	0	8	0
+30	32	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	155	engine	0	7	0
+31	36	15	Reed Sorenson	Energex Wood Pellet Fuel   (Jay Robinson)	Toyota	154	running	0	6	0
+32	30	32	Matt DiBenedetto	IncredibleBank.com   (Archie St. Hilaire)	Ford	153	axle	0	5	0
+33	39	55	Derrike Cope	StarCom Fiber   (Jay Robinson)	Chevrolet	153	running	0	4	0
+34	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	146	brakes	0	3	0
+35	26	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	140	crash	0	4	0
+36	19	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	95	crash	0	7	0
+37	8	1	Jamie McMurray	Cessna / Beechcraft   (Chip Ganassi)	Chevrolet	95	crash	0	3	0
+38	28	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	58	engine	0	1	0
+39	38	51	Cody Ware	Clemson Tigers National Champions   (Rick Ware)	Chevrolet	35	vibration	0	1	0
+\.
+
+
+--
+-- Data for Name: Bank_of_America_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Bank_of_America_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	17	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	337	running	91	47	5
+2	7	24	Chase Elliott	Sun Energy 1   (Rick Hendrick)	Chevrolet	337	running	12	53	0
+3	3	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	337	running	149	54	2
+4	1	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	337	running	45	43	0
+5	18	1	Jamie McMurray	Sherwin-Williams   (Chip Ganassi)	Chevrolet	337	running	4	41	0
+6	14	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	337	running	0	33	0
+7	25	48	Jimmie Johnson	Lowe's / A.O. Smith   (Rick Hendrick)	Chevrolet	337	running	0	34	0
+8	15	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	337	running	0	31	0
+9	9	5	Kasey Kahne	Road to Race Day / Go90.com   (Rick Hendrick)	Chevrolet	337	running	2	28	0
+10	10	42	Kyle Larson	Target / Axe   (Chip Ganassi)	Chevrolet	337	running	12	38	0
+11	2	20	Matt Kenseth	Tide Pods   (Joe Gibbs)	Toyota	337	running	0	38	0
+12	23	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	337	running	0	25	0
+13	22	17	Ricky Stenhouse, Jr.	Sunny D   (Jack Roush)	Ford	337	running	0	24	0
+14	26	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	337	running	0	23	0
+15	6	2	Brad Keselowski	Alliance Truck Parts   (Roger Penske)	Ford	337	running	0	22	0
+16	13	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	337	running	0	21	0
+17	38	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	337	running	0	20	0
+18	21	37	Chris Buescher	Gain   (JTG-Daugherty Racing)	Chevrolet	337	running	0	19	0
+19	20	27	Paul Menard	Menards / Schrock   (Richard Childress)	Chevrolet	337	running	0	18	0
+20	19	47	A.J. Allmendinger	Kroger ClickList / DiGiorno / Breyers   (JTG-Daugherty Racing)	Chevrolet	337	running	0	17	0
+21	27	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	337	running	0	16	0
+22	8	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	337	running	0	24	0
+23	29	32	Matt DiBenedetto	E.J. Wade Foundation   (Archie St. Hilaire)	Ford	337	running	0	14	0
+24	24	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	337	running	0	13	0
+25	30	34	Landon Cassill	Love's Travel Stops / Roller Bites   (Bob Jenkins)	Ford	336	running	0	12	0
+26	28	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	335	running	0	11	0
+27	5	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	335	running	0	10	0
+28	39	23	Corey LaJoie	MyFreedomSmokes.com   (BK Racing)	Toyota	333	running	0	9	0
+29	4	18	Kyle Busch	Interstate Batteries   (Joe Gibbs)	Toyota	331	running	22	14	0
+30	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	330	running	0	7	0
+31	34	15	Reed Sorenson	Xchange of America   (Jay Robinson)	Chevrolet	330	running	0	6	0
+32	33	51	B.J. McLeod	Donnie Neuenberger Foundation   (Rick Ware)	Chevrolet	326	running	0	0	0
+33	36	66	Timmy Hill	OCR Gaz Bar   (Carl Long)	Chevrolet	326	running	0	0	0
+34	32	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	295	running	0	3	0
+35	16	95	Michael McDowell	Procore   (Leavine Family Racing)	Chevrolet	293	running	0	2	0
+36	35	55	Gray Gaulding	Low T Centers   (Jay Robinson)	Toyota	267	running	0	1	0
+37	31	38	David Ragan	TheHouse.com   (Bob Jenkins)	Ford	263	crash	0	1	0
+38	12	10	Danica Patrick	Ford Warriors in Pink   (Stewart Haas Racing)	Ford	263	crash	0	1	0
+39	40	83	Brett Moffitt	Champion Machinery   (BK Racing)	Toyota	89	crash	0	0	0
+40	11	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	43	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Bass_Pro_Shops-NRA_Night_Race_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Bass_Pro_Shops-NRA_Night_Race_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	18	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	500	running	156	53	6
+2	1	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	500	running	260	50	0
+3	7	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	500	running	0	43	0
+4	5	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	500	running	11	49	1
+5	25	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	500	running	0	32	0
+6	13	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	500	running	1	38	0
+7	20	6	Trevor Bayne	Tim Duerr EcoBoost   (Jack Roush)	Ford	500	running	0	30	0
+8	29	4	Kevin Harvick	Busch Outdoors   (Stewart Haas Racing)	Ford	500	running	0	37	0
+9	2	42	Kyle Larson	Huggies Little Movers   (Chip Ganassi)	Chevrolet	500	running	70	41	0
+10	10	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	500	running	0	31	0
+11	21	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	500	running	0	36	0
+12	11	1	Jamie McMurray	McDonald's / Cessna   (Chip Ganassi)	Chevrolet	500	running	0	25	0
+13	8	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	500	running	0	27	0
+14	14	17	Ricky Stenhouse, Jr.	Lenox / Fastenal   (Jack Roush)	Ford	500	running	0	23	0
+15	12	19	Daniel Suarez	Irwin / Lenox   (Joe Gibbs)	Toyota	500	running	0	22	0
+16	27	27	Paul Menard	Knauf / Menards   (Richard Childress)	Chevrolet	499	running	0	23	0
+17	19	38	David Ragan	Juice Battery   (Bob Jenkins)	Ford	499	running	0	20	0
+18	4	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	499	running	2	26	0
+19	9	14	Clint Bowyer	Rush Truck Centers   (Stewart Haas Racing)	Ford	499	running	0	19	0
+20	26	95	Michael McDowell	Wipes.com   (Leavine Family Racing)	Chevrolet	499	running	0	17	0
+21	6	78	Martin Truex, Jr.	Bass Pro Shops / Ducks Unlimited   (Barney Visser)	Toyota	499	running	0	18	0
+22	23	47	A.J. Allmendinger	Kroger ClickList / Crest / Velveeta   (JTG-Daugherty Racing)	Chevrolet	498	running	0	15	0
+23	31	88	Dale Earnhardt, Jr.	Axalta / Ducks Unlimited   (Rick Hendrick)	Chevrolet	497	running	0	14	0
+24	3	5	Kasey Kahne	Rated Red "Road to Race Day"   (Rick Hendrick)	Chevrolet	497	running	0	13	0
+25	24	10	Danica Patrick	CSU / One Cure   (Stewart Haas Racing)	Ford	496	running	0	12	0
+26	34	32	Matt DiBenedetto	E.J. Wade Construction   (Archie St. Hilaire)	Ford	496	running	0	11	0
+27	15	37	Chris Buescher	Bush's Grillin' Beans / Kingsford / Scott   (JTG-Daugherty Racing)	Chevrolet	496	running	0	10	0
+28	35	83	Corey LaJoie	HMS Motorsport   (BK Racing)	Toyota	495	running	0	9	0
+29	17	2	Brad Keselowski	AutoTrader   (Roger Penske)	Ford	493	running	0	8	0
+30	30	7	J.J. Yeley	ZombieAuto.com   (Tommy Baldwin, Jr.)	Chevrolet	493	running	0	0	0
+31	37	55	Gray Gaulding	LaColombe Draft Latte   (Jay Robinson)	Chevrolet	488	running	0	6	0
+32	36	51	B.J. McLeod	NEX Transportation   (Rick Ware)	Chevrolet	482	running	0	0	0
+33	32	72	Cole Whitt	Bad Boy Mowers   (Bryan Smith)	Chevrolet	480	running	0	4	0
+34	40	23	Joey Gase	Best Home Furnishings   (BK Racing)	Toyota	476	running	0	0	0
+35	33	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	412	crash	0	2	0
+36	22	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	394	crash	0	1	0
+37	28	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	390	crash	0	1	0
+38	39	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	352	transmission	0	1	0
+39	16	3	Austin Dillon	Dow Energy & Water   (Richard Childress)	Chevrolet	230	crash	0	1	0
+40	38	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	225	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Bojangles_Southern_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Bojangles_Southern_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	9	11	Denny Hamlin	Sport Clips Throwback   (Joe Gibbs)	Toyota	367	running	124	32	0
+2	3	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	367	running	6	43	0
+3	7	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	367	running	7	38	0
+4	13	3	Austin Dillon	American Ethanol E15 Throwback   (Richard Childress)	Chevrolet	367	running	0	36	0
+5	10	77	Erik Jones	5-hour Energy Rookie Salute   (Barney Visser)	Toyota	367	running	0	37	0
+6	11	20	Matt Kenseth	Circle K Throwback   (Joe Gibbs)	Toyota	367	running	0	32	0
+7	17	31	Ryan Newman	Caterpillar Throwback   (Richard Childress)	Chevrolet	367	running	0	30	0
+8	2	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats 40th Anniv.   (Barney Visser)	Toyota	367	running	76	49	2
+9	1	4	Kevin Harvick	Busch Beer Throwback   (Stewart Haas Racing)	Ford	366	running	22	43	0
+10	5	1	Jamie McMurray	McDonald's Throwback   (Chip Ganassi)	Chevrolet	366	running	0	34	0
+11	20	24	Chase Elliott	NAPA Auto Parts Throwback   (Rick Hendrick)	Chevrolet	366	running	0	26	0
+12	18	48	Jimmie Johnson	Lowe's Throwback   (Rick Hendrick)	Chevrolet	366	running	0	25	0
+13	25	13	Ty Dillon	GEICO Throwback   (Germain Racing)	Chevrolet	366	running	0	24	0
+14	4	42	Kyle Larson	Credit One Bank Throwback   (Chip Ganassi)	Chevrolet	366	running	124	39	0
+15	6	2	Brad Keselowski	Miller Genuine Draft Throwback   (Roger Penske)	Ford	366	running	3	33	0
+16	21	27	Paul Menard	Dutch Boy / Menards   (Richard Childress)	Chevrolet	366	running	0	21	0
+17	27	37	Chris Buescher	Cheerios Throwback   (JTG-Daugherty Racing)	Chevrolet	366	running	0	20	0
+18	8	22	Joey Logano	Shell / Pennzoil Throwback   (Roger Penske)	Ford	366	running	0	22	0
+19	30	95	Michael McDowell	WRL General Contractors Throwback   (Leavine Family Racing)	Chevrolet	365	running	0	18	0
+20	15	43	Aric Almirola	STP Throwback   (Richard Petty Motorsports)	Ford	365	running	0	17	0
+21	31	34	Landon Cassill	Love's Travel Stops Throwback   (Bob Jenkins)	Ford	365	running	5	16	0
+22	22	88	Dale Earnhardt, Jr.	Nationwide Insurance Throwback   (Rick Hendrick)	Chevrolet	365	running	0	15	0
+23	34	72	Cole Whitt	Ted Whitt Plumbing   (Bryan Smith)	Chevrolet	364	running	0	14	0
+24	23	5	Kasey Kahne	Great Clips Throwback   (Rick Hendrick)	Chevrolet	364	running	0	13	0
+25	26	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	363	running	0	12	0
+26	33	10	Danica Patrick	Ford Credit Throwback   (Stewart Haas Racing)	Ford	363	running	0	11	0
+27	28	32	Matt DiBenedetto	Keen Parts / Corvetteparts.net Throwback   (Archie St. Hilaire)	Ford	362	running	0	10	0
+28	35	23	Corey LaJoie	Dr. Pepper Throwback   (BK Racing)	Toyota	360	running	0	9	0
+29	14	17	Ricky Stenhouse, Jr.	Fifth Third Bank Throwback   (Jack Roush)	Ford	358	running	0	8	0
+30	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	356	running	0	7	0
+31	12	21	Ryan Blaney	Motorcraft Throwback   (Wood Brothers)	Ford	356	running	0	6	0
+32	38	55	Derrike Cope	Mane 'n Tail   (Jay Robinson)	Toyota	351	running	0	5	0
+33	40	66	Carl Long	CrashClaimsR.us   (Carl Long)	Chevrolet	350	running	0	0	0
+34	29	47	A.J. Allmendinger	Kroger ClickList Throwback   (JTG-Daugherty Racing)	Chevrolet	340	running	0	3	0
+35	24	6	Trevor Bayne	AdvoCare Throwback   (Jack Roush)	Ford	336	running	0	2	0
+36	36	83	Gray Gaulding	Champion Machinery   (BK Racing)	Toyota	202	crash	0	1	0
+37	39	51	Cody Ware	Bubba Burger / Pray for Texas Throwback   (Rick Ware)	Chevrolet	144	crash	0	1	0
+38	19	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	125	crash	0	1	0
+39	32	15	Reed Sorenson	Xchange of America Throwback   (Jay Robinson)	Toyota	104	clutch	0	1	0
+40	16	14	Clint Bowyer	Carolina Ford Dealers Throwback   (Stewart Haas Racing)	Ford	18	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: Brickyard_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Brickyard_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	19	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	167	running	12	40	5
+2	11	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	167	running	23	37	0
+3	8	31	Ryan Newman	Velveeta Shells & Cheese   (Richard Childress)	Chevrolet	167	running	0	34	0
+4	7	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	167	running	0	43	0
+5	14	20	Matt Kenseth	Tide Pods   (Joe Gibbs)	Toyota	167	running	21	42	0
+6	2	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	167	running	0	44	0
+7	15	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	167	running	0	30	0
+8	27	32	Matt DiBenedetto	Corvetteparts.net / Anest Iwata   (Archie St. Hilaire)	Ford	167	running	0	29	0
+9	26	37	Chris Buescher	Clorox / Scott Products / Dawn   (JTG-Daugherty Racing)	Chevrolet	167	running	0	28	0
+10	39	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Hellmann's   (JTG-Daugherty Racing)	Chevrolet	167	running	0	27	0
+11	23	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	167	running	0	26	0
+12	34	72	Cole Whitt	Moen   (Mark Smith)	Chevrolet	167	running	0	25	0
+13	29	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	167	running	0	24	0
+14	37	66	Timmy Hill	CrashClaimsR.us / Timmy Hill's 200th Start   (Carl Long)	Chevrolet	167	running	0	0	0
+15	3	1	Jamie McMurray	Cessna / McDonald's   (Chip Ganassi)	Chevrolet	167	running	0	27	0
+16	17	27	Paul Menard	Valvoline / Menards   (Richard Childress)	Chevrolet	167	running	0	21	0
+17	5	11	Denny Hamlin	FedEx Cares   (Joe Gibbs)	Toyota	166	running	0	23	0
+18	24	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	166	running	0	19	0
+19	28	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	165	running	0	18	0
+20	22	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	162	crash	0	17	0
+21	20	3	Austin Dillon	Dow Molykote Smart Lubrication   (Richard Childress)	Chevrolet	162	crash	0	16	0
+22	31	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	162	parked	0	15	0
+23	10	21	Ryan Blaney	Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	162	crash	6	30	0
+24	35	55	Gray Gaulding	Low T Centers   (Jay Robinson)	Chevrolet	162	crash	0	13	0
+25	38	15	Joey Gase	The Lisa Colagrossi Foundation   (Jay Robinson)	Chevrolet	162	crash	0	0	0
+26	36	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	162	running	0	11	0
+27	4	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	158	crash	0	12	0
+28	25	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	154	crash	0	12	0
+29	12	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	149	crash	0	8	0
+30	18	14	Clint Bowyer	Mobil 1 / Rush Truck Centers   (Stewart Haas Racing)	Ford	148	crash	0	7	0
+31	9	77	Erik Jones	Sport Clips   (Barney Visser)	Toyota	148	crash	10	13	0
+32	40	51	B.J. McLeod	American Campus Communities   (Rick Ware)	Chevrolet	135	running	0	0	0
+33	6	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	110	crash	8	22	0
+34	1	18	Kyle Busch	Skittles   (Joe Gibbs)	Toyota	110	crash	87	23	2
+35	21	17	Ricky Stenhouse, Jr.	Sunny D   (Jack Roush)	Ford	106	crash	0	2	0
+36	13	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	76	crash	0	2	0
+37	33	7	J.J. Yeley	Accell Construction   (Tommy Baldwin, Jr.)	Chevrolet	70	crash	0	0	0
+38	30	38	David Ragan	Dockside Logistics   (Bob Jenkins)	Ford	56	crash	0	1	0
+39	16	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	43	engine	0	1	0
+40	32	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	9	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Camping_World_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Camping_World_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	22	31	Ryan Newman	Grainger   (Richard Childress)	Chevrolet	314	running	6	42	5
+2	4	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	314	running	3	53	0
+3	9	18	Kyle Busch	Skittles   (Joe Gibbs)	Toyota	314	running	114	47	0
+4	21	17	Ricky Stenhouse, Jr.	Fastenal   (Jack Roush)	Ford	314	running	0	33	0
+5	6	2	Brad Keselowski	Alliance Truck Parts   (Roger Penske)	Ford	314	running	0	11	0
+6	23	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	314	running	0	22	0
+7	27	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	314	running	0	30	0
+8	8	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	314	running	0	33	0
+9	14	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	314	running	0	38	0
+10	19	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	314	running	0	29	0
+11	16	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	314	running	0	26	0
+12	7	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	314	running	106	42	1
+13	13	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	314	running	0	24	0
+14	3	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	314	running	0	24	0
+15	5	1	Jamie McMurray	Cessna / Beechcraft   (Chip Ganassi)	Chevrolet	314	running	0	33	0
+16	15	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	314	running	0	21	0
+17	28	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	314	running	0	20	0
+18	17	3	Austin Dillon	Dow / World Water Day   (Richard Childress)	Chevrolet	314	running	0	19	0
+19	24	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	314	running	0	18	0
+20	10	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	314	running	0	17	0
+21	18	27	Paul Menard	FVP / Menards   (Richard Childress)	Chevrolet	314	running	0	16	0
+22	26	10	Danica Patrick	TaxAct   (Stewart Haas Racing)	Ford	314	running	0	15	0
+23	2	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	314	running	0	21	0
+24	25	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	314	running	0	13	0
+25	11	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	314	running	1	12	0
+26	20	47	A.J. Allmendinger	Fry's ClickList / Velveeta / Nature Valley   (JTG-Daugherty Racing)	Chevrolet	314	running	0	11	0
+27	33	37	Chris Buescher	Scott Products / Crest / Bush's Beans   (JTG-Daugherty Racing)	Chevrolet	314	running	1	10	0
+28	29	34	Landon Cassill	Starkey Hearing Foundation   (Bob Jenkins)	Ford	313	running	0	9	0
+29	30	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	313	running	0	8	0
+30	35	15	Reed Sorenson	Premium Motorsports   (Jay Robinson)	Chevrolet	312	running	1	7	0
+31	1	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	307	crash	82	16	1
+32	39	51	Timmy Hill	Spoonful of Music Foundation / Bubba Burger   (Rick Ware)	Chevrolet	307	running	0	0	0
+33	37	55	Derrike Cope	Ashurst American Honey   (Jay Robinson)	Chevrolet	307	running	0	4	0
+34	32	72	Cole Whitt	Standard Plumbing Supply   (Mark Smith)	Chevrolet	256	crash	0	3	0
+35	34	38	David Ragan	Jacob Companies   (Bob Jenkins)	Ford	204	crash	0	2	0
+36	36	23	Gray Gaulding	SunFrog.com   (BK Racing)	Toyota	201	crash	0	1	0
+37	12	20	Matt Kenseth	Tide Pods   (Joe Gibbs)	Toyota	190	crash	0	1	0
+38	31	83	Corey LaJoie	BK Racing Graphics   (BK Racing)	Toyota	115	crash	0	1	0
+39	38	33	Jeffrey Earnhardt	NiceRide Apparel   (Joe Falk)	Chevrolet	9	transmission	0	1	0
+\.
+
+
+--
+-- Data for Name: Can-Am_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Can-Am_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	7	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	312	running	62	56	5
+2	4	24	Chase Elliott	Hooters   (Rick Hendrick)	Chevrolet	312	running	34	45	0
+3	5	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	312	running	0	44	0
+4	11	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	312	running	0	45	0
+5	6	4	Kevin Harvick	Busch Light   (Stewart Haas Racing)	Ford	312	running	0	43	0
+6	13	1	Jamie McMurray	Cessna   (Chip Ganassi)	Chevrolet	312	running	0	35	0
+7	8	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	312	running	0	41	0
+8	27	17	Ricky Stenhouse, Jr.	Robert Yates Tribute   (Jack Roush)	Ford	312	running	0	29	0
+9	22	43	Aric Almirola	U.S. Air Force   (Richard Petty Motorsports)	Ford	312	running	0	28	0
+10	14	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	312	running	0	27	0
+11	29	13	Ty Dillon	GEICO Military   (Germain Racing)	Chevrolet	312	running	0	26	0
+12	9	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	312	running	0	25	0
+13	20	14	Clint Bowyer	USA Network Damnation   (Stewart Haas Racing)	Ford	312	running	0	25	0
+14	21	3	Austin Dillon	Realtree   (Richard Childress)	Chevrolet	312	running	0	23	0
+15	19	27	Paul Menard	Duracell / Menards   (Richard Childress)	Chevrolet	312	running	0	22	0
+16	16	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	312	running	0	21	0
+17	1	21	Ryan Blaney	SKF / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	312	running	11	20	0
+18	10	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	312	running	0	19	0
+19	17	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	311	running	0	18	0
+20	18	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	311	running	0	22	0
+21	15	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	310	running	0	16	0
+22	28	95	Michael McDowell	Rohto Jolt Eyedrops   (Leavine Family Racing)	Chevrolet	309	running	0	15	0
+23	23	47	A.J. Allmendinger	Fry's ClickList / Hot Pockets / Dawn   (JTG-Daugherty Racing)	Chevrolet	309	running	0	14	0
+24	32	34	Landon Cassill	Love's Travel Stops / Roller Bites   (Bob Jenkins)	Ford	309	running	0	13	0
+25	24	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	309	running	0	12	0
+26	37	15	D.J. Kennington	Northern Provincial Pipelines   (Jay Robinson)	Chevrolet	307	running	0	11	0
+27	30	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	306	running	0	10	0
+28	36	66	David Starr	Eureka   (Carl Long)	Toyota	305	running	0	0	0
+29	38	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	305	running	0	8	0
+30	35	7	Joey Gase	Eternal Fan   (Tommy Baldwin, Jr.)	Chevrolet	304	running	0	0	0
+31	33	23	Corey LaJoie	Fresh Beards / Earthwater   (BK Racing)	Toyota	303	running	0	6	0
+32	40	0	Derrike Cope	StarCom Fiber / Ashurst American Honey   (StarCom Racing)	Chevrolet	302	running	0	5	0
+33	26	38	David Ragan	1000Bulbs.com   (Bob Jenkins)	Ford	301	running	0	4	0
+34	39	51	Kyle Weatherman	Prevagen   (Rick Ware)	Chevrolet	294	running	0	3	0
+35	2	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	275	crash	193	21	1
+36	34	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	258	crash	0	1	0
+37	31	37	Chris Buescher	Clorox / Hellmann's / Hungry Jack   (JTG-Daugherty Racing)	Chevrolet	247	crash	0	1	0
+38	25	6	Trevor Bayne	Ford EcoBoost   (Jack Roush)	Ford	226	crash	0	1	0
+39	12	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	148	crash	0	2	0
+40	3	42	Kyle Larson	Refresh Your Car!   (Chip Ganassi)	Chevrolet	104	engine	12	11	1
+\.
+
+
+--
+-- Data for Name: Coca-Cola_600_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Coca-Cola_600_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	22	3	Austin Dillon	Dow Salutes Veterans   (Richard Childress)	Chevrolet	400	running	2	45	5
+2	2	18	Kyle Busch	M&M's Red, White & Blue   (Joe Gibbs)	Toyota	400	running	63	61	1
+3	8	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats / USO   (Barney Visser)	Toyota	400	running	233	60	1
+4	4	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	400	running	0	55	0
+5	6	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	400	running	10	43	1
+6	12	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	400	running	1	44	0
+7	5	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	400	running	0	39	0
+8	1	4	Kevin Harvick	Mobil 1   (Stewart Haas Racing)	Ford	400	running	45	41	0
+9	17	31	Ryan Newman	Grainger   (Richard Childress)	Chevrolet	400	running	0	28	0
+10	19	88	Dale Earnhardt, Jr.	Nationwide Patriotic   (Rick Hendrick)	Chevrolet	400	running	0	29	0
+11	20	19	Daniel Suarez	Subway   (Joe Gibbs)	Toyota	400	running	0	29	0
+12	11	1	Jamie McMurray	GearWrench   (Chip Ganassi)	Chevrolet	400	running	0	31	0
+13	16	27	Paul Menard	Knauf / Menards   (Richard Childress)	Chevrolet	400	running	2	24	0
+14	9	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	400	running	0	26	0
+15	13	17	Ricky Stenhouse, Jr.	Milwaukee / Fastenal Patriotic   (Jack Roush)	Ford	400	running	2	22	0
+16	18	6	Trevor Bayne	Ford EcoBoost Patriotic   (Jack Roush)	Ford	400	running	0	21	0
+17	14	48	Jimmie Johnson	Lowe's Patriotic   (Rick Hendrick)	Chevrolet	400	running	35	36	0
+18	26	47	A.J. Allmendinger	Harris Teeter Express Lane / Klondike / Heinz   (JTG-Daugherty Racing)	Chevrolet	399	running	0	19	0
+19	21	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	399	running	0	18	0
+20	29	37	Chris Buescher	Kleenex / Cars 3   (JTG-Daugherty Racing)	Chevrolet	399	running	0	17	0
+21	23	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	399	running	0	16	0
+22	25	43	Regan Smith	United States Air Force   (Richard Petty Motorsports)	Ford	399	running	0	0	0
+23	28	38	David Ragan	Jacob Companies Camo   (Bob Jenkins)	Ford	397	running	0	14	0
+24	7	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	396	running	0	17	0
+25	15	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	396	running	7	12	0
+26	33	7	J.J. Yeley	Accell Construction / Hope For The Warriors   (Tommy Baldwin, Jr.)	Chevrolet	395	running	0	0	0
+27	32	23	Gray Gaulding	Bubba Burger / We Salute You   (BK Racing)	Toyota	393	running	0	10	0
+28	31	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	393	running	0	9	0
+29	36	51	Timmy Hill	CharliesSoap.com   (Rick Ware)	Chevrolet	384	running	0	0	0
+30	35	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	375	running	0	7	0
+31	37	55	Derrike Cope	Twin Peaks   (Jay Robinson)	Toyota	327	running	0	6	0
+32	40	83	Corey LaJoie	Hope for the Warriors   (BK Racing)	Toyota	315	engine	0	5	0
+33	39	42	Kyle Larson	Target / Banana Boat   (Chip Ganassi)	Chevrolet	292	crash	0	11	0
+34	34	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	290	engine	0	3	0
+35	24	5	Kasey Kahne	LiftMaster   (Rick Hendrick)	Chevrolet	244	crash	0	2	0
+36	27	13	Ty Dillon	GEICO Military   (Germain Racing)	Chevrolet	242	rear end	0	1	0
+37	30	32	Matt DiBenedetto	Cosmo Motors   (Archie St. Hilaire)	Ford	139	crash	0	1	0
+38	3	24	Chase Elliott	NAPA   (Rick Hendrick)	Chevrolet	19	crash	0	1	0
+39	10	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	19	crash	0	1	0
+40	38	33	Jeffrey Earnhardt	Towne Bank   (Joe Falk)	Chevrolet	18	rear end	0	1	0
+\.
+
+
+--
+-- Data for Name: Coke_Zero_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Coke_Zero_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	6	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	163	running	17	40	5
+2	11	14	Clint Bowyer	Mobil 1   (Stewart Haas Racing)	Ford	163	running	4	42	0
+3	24	27	Paul Menard	Moen / Menards   (Richard Childress)	Chevrolet	163	running	0	34	0
+4	23	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	163	running	0	38	0
+5	22	31	Ryan Newman	Velveeta Shells & Cheese   (Richard Childress)	Chevrolet	163	running	0	32	0
+6	30	38	David Ragan	Shriners Hospitals for Children 95th Anniv.   (Bob Jenkins)	Ford	163	running	4	38	0
+7	32	75	Brendan Gaughan	Beard Oil Distributing   (Mark Beard)	Chevrolet	163	running	0	0	0
+8	27	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Hot Pockets   (JTG-Daugherty Racing)	Chevrolet	163	running	0	29	0
+9	17	77	Erik Jones	Sport Clips   (Barney Visser)	Toyota	163	running	9	28	0
+10	29	37	Chris Buescher	CoffeeMate / Stouffer's / DiGiorno   (JTG-Daugherty Racing)	Chevrolet	163	running	0	27	0
+11	36	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	163	running	0	26	0
+12	12	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	163	running	4	33	0
+13	28	32	Matt DiBenedetto	Incredible Bank   (Archie St. Hilaire)	Ford	163	running	0	24	0
+14	8	1	Jamie McMurray	McDonald's $1 Any Size Soft Drink   (Chip Ganassi)	Chevrolet	163	running	0	27	0
+15	31	43	Darrell Wallace, Jr.	Smithfield   (Richard Petty Motorsports)	Ford	163	running	0	0	0
+16	34	13	Ty Dillon	GEICO Military   (Germain Racing)	Chevrolet	163	running	7	24	0
+17	20	19	Daniel Suarez	Subway   (Joe Gibbs)	Toyota	163	running	11	20	0
+18	4	5	Kasey Kahne	UniFirst Uniforms   (Rick Hendrick)	Chevrolet	163	running	12	23	0
+19	26	34	Landon Cassill	Love's "Honoring the Quiet Professional"   (Bob Jenkins)	Ford	163	running	0	18	0
+20	16	18	Kyle Busch	Interstate Batteries   (Joe Gibbs)	Toyota	163	running	0	17	0
+21	33	7	Elliott Sadler	Golden Corral   (Tommy Baldwin, Jr.)	Chevrolet	163	running	0	0	0
+22	2	24	Chase Elliott	NAPA Patriotic   (Rick Hendrick)	Chevrolet	162	running	4	15	0
+23	14	6	Trevor Bayne	Liberty National Life Insurance   (Jack Roush)	Ford	160	running	2	14	0
+24	18	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	157	crash	16	22	0
+25	10	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	154	crash	0	12	0
+26	9	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	154	crash	9	20	0
+27	13	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	154	crash	21	22	1
+28	15	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	153	crash	0	19	0
+29	21	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	153	crash	0	8	0
+30	37	55	Reed Sorenson	RoyalTeakCollection.com   (Jay Robinson)	Toyota	147	running	0	7	0
+31	3	2	Brad Keselowski	Detroit Genuine Parts   (Roger Penske)	Ford	113	crash	35	16	1
+32	1	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	106	crash	1	14	0
+33	5	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	105	crash	7	9	0
+34	25	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	73	crash	0	3	0
+35	7	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	71	crash	0	8	0
+36	19	3	Austin Dillon	American Ethanol E15   (Richard Childress)	Chevrolet	70	crash	0	1	0
+37	39	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	57	engine	0	1	0
+38	40	15	D.J. Kennington	Xchange of America / LordCo   (Jay Robinson)	Toyota	14	engine	0	1	0
+39	35	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	9	engine	0	1	0
+40	38	83	Ryan Sieg	Dustless Blasting   (BK Racing)	Toyota	7	engine	0	0	0
+\.
+
+
+--
+-- Data for Name: Delaware_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Delaware_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	2	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	400	running	30	56	5
+2	12	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	400	running	138	47	0
+3	17	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	400	running	5	40	0
+4	1	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	400	running	51	50	0
+5	3	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	400	running	137	47	1
+6	19	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	400	running	0	32	0
+7	7	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	400	running	0	34	0
+8	5	19	Daniel Suarez	Comcast Business / Arris   (Joe Gibbs)	Toyota	400	running	0	29	0
+9	26	1	Jamie McMurray	GearWrench   (Chip Ganassi)	Chevrolet	400	running	0	30	0
+10	16	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	400	running	39	40	1
+11	4	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	400	running	0	26	0
+12	10	77	Erik Jones	SiriusXM   (Barney Visser)	Toyota	400	running	0	25	0
+13	8	31	Ryan Newman	Waste Masters   (Richard Childress)	Chevrolet	399	running	0	24	0
+14	21	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	399	running	0	23	0
+15	18	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	399	running	0	22	0
+16	23	3	Austin Dillon	AAA   (Richard Childress)	Chevrolet	399	running	0	21	0
+17	9	4	Kevin Harvick	Busch Beer   (Stewart Haas Racing)	Ford	399	running	0	23	0
+18	24	10	Danica Patrick	Ford Warriors in Pink   (Stewart Haas Racing)	Ford	399	running	0	25	0
+19	15	17	Ricky Stenhouse, Jr.	Fastenal   (Jack Roush)	Ford	399	running	0	25	0
+20	13	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	398	running	0	17	0
+21	28	38	David Ragan	TheHouse.com   (Bob Jenkins)	Ford	397	running	0	18	0
+22	29	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	397	running	0	15	0
+23	11	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	397	running	0	14	0
+24	20	6	Trevor Bayne	Ford EcoBoost   (Jack Roush)	Ford	396	running	0	13	0
+25	14	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	396	running	0	12	0
+26	25	27	Paul Menard	Richmond / Menards   (Richard Childress)	Chevrolet	396	running	0	11	0
+27	30	95	Michael McDowell	FDNY Foundation   (Leavine Family Racing)	Chevrolet	396	running	0	10	0
+28	27	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Heinz   (JTG-Daugherty Racing)	Chevrolet	395	running	0	9	0
+29	31	34	Landon Cassill	MDS Transport   (Bob Jenkins)	Ford	394	running	0	8	0
+30	22	37	Chris Buescher	Kingsford / Clorox / Scott   (JTG-Daugherty Racing)	Chevrolet	394	running	0	7	0
+31	40	32	Matt DiBenedetto	Keen Parts   (Archie St. Hilaire)	Ford	393	running	0	6	0
+32	33	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	392	running	0	5	0
+33	34	83	Brett Moffitt	HIKvision   (BK Racing)	Toyota	391	running	0	0	0
+34	37	23	Corey LaJoie	Fresh Beards   (BK Racing)	Toyota	389	running	0	3	0
+35	6	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	374	axle	0	8	0
+36	36	51	B.J. McLeod	Donnie Neuenberger Foundation   (Rick Ware)	Chevrolet	372	running	0	0	0
+37	38	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	368	running	0	1	0
+38	32	15	Ross Chastain	Use Your Melon, Drive Sober DE   (Jay Robinson)	Chevrolet	348	running	0	0	0
+39	39	55	Reed Sorenson	Sundance Vacations   (Jay Robinson)	Toyota	162	engine	0	1	0
+40	35	66	Timmy Hill	OCR Gaz Bar   (Carl Long)	Chevrolet	39	electrical	0	0	0
+\.
+
+
+--
+-- Data for Name: Federated_Auto_Parts_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Federated_Auto_Parts_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	4	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	404	running	53	54	5
+2	12	22	Joey Logano	Shell / Pennzoil / American Red Cross   (Roger Penske)	Ford	404	running	0	47	0
+3	27	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	404	running	4	36	0
+4	3	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	404	running	0	37	0
+5	2	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	404	running	0	32	0
+6	10	77	Erik Jones	SiriusXM   (Barney Visser)	Toyota	404	running	0	43	0
+7	16	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	404	running	0	30	0
+8	20	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	404	running	0	29	0
+9	7	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	404	running	38	39	1
+10	9	24	Chase Elliott	Mountain Dew   (Rick Hendrick)	Chevrolet	404	running	0	29	0
+11	15	2	Brad Keselowski	Fitzgerald Glider Kits   (Roger Penske)	Ford	404	running	9	32	0
+12	17	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	404	running	0	25	0
+13	21	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	404	running	13	28	0
+14	11	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	404	running	0	23	0
+15	6	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	404	running	0	25	0
+16	28	95	Michael McDowell	FDNY Foundation   (Leavine Family Racing)	Chevrolet	404	running	0	21	0
+17	23	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	404	running	0	20	0
+18	14	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	404	running	0	19	0
+19	8	17	Ricky Stenhouse, Jr.	Fastenal   (Jack Roush)	Ford	404	running	0	18	0
+20	5	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	403	crash	198	33	1
+21	31	3	Austin Dillon	Dow / Dowfrost   (Richard Childress)	Chevrolet	403	running	0	16	0
+22	32	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	403	running	0	15	0
+23	19	10	Danica Patrick	Warrior by Danica Patrick / HSN.com   (Stewart Haas Racing)	Ford	403	running	0	14	0
+24	13	14	Clint Bowyer	Rush Truck Centers / #TexasStrong   (Stewart Haas Racing)	Ford	403	running	0	21	0
+25	18	6	Trevor Bayne	Performance Plus Motor Oil   (Jack Roush)	Ford	402	running	0	12	0
+26	22	47	A.J. Allmendinger	Kroger ClickList / Hellmann's / Oscar Mayer   (JTG-Daugherty Racing)	Chevrolet	402	running	0	11	0
+27	29	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	402	running	0	10	0
+28	26	27	Paul Menard	Richmond / Menards   (Richard Childress)	Chevrolet	402	running	0	9	0
+29	33	83	Corey LaJoie	Safeway / LaBella Hair Design   (BK Racing)	Toyota	400	running	0	8	0
+30	36	55	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	400	running	0	7	0
+31	25	32	Matt DiBenedetto	E.J. Wade Construction   (Archie St. Hilaire)	Ford	400	running	0	6	0
+32	24	37	Chris Buescher	Nature Valley   (JTG-Daugherty Racing)	Chevrolet	400	running	0	5	0
+33	35	72	Cole Whitt	Zello   (Bryan Smith)	Chevrolet	396	running	0	4	0
+34	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	395	running	0	3	0
+35	34	23	Gray Gaulding	SweetFrog   (BK Racing)	Toyota	393	running	0	2	0
+36	38	15	Derrike Cope	StarCom Fiber   (Jay Robinson)	Chevrolet	388	running	0	1	0
+37	39	51	B.J. McLeod	Texas Strong / Bubba Burger   (Rick Ware)	Chevrolet	318	transmission	0	0	0
+38	1	20	Matt Kenseth	Hurricane Harvey Relief / ToyotaCare   (Joe Gibbs)	Toyota	257	crash	89	17	0
+39	30	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	33	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: FireKeepers_Casino_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "FireKeepers_Casino_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	42	Kyle Larson	Cars 3 / Target / Cottonelle   (Chip Ganassi)	Chevrolet	200	running	96	57	5
+2	10	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	200	running	0	40	0
+3	7	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	200	running	0	36	0
+4	5	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	200	running	0	44	0
+5	8	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	200	running	0	32	0
+6	2	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	200	running	62	51	2
+7	4	18	Kyle Busch	M&M's Red, White & Blue   (Joe Gibbs)	Toyota	200	running	40	47	0
+8	21	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	200	running	0	29	0
+9	17	88	Dale Earnhardt, Jr.	Mountain Dew   (Rick Hendrick)	Chevrolet	200	running	0	28	0
+10	13	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	200	running	0	28	0
+11	9	20	Matt Kenseth	Freightliner   (Joe Gibbs)	Toyota	200	running	0	39	0
+12	15	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	200	running	0	28	0
+13	14	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	200	running	0	24	0
+14	11	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	200	running	0	28	0
+15	19	31	Ryan Newman	Velveeta Shells & Cheese   (Richard Childress)	Chevrolet	200	running	0	22	0
+16	12	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	200	running	2	22	0
+17	27	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	200	running	0	20	0
+18	25	47	A.J. Allmendinger	Kroger ClickList / Nature Valley / Crest   (JTG-Daugherty Racing)	Chevrolet	200	running	0	19	0
+19	26	43	Darrell Wallace, Jr.	Smithfield   (Richard Petty Motorsports)	Ford	200	running	0	0	0
+20	37	13	Ty Dillon	Twisted Tea   (Germain Racing)	Chevrolet	200	running	0	17	0
+21	16	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	200	running	0	16	0
+22	30	27	Paul Menard	Nibco / Menards   (Richard Childress)	Chevrolet	200	running	0	15	0
+23	22	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	200	running	0	14	0
+24	20	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	200	running	0	13	0
+25	6	21	Ryan Blaney	Omnicraft Auto Parts / Quick Lane   (Wood Brothers)	Ford	200	running	0	16	0
+26	3	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	200	running	0	22	0
+27	18	3	Austin Dillon	Dow Salutes Veterans   (Richard Childress)	Chevrolet	199	running	0	10	0
+28	28	32	Matt DiBenedetto	KeenParts.com / CorvetteParts.net   (Archie St. Hilaire)	Ford	199	running	0	9	0
+29	29	38	David Ragan	Shriners Hospitals for Children   (Bob Jenkins)	Ford	198	running	0	8	0
+30	32	83	Corey LaJoie	JAS Expedited Trucking   (BK Racing)	Toyota	197	running	0	7	0
+31	33	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	197	running	0	6	0
+32	36	34	Landon Cassill	Front Row Motorsports   (Bob Jenkins)	Ford	196	running	0	5	0
+33	31	23	Ryan Sieg	Dr. Pepper   (BK Racing)	Toyota	196	running	0	0	0
+34	34	15	Reed Sorenson	Corrigan Oil   (Jay Robinson)	Chevrolet	195	running	0	3	0
+35	35	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	195	running	0	2	0
+36	24	37	Chris Buescher	Kingsford / Bush's Best Beans   (JTG-Daugherty Racing)	Chevrolet	194	running	0	1	0
+37	23	10	Danica Patrick	TaxAct   (Stewart Haas Racing)	Ford	190	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: First_Data_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "First_Data_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	14	18	Kyle Busch	M&M's Halloween   (Joe Gibbs)	Toyota	505	running	184	58	5
+2	2	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	505	running	0	48	0
+3	5	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	505	running	0	26	0
+4	7	2	Brad Keselowski	Alliance Truck Parts   (Roger Penske)	Ford	505	running	108	53	2
+5	13	4	Kevin Harvick	Busch NA   (Stewart Haas Racing)	Ford	505	running	0	36	0
+6	34	6	Trevor Bayne	Ford EcoBoost   (Jack Roush)	Ford	505	running	0	31	0
+7	6	11	Denny Hamlin	FedEx / Walgreen's   (Joe Gibbs)	Toyota	505	running	7	31	0
+8	4	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	505	running	0	38	0
+9	17	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	505	running	0	31	0
+10	22	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	505	running	0	27	0
+11	21	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	505	running	0	26	0
+12	24	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	505	running	24	33	0
+13	25	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	505	running	0	26	0
+14	18	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	505	running	0	23	0
+15	15	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	505	running	0	22	0
+16	12	5	Kasey Kahne	UniFirst Uniforms   (Rick Hendrick)	Chevrolet	505	running	0	24	0
+17	23	10	Danica Patrick	Ford Warriors in Pink   (Stewart Haas Racing)	Ford	505	running	0	20	0
+18	10	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	505	running	0	19	0
+19	20	95	Michael McDowell	Rohto Jolt Eyedrops   (Leavine Family Racing)	Chevrolet	505	running	0	18	0
+20	19	27	Paul Menard	Libman / Menards   (Richard Childress)	Chevrolet	505	running	0	17	0
+21	29	37	Chris Buescher	Bush's Chili Beans   (JTG-Daugherty Racing)	Chevrolet	505	running	0	16	0
+22	11	41	Kurt Busch	State Water Heaters   (Stewart Haas Racing)	Ford	505	running	0	15	0
+23	33	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	505	running	0	14	0
+24	1	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	504	running	59	29	0
+25	30	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	504	running	0	12	0
+26	8	77	Erik Jones	SiriusXM   (Barney Visser)	Toyota	504	running	0	11	0
+27	3	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	504	running	123	21	0
+28	31	38	David Ragan	TheHouse.com   (Bob Jenkins)	Ford	503	running	0	9	0
+29	16	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	503	running	0	8	0
+30	26	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	501	running	0	7	0
+31	35	83	Gray Gaulding	Autism Speaks   (BK Racing)	Toyota	501	running	0	6	0
+32	32	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	500	running	0	5	0
+33	36	23	Corey LaJoie	Schulter Systems   (BK Racing)	Toyota	500	running	0	4	0
+34	40	7	Hermie Sadler	Virginia Lottery   (Tommy Baldwin, Jr.)	Chevrolet	494	running	0	3	0
+35	38	51	Kyle Weatherman	Lilly Trucking / Spoonful of Music Fnd.   (Rick Ware)	Chevrolet	488	running	0	2	0
+36	39	66	Carl Long	OCR Gaz Bar / Mohawk Market   (Carl Long)	Chevrolet	444	crash	0	0	0
+37	9	42	Kyle Larson	First Data / CardConnect   (Chip Ganassi)	Chevrolet	300	crash	0	1	0
+38	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	274	rear gear	0	1	0
+39	28	32	Matt DiBenedetto	Keen Parts   (Archie St. Hilaire)	Ford	187	electrical	0	1	0
+40	27	47	A.J. Allmendinger	Kroger ClickList / Butterfinger / Crest   (JTG-Daugherty Racing)	Chevrolet	94	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Folds_of_Honor_QuikTrip_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Folds_of_Honor_QuikTrip_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	5	2	Brad Keselowski	Autotrader.com   (Roger Penske)	Ford	325	running	21	53	5
+2	8	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	325	running	7	43	0
+3	16	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	325	running	0	34	0
+4	29	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	325	running	0	33	0
+5	11	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	325	running	0	49	0
+6	6	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	325	running	0	37	0
+7	13	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	325	running	0	30	0
+8	9	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	325	running	0	43	0
+9	1	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	325	running	292	48	2
+10	7	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	325	running	0	27	0
+11	25	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	325	running	0	28	0
+12	15	6	Trevor Bayne	Liberty National Life Insurance   (Jack Roush)	Ford	325	running	0	26	0
+13	4	17	Ricky Stenhouse, Jr.	Sunny D   (Jack Roush)	Ford	325	running	0	28	0
+14	23	77	Erik Jones	SiriusXM / 5-hour Energy Extra Strength   (Barney Visser)	Toyota	325	running	0	26	0
+15	26	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	325	running	0	22	0
+16	3	18	Kyle Busch	Snickers Crisper   (Joe Gibbs)	Toyota	325	running	0	21	0
+17	24	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	325	running	0	20	0
+18	14	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	324	running	0	19	0
+19	18	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	324	running	2	19	0
+20	37	72	Cole Whitt	Rinnai Tankless Water Heaters   (Mark Smith)	Chevrolet	324	running	0	17	0
+21	21	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	323	running	0	16	0
+22	27	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	323	running	0	15	0
+23	34	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	323	running	0	14	0
+24	28	37	Chris Buescher	Bush's Beans / Cheez-It / Tide / Tyson   (JTG-Daugherty Racing)	Chevrolet	323	running	0	13	0
+25	17	27	Paul Menard	Richmond / Menards   (Richard Childress)	Chevrolet	322	running	0	12	0
+26	20	47	A.J. Allmendinger	Kroger ClickList / Lean Cusine / Cheerios   (JTG-Daugherty Racing)	Chevrolet	322	running	0	-24	0
+27	30	43	Aric Almirola	Waffle House / Smithfield   (Richard Petty Motorsports)	Ford	321	running	0	10	0
+28	22	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	321	running	0	9	0
+29	36	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	320	running	0	8	0
+30	12	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	320	running	0	7	0
+31	33	15	Reed Sorenson	The Maids   (Jay Robinson)	Chevrolet	320	running	0	6	0
+32	19	3	Austin Dillon	Dow / Quikrete   (Richard Childress)	Chevrolet	319	running	0	10	0
+33	35	33	Jeffrey Earnhardt	Circle Sport Racing with TMG   (Joe Falk)	Chevrolet	317	running	0	4	0
+34	32	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	313	running	0	3	0
+35	2	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	309	running	3	15	0
+36	38	55	Derrike Cope	Wade Tractor & Equipment   (Jay Robinson)	Chevrolet	298	running	0	1	0
+37	31	23	Gray Gaulding	Dr. Pepper   (BK Racing)	Toyota	253	engine	0	1	0
+38	10	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	182	rear end	0	4	0
+39	39	51	Cody Ware	Spoonful of Music Foundation / Bubba Burger   (Rick Ware)	Chevrolet	74	steering	0	1	0
+\.
+
+
+--
+-- Data for Name: Food_City_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Food_City_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	11	48	Jimmie Johnson	Lowe's / A.O. Smith   (Rick Hendrick)	Chevrolet	500	running	81	54	5
+2	9	14	Clint Bowyer	Haas Automation Demo Day   (Stewart Haas Racing)	Ford	500	running	0	35	0
+3	10	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	500	running	14	41	0
+4	22	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	500	running	0	33	0
+5	5	22	Joey Logano	AutoTrader   (Roger Penske)	Ford	500	running	72	48	0
+6	1	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	500	running	202	45	1
+7	2	24	Chase Elliott	Mountain Dew / Little Caesars   (Rick Hendrick)	Chevrolet	500	running	0	35	0
+8	3	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	500	running	116	48	1
+9	19	17	Ricky Stenhouse, Jr.	Sunny D   (Jack Roush)	Ford	500	running	0	29	0
+10	16	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	500	running	10	33	0
+11	12	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	500	running	0	28	0
+12	8	1	Jamie McMurray	Bass Pro Shops / NWTF   (Chip Ganassi)	Chevrolet	500	running	0	35	0
+13	21	3	Austin Dillon	New Era Cap   (Richard Childress)	Chevrolet	500	running	0	24	0
+14	13	31	Ryan Newman	Grainger   (Richard Childress)	Chevrolet	500	running	0	23	0
+15	24	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	500	running	0	22	0
+16	26	27	Paul Menard	Libman / Menards   (Richard Childress)	Chevrolet	499	running	0	21	0
+17	14	77	Erik Jones	Sport Clips   (Barney Visser)	Toyota	499	running	0	33	0
+18	23	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	498	running	0	19	0
+19	32	32	Matt DiBenedetto	Cosmo Motors   (Archie St. Hilaire)	Ford	498	running	0	18	0
+20	17	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	498	running	0	17	0
+21	31	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	498	running	0	16	0
+22	18	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	497	running	0	15	0
+23	33	38	David Ragan	Jacob Companies   (Bob Jenkins)	Ford	497	running	0	14	0
+24	35	83	Corey LaJoie	JAS Expedited Trucking   (BK Racing)	Toyota	497	running	0	13	0
+25	15	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	494	running	0	12	0
+26	28	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	494	running	0	11	0
+27	37	33	Jeffrey Earnhardt	Little Joe's Autos   (Joe Falk)	Chevrolet	491	running	0	10	0
+28	34	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	490	running	0	9	0
+29	36	23	Gray Gaulding	SunFrog.com   (BK Racing)	Toyota	487	running	0	8	0
+30	25	47	A.J. Allmendinger	Kroger ClickList / Stouffer's / Cheerios   (JTG-Daugherty Racing)	Chevrolet	482	running	0	9	0
+31	39	55	Derrike Cope	Premium Motorsports   (Jay Robinson)	Toyota	465	running	0	6	0
+32	30	34	Landon Cassill	CSX "Play It Safe" / Trees for Tracks   (Bob Jenkins)	Ford	458	running	5	5	0
+33	6	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	452	running	0	4	0
+34	4	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	433	running	0	3	0
+35	7	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	383	crash	0	3	0
+36	29	10	Danica Patrick	Mobil 1 Annual Protection   (Stewart Haas Racing)	Ford	320	crash	0	1	0
+37	38	51	Timmy Hill	SleepFresh Mattress   (Rick Ware)	Chevrolet	234	suspension	0	0	0
+38	20	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	218	crash	0	1	0
+39	27	37	Chris Buescher	Bush's Beans / Scott Products / Kingsford   (JTG-Daugherty Racing)	Chevrolet	53	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Ford_EcoBoost_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Ford_EcoBoost_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	2	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	267	running	78	40	0
+2	3	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	267	running	43	35	0
+3	7	42	Kyle Larson	Credit One Bank / DC Solar   (Chip Ganassi)	Chevrolet	267	running	145	54	2
+4	9	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	267	running	0	33	0
+5	18	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	267	running	0	39	0
+6	19	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	267	running	0	36	0
+7	5	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	267	running	1	30	0
+8	4	20	Matt Kenseth	DeWalt Hurricane Relief   (Joe Gibbs)	Toyota	267	running	0	33	0
+9	1	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	267	running	0	32	0
+10	21	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	267	running	0	27	0
+11	17	3	Austin Dillon	Dow / WeatherTech   (Richard Childress)	Chevrolet	267	running	0	26	0
+12	16	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	267	running	0	26	0
+13	13	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	266	running	0	24	0
+14	26	47	A.J. Allmendinger	Kroger ClickList / DiGiorno / Cheez-It   (JTG-Daugherty Racing)	Chevrolet	266	running	0	23	0
+15	6	17	Ricky Stenhouse, Jr.	3M / Fastenal   (Jack Roush)	Ford	266	running	0	22	0
+16	15	27	Paul Menard	Richmond / Menards   (Richard Childress)	Chevrolet	265	running	0	21	0
+17	30	38	David Ragan	Weather Channel / Flagship Solutions   (Bob Jenkins)	Ford	265	running	0	20	0
+18	20	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	265	running	0	19	0
+19	12	6	Trevor Bayne	Roush Performance   (Jack Roush)	Ford	265	running	0	18	0
+20	29	37	Chris Buescher	Clorox / Kingsford / Scott Products   (JTG-Daugherty Racing)	Chevrolet	265	running	0	17	0
+21	14	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	265	running	0	16	0
+22	8	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	265	running	0	24	0
+23	28	34	Landon Cassill	Love's Travel Stops / Roller Bites   (Bob Jenkins)	Ford	265	running	0	14	0
+24	23	95	Michael McDowell	Rohto Jolt Eyedrops   (Leavine Family Racing)	Chevrolet	265	running	0	13	0
+25	24	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	264	running	0	12	0
+26	32	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	264	running	0	11	0
+27	22	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	264	running	0	10	0
+28	33	72	Cole Whitt	Rinnai   (Bryan Smith)	Chevrolet	264	running	0	9	0
+29	11	21	Ryan Blaney	SKF / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	264	running	0	8	0
+30	31	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	263	running	0	7	0
+31	34	23	Corey LaJoie	MyFreedomSmokes.com   (BK Racing)	Toyota	261	running	0	0	0
+32	36	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	259	running	0	5	0
+33	27	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	234	crash	0	4	0
+34	10	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	225	brakes	0	3	0
+35	37	15	Reed Sorenson	Xchange of America   (Jay Robinson)	Chevrolet	212	engine	0	2	0
+36	38	66	David Starr	Eureka   (Carl Long)	Chevrolet	175	brakes	0	0	0
+37	25	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	139	crash	0	1	0
+38	39	51	Ray Black, Jr.	ScubaLife   (Rick Ware)	Chevrolet	49	too slow	0	0	0
+39	35	83	Joey Gase	Eternal Fan / Premier Millwright   (BK Racing)	Toyota	4	crash	0	0	0
+\.
+
+
+--
+-- Data for Name: GEICO_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "GEICO_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	191	running	14	49	5
+2	23	1	Jamie McMurray	McDonald's $1 Any Size Soft Drink   (Chip Ganassi)	Chevrolet	191	running	0	36	0
+3	10	18	Kyle Busch	Skittles Red White & Blue   (Joe Gibbs)	Toyota	191	running	48	42	0
+4	22	43	Aric Almirola	Fresh From Florida   (Richard Petty Motorsports)	Ford	191	running	0	-2	0
+5	19	5	Kasey Kahne	UniFirst Uniforms   (Rick Hendrick)	Chevrolet	191	running	0	35	0
+6	15	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	191	running	0	35	0
+7	3	2	Brad Keselowski	Fitzgerald Glider Kits   (Roger Penske)	Ford	191	running	31	40	1
+8	30	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	191	running	3	35	0
+9	9	27	Paul Menard	Valvoline / Menards   (Richard Childress)	Chevrolet	191	running	1	32	0
+10	29	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	191	running	0	27	0
+11	11	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	191	running	43	36	1
+12	21	42	Kyle Larson	Share an Ice Cold Coke with Kyle   (Chip Ganassi)	Chevrolet	191	running	0	30	0
+13	28	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	191	running	3	24	0
+14	17	14	Clint Bowyer	Haas Automation Demo Day   (Stewart Haas Racing)	Ford	191	running	10	23	0
+15	34	37	Chris Buescher	Velveeta / Breyers / Maxwell House   (JTG-Daugherty Racing)	Chevrolet	191	running	0	22	0
+16	38	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	191	running	0	21	0
+17	35	7	Elliott Sadler	Golden Corral   (Tommy Baldwin, Jr.)	Chevrolet	191	running	2	0	0
+18	26	32	Matt DiBenedetto	E.J. Wade Foundation   (Archie St. Hilaire)	Ford	191	running	0	19	0
+19	7	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	191	running	0	18	0
+20	37	23	Gray Gaulding	SunFrog.com   (BK Racing)	Toyota	191	running	0	17	0
+21	39	15	Joey Gase	Sparks Energy   (Jay Robinson)	Toyota	191	running	0	0	0
+22	2	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	191	running	0	15	0
+23	6	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	191	running	15	23	0
+24	4	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	190	running	4	13	0
+25	20	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	185	crash	2	12	0
+26	32	75	Brendan Gaughan	Beard Oil Distributing   (Mark Beard)	Chevrolet	183	running	0	0	0
+27	36	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	183	running	0	10	0
+28	40	33	Jeffrey Earnhardt	Circle Sport Racing with TMG   (Joe Falk)	Chevrolet	174	engine	0	9	0
+29	25	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	173	transmission	0	8	0
+30	8	24	Chase Elliott	Hooters   (Rick Hendrick)	Chevrolet	168	crash	0	7	0
+31	27	47	A.J. Allmendinger	Kroger ClickList / Coffeemate / Nature Valley   (JTG-Daugherty Racing)	Chevrolet	168	crash	0	6	0
+32	12	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	168	crash	10	10	0
+33	14	77	Erik Jones	ToyotaCare   (Barney Visser)	Toyota	168	crash	0	7	0
+34	24	95	Michael McDowell	Winn-Dixie   (Leavine Family Racing)	Chevrolet	168	crash	0	3	0
+35	13	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	168	crash	0	16	0
+36	18	3	Austin Dillon	Dow Energy & Water / Intellifresh   (Richard Childress)	Chevrolet	168	crash	0	1	0
+37	5	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	168	crash	5	7	0
+38	31	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	168	crash	0	4	0
+39	16	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	160	crash	0	11	0
+40	33	55	Reed Sorenson	Xchange of America   (Jay Robinson)	Toyota	72	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Go_Bowling_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Go_Bowling_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	3	78	Martin Truex, Jr.	Auto-Owners Insurance   (Barney Visser)	Toyota	267	running	104	57	5
+2	17	2	Brad Keselowski	Freightliner / Elite Support   (Roger Penske)	Ford	267	running	0	41	0
+3	8	4	Kevin Harvick	Busch Light   (Stewart Haas Racing)	Ford	267	running	10	38	0
+4	1	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	267	running	83	51	1
+5	5	18	Kyle Busch	M&M's / Walgreen's Red Nose Day   (Joe Gibbs)	Toyota	267	running	59	48	1
+6	9	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	267	running	0	47	0
+7	15	19	Daniel Suarez	Stanley Tools / Ace / CMN   (Joe Gibbs)	Toyota	267	running	0	30	0
+8	12	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	267	running	0	36	0
+9	30	14	Clint Bowyer	Mobil 1 Annual Protection   (Stewart Haas Racing)	Ford	267	running	3	28	0
+10	16	6	Trevor Bayne	Roush Performance / Mel Hambelton Ford   (Jack Roush)	Ford	267	running	1	27	0
+11	4	17	Ricky Stenhouse, Jr.	Go Bowling   (Jack Roush)	Ford	267	running	0	26	0
+12	14	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	267	running	0	28	0
+13	35	95	Michael McDowell	Tommy Williams Drywall   (Leavine Family Racing)	Chevrolet	267	running	0	24	0
+14	22	13	Ty Dillon	Twisted Tea   (Germain Racing)	Chevrolet	267	running	0	23	0
+15	31	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	267	running	0	28	0
+16	11	3	Austin Dillon	American Ethanol E15   (Richard Childress)	Chevrolet	267	running	0	21	0
+17	34	38	David Ragan	Overton's   (Bob Jenkins)	Ford	267	running	0	20	0
+18	20	37	Chris Buescher	Scott Products / Kingsford / Bush's Beans   (JTG-Daugherty Racing)	Chevrolet	267	running	0	19	0
+19	6	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	267	running	3	19	0
+20	33	88	Dale Earnhardt, Jr.	Mountain Dew DEW-S-A   (Rick Hendrick)	Chevrolet	267	running	2	17	0
+21	36	34	Landon Cassill	A&W All-American Food   (Bob Jenkins)	Ford	267	running	0	16	0
+22	32	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	267	running	2	17	0
+23	7	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	267	running	0	22	0
+24	29	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	267	running	0	18	0
+25	37	15	Reed Sorenson	Harrah's North Kansas City   (Jay Robinson)	Chevrolet	267	running	0	12	0
+26	26	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	266	running	0	11	0
+27	38	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	265	running	0	10	0
+28	39	51	Timmy Hill	Lilly Trucking   (Rick Ware)	Chevrolet	259	running	0	0	0
+29	10	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	258	running	0	8	0
+30	21	47	A.J. Allmendinger	Dillons ClickList / Lean Cuisine   (JTG-Daugherty Racing)	Chevrolet	257	running	0	7	0
+31	40	66	Carl Long	Poker Palace   (Carl Long)	Chevrolet	256	running	0	0	0
+32	23	32	Matt DiBenedetto	IncredibleBank.com   (Archie St. Hilaire)	Ford	243	running	0	5	0
+33	27	33	Jeffrey Earnhardt	Curtis Key Plumbing   (Joe Falk)	Chevrolet	243	running	0	4	0
+34	25	23	Gray Gaulding	Dr. Pepper   (BK Racing)	Toyota	231	running	0	3	0
+35	18	27	Paul Menard	FVP / Menards   (Richard Childress)	Chevrolet	202	crash	0	2	0
+36	24	10	Danica Patrick	Wonder Woman / CSU / One Cure   (Stewart Haas Racing)	Ford	199	crash	0	1	0
+37	2	22	Joey Logano	AAA Insurance   (Roger Penske)	Ford	199	crash	0	2	0
+38	13	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	199	crash	0	1	0
+39	28	55	Derrike Cope	Premium Motorsports   (Jay Robinson)	Toyota	179	engine	0	1	0
+40	19	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	154	oil pump	0	1	0
+\.
+
+
+--
+-- Data for Name: Hollywood_Casino_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Hollywood_Casino_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	267	running	91	43	5
+2	15	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	267	running	0	35	0
+3	40	21	Ryan Blaney	Omnicraft Auto Parts / Quick Lane   (Wood Brothers)	Ford	267	running	3	44	0
+4	14	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	267	running	0	39	0
+5	4	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	267	running	5	50	1
+6	20	37	Chris Buescher	Scott Towels / Clorox / Bush's Beans   (JTG-Daugherty Racing)	Chevrolet	267	running	0	31	0
+7	19	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	267	running	0	30	0
+8	2	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	267	running	37	47	0
+9	25	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	267	running	0	28	0
+10	7	18	Kyle Busch	M&M's Halloween   (Joe Gibbs)	Toyota	267	running	112	43	1
+11	12	48	Jimmie Johnson	Lowe's / Marshalltown   (Rick Hendrick)	Chevrolet	267	running	0	32	0
+12	23	27	Paul Menard	Richmond / Menards   (Richard Childress)	Chevrolet	267	running	0	25	0
+13	10	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	267	running	18	32	0
+14	11	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	267	running	0	23	0
+15	21	5	Kasey Kahne	UniFirst Uniforms   (Rick Hendrick)	Chevrolet	267	running	0	22	0
+16	29	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	267	running	0	21	0
+17	27	38	David Ragan	TheHouse.com   (Bob Jenkins)	Ford	267	running	0	20	0
+18	16	95	Michael McDowell	TWD   (Leavine Family Racing)	Chevrolet	267	running	0	19	0
+19	9	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	267	running	0	18	0
+20	28	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	267	running	0	17	0
+21	17	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	267	running	0	16	0
+22	30	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	267	running	0	15	0
+23	31	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	265	running	0	14	0
+24	35	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	263	running	0	13	0
+25	37	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	263	running	0	12	0
+26	38	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	261	running	0	11	0
+27	34	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	261	running	0	10	0
+28	33	55	Gray Gaulding	Harrah?s North Kansas City   (Jay Robinson)	Toyota	259	running	0	9	0
+29	24	17	Ricky Stenhouse, Jr.	Wypall / Fastenal   (Jack Roush)	Ford	256	crash	0	8	0
+30	36	51	B.J. McLeod	Spoonful of Music Foundation   (Rick Ware)	Chevrolet	254	running	0	0	0
+31	32	83	Brett Moffitt	Earthwater   (BK Racing)	Toyota	238	running	0	0	0
+32	26	47	A.J. Allmendinger	Dillons ClickList / Butterfinger / Suave Men   (JTG-Daugherty Racing)	Chevrolet	232	crash	0	5	0
+33	18	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	203	crash	0	4	0
+34	8	1	Jamie McMurray	Cessna / Bomasada   (Chip Ganassi)	Chevrolet	198	crash	1	13	0
+35	6	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	197	crash	0	8	0
+36	5	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	197	crash	0	1	0
+37	3	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	197	crash	0	10	0
+38	22	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	197	crash	0	1	0
+39	13	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	73	engine	0	1	0
+40	39	0	Derrike Cope	StarCom Fiber   (StarCom Racing)	Chevrolet	35	handling	0	1	0
+\.
+
+
+--
+-- Data for Name: ISM_Connect_300_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "ISM_Connect_300_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	300	running	187	58	6
+2	2	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	300	running	1	50	0
+3	10	20	Matt Kenseth	SiriusXM   (Joe Gibbs)	Toyota	300	running	0	48	0
+4	13	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	300	running	0	45	0
+5	5	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	300	running	112	47	1
+6	8	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	300	running	0	45	0
+7	16	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	300	running	0	30	0
+8	25	19	Daniel Suarez	Comcast Business / Arris   (Joe Gibbs)	Toyota	300	running	0	29	0
+9	4	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	300	running	0	36	0
+10	39	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	300	running	0	27	0
+11	14	24	Chase Elliott	Kelley Blue Book   (Rick Hendrick)	Chevrolet	300	running	0	26	0
+12	3	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	300	running	0	30	0
+13	18	31	Ryan Newman	Childress Vineyards   (Richard Childress)	Chevrolet	300	running	0	24	0
+14	12	48	Jimmie Johnson	Lowe's / Hitachi   (Rick Hendrick)	Chevrolet	300	running	0	30	0
+15	24	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	300	running	0	22	0
+16	11	1	Jamie McMurray	Cessna   (Chip Ganassi)	Chevrolet	300	running	0	22	0
+17	20	47	A.J. Allmendinger	Kroger ClickList / Suave Men   (JTG-Daugherty Racing)	Chevrolet	300	running	0	20	0
+18	27	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	300	running	0	19	0
+19	17	3	Austin Dillon	Chevrolet Accessories   (Richard Childress)	Chevrolet	300	running	0	18	0
+20	19	27	Paul Menard	Sylvania / Menards   (Richard Childress)	Chevrolet	300	running	0	17	0
+21	22	37	Chris Buescher	Scott Products / Crisco / Hellmann's   (JTG-Daugherty Racing)	Chevrolet	299	running	0	16	0
+22	30	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	298	running	0	15	0
+23	31	95	Michael McDowell	Procore   (Leavine Family Racing)	Chevrolet	298	running	0	14	0
+24	23	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	298	running	0	13	0
+25	28	34	Landon Cassill	MDS Transport   (Bob Jenkins)	Ford	298	running	0	12	0
+26	29	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	297	running	0	11	0
+27	33	23	Corey LaJoie	Schroth Racing   (BK Racing)	Toyota	297	running	0	10	0
+28	35	15	Reed Sorenson	Ol' Hick Cooking Pellets   (Jay Robinson)	Chevrolet	297	running	0	9	0
+29	21	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	296	running	0	8	0
+30	32	72	Cole Whitt	Rinnai   (Bryan Smith)	Chevrolet	296	running	0	7	0
+31	26	32	Matt DiBenedetto	Ford EcoBoost   (Archie St. Hilaire)	Ford	295	running	0	6	0
+32	36	83	Brett Moffitt	Super Donut   (BK Racing)	Toyota	294	running	0	0	0
+33	34	55	Gray Gaulding	Wind River Environmental   (Jay Robinson)	Toyota	293	running	0	4	0
+34	15	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	289	running	0	3	0
+35	9	5	Kasey Kahne	go90.com / Road to Race Day   (Rick Hendrick)	Chevrolet	289	running	0	2	0
+36	6	4	Kevin Harvick	Mobil 1   (Stewart Haas Racing)	Ford	148	crash	0	2	0
+37	7	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	148	crash	0	1	0
+38	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	143	crash	0	1	0
+39	38	51	Cody Ware	Lilly Trucking   (Rick Ware)	Chevrolet	74	rear gear	0	1	0
+\.
+
+
+--
+-- Data for Name: I_Love_New_York_355_at_the_Glen_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "I_Love_New_York_355_at_the_Glen_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	3	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	90	running	24	58	5
+2	15	20	Matt Kenseth	ToyotaCare   (Joe Gibbs)	Toyota	90	running	0	43	0
+3	5	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	90	running	14	44	1
+4	11	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	90	running	0	38	0
+5	12	14	Clint Bowyer	Five Star Urgent Care   (Stewart Haas Racing)	Ford	90	running	0	32	0
+6	18	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	90	running	0	34	0
+7	1	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	90	running	21	42	1
+8	16	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	90	running	2	36	0
+9	7	47	A.J. Allmendinger	Kroger ClickList / Nature Valley / Velveeta   (JTG-Daugherty Racing)	Chevrolet	90	running	0	32	0
+10	6	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	90	running	0	33	0
+11	17	37	Chris Buescher	Scott Products / Kingsford / Bush's Beans   (JTG-Daugherty Racing)	Chevrolet	90	running	0	26	0
+12	14	95	Michael McDowell	K-LOVE Radio   (Leavine Family Racing)	Chevrolet	90	running	0	25	0
+13	4	24	Chase Elliott	Sun Energy 1   (Rick Hendrick)	Chevrolet	90	running	9	32	0
+14	9	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	90	running	0	28	0
+15	8	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	90	running	20	32	0
+16	19	5	Kasey Kahne	Rated Red "Road to Race Day"   (Rick Hendrick)	Chevrolet	90	running	0	23	0
+17	20	4	Kevin Harvick	Busch Beer   (Stewart Haas Racing)	Ford	90	running	0	20	0
+18	21	27	Paul Menard	Dutch Boy / Menards   (Richard Childress)	Chevrolet	90	running	0	19	0
+19	24	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	90	running	0	18	0
+20	22	17	Ricky Stenhouse, Jr.	NESN.com   (Jack Roush)	Ford	90	running	0	18	0
+21	29	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	90	running	0	16	0
+22	25	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	90	running	0	15	0
+23	2	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	90	running	0	21	0
+24	13	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	90	running	0	17	0
+25	23	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	90	running	0	12	0
+26	27	3	Austin Dillon	Dow STEM   (Richard Childress)	Chevrolet	90	running	0	11	0
+27	31	38	David Ragan	Overton's   (Bob Jenkins)	Ford	90	running	0	10	0
+28	37	32	Matt DiBenedetto	Incredible Bank   (Archie St. Hilaire)	Ford	90	running	0	9	0
+29	10	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	90	running	0	8	0
+30	35	33	Boris Said	Genesee Beer   (Joe Falk)	Chevrolet	89	running	0	7	0
+31	34	15	Gary Klutt	Color Compass Corp. / Fusillo Const.   (Jay Robinson)	Chevrolet	89	running	0	6	0
+32	33	83	Brett Moffitt	JAS Expedited Trucking   (BK Racing)	Toyota	89	running	0	0	0
+33	36	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	89	running	0	4	0
+34	26	72	Cole Whitt	RTIC Coolers   (Bryan Smith)	Chevrolet	81	running	0	3	0
+35	30	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	80	running	0	2	0
+36	32	34	Landon Cassill	Jacob Companies   (Bob Jenkins)	Ford	78	running	0	1	0
+37	28	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	22	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: Kobalt_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Kobalt_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	2	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	267	running	150	60	7
+2	5	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	267	running	0	52	0
+3	12	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	267	running	0	47	0
+4	6	22	Joey Logano	Pennzoil   (Roger Penske)	Ford	267	running	5	39	0
+5	1	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	267	running	89	48	0
+6	15	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	267	running	0	31	0
+7	3	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	267	running	0	43	0
+8	10	1	Jamie McMurray	Credit One Bank / Cessna   (Chip Ganassi)	Chevrolet	267	running	0	37	0
+9	4	20	Matt Kenseth	BlueDEF Diesel Exhaust Fluid   (Joe Gibbs)	Toyota	267	running	0	30	0
+10	13	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	267	running	0	27	0
+11	16	48	Jimmie Johnson	Lowe's / Kobalt Tools   (Rick Hendrick)	Chevrolet	267	running	19	31	0
+12	7	5	Kasey Kahne	LiftMaster   (Rick Hendrick)	Chevrolet	267	running	0	25	0
+13	20	6	Trevor Bayne	Performance Plus Motor Oil   (Jack Roush)	Ford	267	running	0	24	0
+14	30	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	267	running	0	23	0
+15	8	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	267	running	0	22	0
+16	18	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	267	running	0	26	0
+17	21	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	267	running	0	22	0
+18	26	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	267	running	2	19	0
+19	14	27	Paul Menard	Valvoline / Menards   (Richard Childress)	Chevrolet	267	running	0	18	0
+20	11	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	267	running	0	17	0
+21	24	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	267	running	2	16	0
+22	9	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	267	running	0	18	0
+23	25	37	Chris Buescher	Natural Light / Barstool Sports   (JTG-Daugherty Racing)	Chevrolet	266	running	0	14	0
+24	23	47	A.J. Allmendinger	Kroger ClickList / Coffeemate / Cheez-It   (JTG-Daugherty Racing)	Chevrolet	266	running	0	13	0
+25	22	3	Austin Dillon	Lucas Oil   (Richard Childress)	Chevrolet	266	running	0	12	0
+26	31	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	265	running	0	11	0
+27	27	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	264	running	0	10	0
+28	33	72	Cole Whitt	Rinnai Tankless Water Heaters   (Mark Smith)	Chevrolet	264	running	0	9	0
+29	32	38	David Ragan	Juice Battery   (Bob Jenkins)	Ford	264	running	0	8	0
+30	17	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	263	running	0	7	0
+31	37	15	Reed Sorenson	Premium Motorsports   (Jay Robinson)	Toyota	262	running	0	6	0
+32	36	33	Jeffrey Earnhardt	Superior Logistics Services   (Joe Falk)	Chevrolet	261	running	0	5	0
+33	29	17	Ricky Stenhouse, Jr.	Fastenal   (Jack Roush)	Ford	261	running	0	4	0
+34	35	23	Gray Gaulding	Schulter Systems   (BK Racing)	Toyota	260	running	0	3	0
+35	38	55	Derrike Cope	Premium Motorsports   (Jay Robinson)	Chevrolet	254	running	0	2	0
+36	28	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	246	engine	0	1	0
+37	39	51	Timmy Hill	Dashub   (Rick Ware)	Chevrolet	135	suspension	0	0	0
+38	19	4	Kevin Harvick	Mobil 1 Annual Protection   (Stewart Haas Racing)	Ford	68	crash	0	1	0
+39	34	83	Corey LaJoie	JAS Expedited Trucking   (BK Racing)	Toyota	16	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Oreilly_Auto_Parts_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Oreilly_Auto_Parts_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	24	48	Jimmie Johnson	Lowe's / Hitachi   (Rick Hendrick)	Chevrolet	334	running	18	49	5
+2	32	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	334	running	0	47	0
+3	4	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	334	running	38	36	0
+4	1	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	334	running	77	44	0
+5	37	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	334	running	0	34	0
+6	5	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	334	running	4	40	0
+7	6	1	Jamie McMurray	Sherwin-Williams Emerald / 3M   (Chip Ganassi)	Chevrolet	334	running	0	46	0
+8	7	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	334	running	49	39	0
+9	33	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	334	running	0	34	0
+10	10	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	334	running	0	32	0
+11	3	14	Clint Bowyer	Haas Automation Demo Day   (Stewart Haas Racing)	Ford	334	running	0	30	0
+12	2	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	334	running	148	45	2
+13	12	6	Trevor Bayne	Performance Plus Motor Oil   (Jack Roush)	Ford	334	running	0	24	0
+14	11	17	Ricky Stenhouse, Jr.	Ford EcoBoost   (Jack Roush)	Ford	334	running	0	26	0
+15	34	18	Kyle Busch	Interstate Batteries 65th Anniversary   (Joe Gibbs)	Toyota	334	running	0	23	0
+16	8	20	Matt Kenseth	Toyota "Let's Go Places"   (Joe Gibbs)	Toyota	334	running	0	21	0
+17	14	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	334	running	0	20	0
+18	18	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	334	running	0	19	0
+19	20	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	334	running	0	18	0
+20	16	47	A.J. Allmendinger	Kroger ClickList / Hot Pockets / Cheerios   (JTG-Daugherty Racing)	Chevrolet	334	running	0	17	0
+21	38	37	Chris Buescher	Scott Products / Tyson / Hellmann's / Crest   (JTG-Daugherty Racing)	Chevrolet	333	running	0	16	0
+22	36	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	333	running	0	15	0
+23	13	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	333	running	0	14	0
+24	19	10	Danica Patrick	TaxAct   (Stewart Haas Racing)	Ford	333	running	0	13	0
+25	17	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	333	running	0	12	0
+26	9	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	332	running	0	11	0
+27	27	7	J.J. Yeley	Accell Construction   (Tommy Baldwin, Jr.)	Chevrolet	330	running	0	0	0
+28	21	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	329	running	0	9	0
+29	15	34	Landon Cassill	Love's Travel Stops / WinStar World Casino   (Bob Jenkins)	Ford	329	running	0	8	0
+30	28	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	327	running	0	7	0
+31	26	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	327	running	0	6	0
+32	23	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	326	running	0	5	0
+33	25	3	Austin Dillon	Dow Energy & Water   (Richard Childress)	Chevrolet	322	running	0	4	0
+34	29	23	Gray Gaulding	Dr. Pepper   (BK Racing)	Toyota	322	running	0	3	0
+35	30	15	Reed Sorenson	Xchange of America   (Jay Robinson)	Chevrolet	319	running	0	2	0
+36	22	27	Paul Menard	Dutch Boy / Menards   (Richard Childress)	Chevrolet	314	running	0	1	0
+37	40	55	Derrike Cope	Low T Centers   (Jay Robinson)	Toyota	313	running	0	1	0
+38	35	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	303	running	0	1	0
+39	39	51	Timmy Hill	Fenton Motors   (Rick Ware)	Chevrolet	104	engine	0	0	0
+40	31	33	Jeffrey Earnhardt	Superior Logistics / Chris Kyle Memorial   (Joe Falk)	Chevrolet	9	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Overtons_301_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Overtons_301_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	8	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	301	running	54	51	5
+2	39	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	301	running	1	45	0
+3	1	78	Martin Truex, Jr.	WIX Filters   (Barney Visser)	Toyota	301	running	137	49	1
+4	3	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	301	running	4	46	0
+5	12	4	Kevin Harvick	Busch Beer   (Stewart Haas Racing)	Ford	301	running	0	40	0
+6	14	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	301	running	0	31	0
+7	19	14	Clint Bowyer	Nature's Bakery / Feeding America   (Stewart Haas Racing)	Ford	301	running	0	31	0
+8	9	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	301	running	0	36	0
+9	10	2	Brad Keselowski	Wurth   (Roger Penske)	Ford	301	running	0	28	0
+10	2	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	301	running	0	33	0
+11	11	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	301	running	0	27	0
+12	7	18	Kyle Busch	Interstate Batteries   (Joe Gibbs)	Toyota	301	running	95	41	1
+13	30	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	301	running	0	24	0
+14	17	17	Ricky Stenhouse, Jr.	Fastenal / GearWrench   (Jack Roush)	Ford	301	running	0	23	0
+15	26	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	301	running	0	22	0
+16	25	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	301	running	0	21	0
+17	4	1	Jamie McMurray	GearWrench   (Chip Ganassi)	Chevrolet	301	running	0	27	0
+18	18	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	301	running	10	19	0
+19	15	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	301	running	0	24	0
+20	27	6	Trevor Bayne	Performance Plus Motor Oil   (Jack Roush)	Ford	301	running	0	17	0
+21	23	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Heinz   (JTG-Daugherty Racing)	Chevrolet	301	running	0	16	0
+22	29	27	Paul Menard	Sylvania LED / Menards   (Richard Childress)	Chevrolet	301	running	0	15	0
+23	28	34	Landon Cassill	MDS Transport   (Bob Jenkins)	Ford	301	running	0	14	0
+24	21	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	301	running	0	13	0
+25	22	37	Chris Buescher	Liberty Tax Service / Bush's Beans / Scott   (JTG-Daugherty Racing)	Chevrolet	300	running	0	12	0
+26	20	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	300	running	0	11	0
+27	24	31	Ryan Newman	Grainger   (Richard Childress)	Chevrolet	300	running	0	14	0
+28	5	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	300	running	0	14	0
+29	32	38	David Ragan	Overton's   (Bob Jenkins)	Ford	300	running	0	8	0
+30	16	32	Matt DiBenedetto	Weir's Motor Sales / Bentley's Saloon   (Archie St. Hilaire)	Ford	299	running	0	7	0
+31	31	23	Corey LaJoie	Dr. Pepper   (BK Racing)	Toyota	298	running	0	6	0
+32	36	83	Ryan Sieg	BK Racing Graphics   (BK Racing)	Toyota	298	running	0	0	0
+33	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	297	running	0	4	0
+34	35	15	Reed Sorenson	Premium Motorsports   (Jay Robinson)	Chevrolet	296	running	0	3	0
+35	34	55	Gray Gaulding	#Checkit4Andretti   (Jay Robinson)	Toyota	295	running	0	2	0
+36	38	51	Josh Bilicki	Prevagen / CNC Swiss   (Rick Ware)	Chevrolet	290	running	0	0	0
+37	13	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	269	running	0	1	0
+38	33	72	Cole Whitt	TriStar Motorsports   (Mark Smith)	Chevrolet	66	engine	0	1	0
+39	6	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	40	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Overtons_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Overtons_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	1	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	160	running	74	50	6
+2	6	4	Kevin Harvick	Mobil 1   (Stewart Haas Racing)	Ford	160	running	0	43	0
+3	2	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	160	running	31	43	0
+4	4	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	160	running	18	37	0
+5	11	2	Brad Keselowski	Alliance Truck Parts   (Roger Penske)	Ford	160	running	6	48	0
+6	7	14	Clint Bowyer	Nature's Bakery / Feeding America   (Stewart Haas Racing)	Ford	160	running	5	44	1
+7	8	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	160	running	0	30	0
+8	9	77	Erik Jones	SiriusXM   (Barney Visser)	Toyota	160	running	4	4	0
+9	15	20	Matt Kenseth	ToyotaCare   (Joe Gibbs)	Toyota	160	running	9	28	0
+10	13	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	160	running	0	28	0
+11	12	5	Kasey Kahne	Great Clips / Shark Week   (Rick Hendrick)	Chevrolet	160	running	0	31	0
+12	23	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	160	running	0	25	0
+13	18	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	160	running	0	31	0
+14	20	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	160	running	0	29	0
+15	22	10	Danica Patrick	Code 3 Associates / One Cure / CSU   (Stewart Haas Racing)	Ford	160	running	0	30	0
+16	21	17	Ricky Stenhouse, Jr.	Fastenal / Rustoleum   (Jack Roush)	Ford	160	running	11	25	0
+17	30	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	159	running	0	20	0
+18	17	95	Michael McDowell	FDNY Foundation   (Leavine Family Racing)	Chevrolet	159	running	0	21	0
+19	27	27	Paul Menard	Moen / Menards   (Richard Childress)	Chevrolet	159	running	0	18	0
+20	19	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	159	running	0	20	0
+21	26	3	Austin Dillon	American Ethanol E15   (Richard Childress)	Chevrolet	159	running	2	16	0
+22	33	38	David Ragan	Overton's   (Bob Jenkins)	Ford	159	running	0	15	0
+23	28	47	A.J. Allmendinger	Kroger ClickList / Nature Valley / Hellmann's   (JTG-Daugherty Racing)	Chevrolet	159	running	0	15	0
+24	32	72	Cole Whitt	Unique Pretzel Bakery   (Bryan Smith)	Chevrolet	159	running	0	13	0
+25	34	23	Corey LaJoie	Lehigh Valley Phantoms   (BK Racing)	Toyota	159	running	0	12	0
+26	3	1	Jamie McMurray	McDonald's   (Chip Ganassi)	Chevrolet	159	running	0	16	0
+27	10	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	159	running	0	10	0
+28	24	37	Chris Buescher	Clorox / Louisiana Hot Sauce / Scott's   (JTG-Daugherty Racing)	Chevrolet	159	running	0	9	0
+29	31	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	158	running	0	8	0
+30	5	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	158	running	0	13	0
+31	35	15	Gray Gaulding	LaColombe Coffee   (Jay Robinson)	Chevrolet	157	running	0	6	0
+32	36	83	Stephen Leicht	Dustless Blasting   (BK Racing)	Toyota	153	running	0	5	0
+33	16	42	Kyle Larson	Energizer   (Chip Ganassi)	Chevrolet	148	running	0	6	0
+34	37	55	Derrike Cope	Sundance Vacations   (Jay Robinson)	Toyota	85	transmission	0	3	0
+35	14	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	57	crash	0	2	0
+36	38	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	24	engine	0	1	0
+37	29	32	Matt DiBenedetto	Dick Stevens Jerky & Trail Mix   (Archie St. Hilaire)	Ford	1	crash	0	1	0
+38	25	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	0	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Pure_Michigan_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Pure_Michigan_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	9	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	202	running	2	45	5
+2	13	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	202	running	57	52	1
+3	8	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	202	running	5	47	0
+4	25	31	Ryan Newman	Velveeta Shells & Cheese   (Richard Childress)	Chevrolet	202	running	0	33	0
+5	21	6	Trevor Bayne	Roush Performance / Hines Park Ford   (Jack Roush)	Ford	202	running	0	32	0
+6	20	37	Chris Buescher	Bush's Grillin' Beans / Kingsford / Tyson   (JTG-Daugherty Racing)	Chevrolet	202	running	0	31	0
+7	17	3	Austin Dillon	Dow Automotive Magna   (Richard Childress)	Chevrolet	202	running	0	30	0
+8	5	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	202	running	0	37	0
+9	7	1	Jamie McMurray	Textron Off-Road / Cessna   (Chip Ganassi)	Chevrolet	202	running	0	32	0
+10	6	18	Kyle Busch	Interstate Batteries   (Joe Gibbs)	Toyota	202	running	14	32	0
+11	15	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	202	running	0	26	0
+12	24	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	202	running	0	25	0
+13	3	4	Kevin Harvick	Busch Light   (Stewart Haas Racing)	Ford	202	running	0	41	0
+14	19	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	202	running	0	23	0
+15	12	21	Ryan Blaney	Motorcraft / SKF   (Wood Brothers)	Ford	202	running	0	27	0
+16	10	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	202	running	16	23	0
+17	1	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	202	running	105	39	1
+18	14	17	Ricky Stenhouse, Jr.	Go Bowling / Justin Epley   (Jack Roush)	Ford	202	running	0	19	0
+19	22	48	Jimmie Johnson	Lowe's / Jimmie Johnson Foundation   (Rick Hendrick)	Chevrolet	202	running	0	18	0
+20	29	47	A.J. Allmendinger	Kroger ClickList / Axe / Maxwell House   (JTG-Daugherty Racing)	Chevrolet	202	running	0	17	0
+21	33	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	202	running	0	16	0
+22	18	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	202	running	0	15	0
+23	11	14	Clint Bowyer	Nature's Bakery / Feeding America   (Stewart Haas Racing)	Ford	202	running	0	14	0
+24	4	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	202	running	0	17	0
+25	32	34	Landon Cassill	MDS Transport   (Bob Jenkins)	Ford	200	running	0	12	0
+26	27	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	200	running	0	11	0
+27	26	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	200	running	0	10	0
+28	2	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	200	running	0	14	0
+29	31	72	Cole Whitt	Bad Boy Mowers   (Bryan Smith)	Chevrolet	199	running	0	8	0
+30	28	38	David Ragan	Overton's   (Bob Jenkins)	Ford	199	running	0	7	0
+31	34	23	Corey LaJoie	JAS Expedited Trucking   (BK Racing)	Toyota	199	running	0	6	0
+32	35	83	Brett Moffitt	Northwestern Technical Institute   (BK Racing)	Toyota	198	running	0	0	0
+33	38	55	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	197	running	0	4	0
+34	30	27	Paul Menard	Dutch Boy / Menards   (Richard Childress)	Chevrolet	196	crash	0	3	0
+35	36	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	196	running	0	2	0
+36	39	51	B.J. McLeod	Corrigan Oil   (Rick Ware)	Chevrolet	178	running	0	0	0
+37	16	19	Daniel Suarez	Arris Surfboard / McAfee   (Joe Gibbs)	Toyota	138	crash	3	7	0
+38	23	5	Kasey Kahne	LiftMaster   (Rick Hendrick)	Chevrolet	138	crash	0	1	0
+39	37	15	Derrike Cope	StarCom Fiber   (Jay Robinson)	Toyota	107	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: Quaker_State_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Quaker_State_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	2	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	274	running	152	60	7
+2	40	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	274	running	0	8	0
+3	12	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	274	running	0	36	0
+4	5	11	Denny Hamlin	FedEx Freight   (Joe Gibbs)	Toyota	274	running	0	40	0
+5	1	18	Kyle Busch	Snickers Rowdy   (Joe Gibbs)	Toyota	274	running	112	50	0
+6	14	77	Erik Jones	SiriusXM   (Barney Visser)	Toyota	274	running	0	40	0
+7	4	1	Jamie McMurray	Cessna / Beechcraft / General Hydroponics   (Chip Ganassi)	Chevrolet	274	running	0	41	0
+8	11	22	Joey Logano	Shell / Pennzoil / AutoTrader   (Roger Penske)	Ford	274	running	7	29	0
+9	7	4	Kevin Harvick	Busch Light   (Stewart Haas Racing)	Ford	274	running	0	42	0
+10	6	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	273	running	0	27	0
+11	17	43	Darrell Wallace, Jr.	Smithfield   (Richard Petty Motorsports)	Ford	273	running	0	0	0
+12	13	88	Dale Earnhardt, Jr.	Nationwide Children's Hospital   (Rick Hendrick)	Chevrolet	273	running	3	25	0
+13	16	14	Clint Bowyer	Rush Truck Centers   (Stewart Haas Racing)	Ford	273	running	0	26	0
+14	18	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	273	running	0	23	0
+15	20	10	Danica Patrick	Nature's Bakery / Feeding America   (Stewart Haas Racing)	Ford	273	running	0	22	0
+16	22	37	Chris Buescher	Breyers / Klondike / Cheez-It   (JTG-Daugherty Racing)	Chevrolet	273	running	0	21	0
+17	3	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	273	running	0	33	0
+18	9	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	273	running	0	19	0
+19	25	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	272	running	0	18	0
+20	28	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Tide   (JTG-Daugherty Racing)	Chevrolet	272	running	0	17	0
+21	24	27	Paul Menard	Sylvania LED / Menards   (Richard Childress)	Chevrolet	272	running	0	16	0
+22	29	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	272	running	0	15	0
+23	21	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	271	running	0	14	0
+24	26	38	David Ragan	Brandeis Machinery / Komatsu   (Bob Jenkins)	Ford	270	running	0	13	0
+25	30	32	Matt DiBenedetto	Corvetteparts.net / Anest Iwata   (Archie St. Hilaire)	Ford	270	running	0	12	0
+26	35	34	Landon Cassill	Love's Travel Stops / #OurMVP   (Bob Jenkins)	Ford	268	running	0	11	0
+27	31	83	Ryan Sieg	JAS Expedited Trucking   (BK Racing)	Toyota	266	running	0	0	0
+28	33	15	Reed Sorenson	Losers Bar & Grill   (Jay Robinson)	Chevrolet	265	running	0	9	0
+29	36	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	265	running	0	8	0
+30	15	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	264	engine	0	11	0
+31	38	66	Timmy Hill	MBM Motorsports   (Carl Long)	Chevrolet	261	running	0	0	0
+32	37	51	B.J. McLeod	Rick Ware Racing   (Rick Ware)	Chevrolet	260	running	0	0	0
+33	27	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	253	running	0	4	0
+34	32	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	212	engine	0	3	0
+35	39	55	Gray Gaulding	#CheckIt4Andretti   (Jay Robinson)	Toyota	207	running	0	2	0
+36	34	23	Joey Gase	Best Home Furnishings   (BK Racing)	Toyota	129	crash	0	0	0
+37	19	6	Trevor Bayne	Roush Performance / Lebanon Ford   (Jack Roush)	Ford	101	crash	0	1	0
+38	23	5	Kasey Kahne	Mountain Dew   (Rick Hendrick)	Chevrolet	93	crash	0	1	0
+39	10	2	Brad Keselowski	Miller Lite Patriotic   (Roger Penske)	Ford	89	crash	0	1	0
+40	8	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	87	crash	0	3	0
+\.
+
+
+--
+-- Data for Name: STP_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "STP_500_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	4	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	500	running	116	55	5
+2	10	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	500	running	274	52	0
+3	2	24	Chase Elliott	Sun Energy 1   (Rick Hendrick)	Chevrolet	500	running	20	50	1
+4	5	22	Joey Logano	Duralast GT   (Roger Penske)	Ford	500	running	1	33	0
+5	20	3	Austin Dillon	Okuma   (Richard Childress)	Chevrolet	500	running	0	34	0
+6	30	47	A.J. Allmendinger	Kroger ClickList / DiGiorno / Cheerios   (JTG-Daugherty Racing)	Chevrolet	500	running	0	31	0
+7	8	14	Clint Bowyer	Haas Automation   (Stewart Haas Racing)	Ford	500	running	0	31	0
+8	11	31	Ryan Newman	Chevrolet   (Richard Childress)	Chevrolet	500	running	0	29	0
+9	25	20	Matt Kenseth	Tide Pods   (Joe Gibbs)	Toyota	500	running	0	32	0
+10	24	17	Ricky Stenhouse, Jr.	Fastenal / MCR Safety   (Jack Roush)	Ford	500	running	0	27	0
+11	33	37	Chris Buescher	Bush's Beans / Scott / Clorox / Tide   (JTG-Daugherty Racing)	Chevrolet	500	running	0	26	0
+12	15	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	500	running	0	28	0
+13	16	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	500	running	0	26	0
+14	13	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	500	running	0	24	0
+15	17	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	500	running	0	32	0
+16	3	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	500	running	42	31	1
+17	1	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	500	running	23	25	0
+18	18	43	Aric Almirola	STP   (Richard Petty Motorsports)	Ford	500	running	0	19	0
+19	22	27	Paul Menard	Duracell / Menards   (Richard Childress)	Chevrolet	500	running	0	18	0
+20	9	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	500	running	0	17	0
+21	31	72	Cole Whitt	Bad Boy Mowers   (Mark Smith)	Chevrolet	499	running	0	16	0
+22	23	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	499	running	0	15	0
+23	29	10	Danica Patrick	TaxAct   (Stewart Haas Racing)	Ford	499	running	0	14	0
+24	34	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	498	running	0	13	0
+25	7	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	498	running	0	22	0
+26	26	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	497	running	0	11	0
+27	27	34	Landon Cassill	FR8 Auctions   (Bob Jenkins)	Ford	497	running	0	10	0
+28	35	83	Corey LaJoie	RMC Events   (BK Racing)	Toyota	496	running	0	9	0
+29	37	23	Gray Gaulding	SunFrog.com   (BK Racing)	Toyota	495	running	0	8	0
+30	12	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	493	running	24	16	0
+31	32	15	Reed Sorenson	Premium Motorsports   (Jay Robinson)	Chevrolet	492	running	0	6	0
+32	19	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	489	running	0	5	0
+33	38	51	Timmy Hill	Go-Parts.com / Fortress Wood Products   (Rick Ware)	Chevrolet	486	running	0	0	0
+34	21	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	418	crash	0	8	0
+35	28	32	Matt DiBenedetto	KeenParts.com / CorvetteParts.net   (Archie St. Hilaire)	Ford	401	crash	0	2	0
+36	36	33	Jeffrey Earnhardt	Honor to Remember   (Joe Falk)	Chevrolet	385	crash	0	1	0
+37	14	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	295	crash	0	1	0
+38	6	1	Jamie McMurray	Cessna / Beechcraft   (Chip Ganassi)	Chevrolet	105	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Tales_of_the_Turtles_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Tales_of_the_Turtles_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	3	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	267	running	77	49	5
+2	8	24	Chase Elliott	NAPA Brakes   (Rick Hendrick)	Chevrolet	267	running	42	38	0
+3	4	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	267	running	59	52	0
+4	2	11	Denny Hamlin	FedEx Office   (Joe Gibbs)	Toyota	267	running	1	45	0
+5	6	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	267	running	0	42	0
+6	5	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	267	running	1	42	0
+7	7	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	267	running	0	40	0
+8	14	48	Jimmie Johnson	Lowe's / Hitachi   (Rick Hendrick)	Chevrolet	267	running	0	29	0
+9	10	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	267	running	0	34	0
+10	19	1	Jamie McMurray	McDonald's / Cessna   (Chip Ganassi)	Chevrolet	267	running	0	28	0
+11	12	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	267	running	0	26	0
+12	13	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	267	running	0	27	0
+13	11	14	Clint Bowyer	Rush Truck Centers   (Stewart Haas Racing)	Ford	266	running	0	24	0
+14	28	27	Paul Menard	Moen / Menards   (Richard Childress)	Chevrolet	266	running	0	23	0
+15	1	18	Kyle Busch	Skittles Sweet Heat   (Joe Gibbs)	Toyota	266	running	85	32	1
+16	9	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	266	running	0	21	0
+17	20	88	Dale Earnhardt, Jr.	Axalta   (Rick Hendrick)	Chevrolet	266	running	0	20	0
+18	22	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	265	running	0	19	0
+19	17	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	265	running	0	21	0
+20	27	34	Landon Cassill	CSX "Play It Safe"   (Bob Jenkins)	Ford	265	running	2	17	0
+21	25	5	Kasey Kahne	Great Clips   (Rick Hendrick)	Chevrolet	264	running	0	16	0
+22	26	6	Trevor Bayne	Performance Plus Motor Oil   (Jack Roush)	Ford	264	running	0	15	0
+23	16	31	Ryan Newman	Cat D10   (Richard Childress)	Chevrolet	264	running	0	14	0
+24	21	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	264	running	0	13	0
+25	15	17	Ricky Stenhouse, Jr.	Fastenal   (Jack Roush)	Ford	263	running	0	12	0
+26	29	47	A.J. Allmendinger	Kroger ClickList / Nature Valley / Heinz   (JTG-Daugherty Racing)	Chevrolet	263	running	0	11	0
+27	18	37	Chris Buescher	Scott Products / Dawn / Axe   (JTG-Daugherty Racing)	Chevrolet	263	running	0	10	0
+28	23	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	262	running	0	9	0
+29	31	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	262	running	0	8	0
+30	30	95	Michael McDowell	Devour Frozen Meals   (Leavine Family Racing)	Chevrolet	262	running	0	7	0
+31	32	32	Matt DiBenedetto	Incredible Bank / Ninja Turtles Samurai   (Archie St. Hilaire)	Ford	261	running	0	6	0
+32	34	15	Reed Sorenson	Low T Centers   (Jay Robinson)	Chevrolet	259	running	0	5	0
+33	24	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	259	running	0	4	0
+34	37	33	Jeffrey Earnhardt	Hulu   (Joe Falk)	Chevrolet	258	running	0	3	0
+35	35	72	Cole Whitt	TriStar Motorsports   (Bryan Smith)	Chevrolet	257	running	0	2	0
+36	33	23	Corey LaJoie	Jewel Osco   (BK Racing)	Toyota	256	running	0	1	0
+37	40	83	Brett Moffitt	JAS Expedited Trucking   (BK Racing)	Toyota	255	running	0	0	0
+38	36	55	Gray Gaulding	U.S. First Responders Association   (Jay Robinson)	Toyota	254	running	0	1	0
+39	38	66	Timmy Hill	U.S. Chrome   (Carl Long)	Chevrolet	254	running	0	0	0
+40	39	51	Ray Black, Jr.	Rick Ware Racing   (Rick Ware)	Chevrolet	251	running	0	0	0
+\.
+
+
+--
+-- Data for Name: Toyota-Save_Mart_350_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Toyota-Save_Mart_350_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	12	4	Kevin Harvick	Mobil 1   (Stewart Haas Racing)	Ford	110	running	24	40	5
+2	13	14	Clint Bowyer	Cars 3   (Stewart Haas Racing)	Ford	110	running	0	36	0
+3	23	2	Brad Keselowski	Freightliner / Elite Support   (Roger Penske)	Ford	110	running	17	43	0
+4	14	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	110	running	11	46	0
+5	4	18	Kyle Busch	M&M's Caramel   (Joe Gibbs)	Toyota	110	running	3	32	0
+6	10	88	Dale Earnhardt, Jr.	Axalta / Fix Auto Collision   (Rick Hendrick)	Chevrolet	110	running	0	36	0
+7	17	41	Kurt Busch	Monster Energy / Haas Automation   (Stewart Haas Racing)	Ford	110	running	0	30	0
+8	8	24	Chase Elliott	Kelley Blue Book   (Rick Hendrick)	Chevrolet	110	running	0	31	0
+9	7	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	110	running	0	39	0
+10	2	1	Jamie McMurray	Cessna / Beechcraft   (Chip Ganassi)	Chevrolet	110	running	1	27	0
+11	15	27	Paul Menard	Tarkett / Menards   (Richard Childress)	Chevrolet	110	running	0	26	0
+12	18	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	110	running	0	36	0
+13	24	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	110	running	12	34	1
+14	16	95	Michael McDowell	K-LOVE Radio   (Leavine Family Racing)	Chevrolet	110	running	0	23	0
+15	20	31	Ryan Newman	Chevrolet Accessories   (Richard Childress)	Chevrolet	110	running	0	23	0
+16	11	19	Daniel Suarez	Stanley Tools   (Joe Gibbs)	Toyota	110	running	0	21	0
+17	6	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	110	running	0	20	0
+18	19	3	Austin Dillon	Dow / Kilz   (Richard Childress)	Chevrolet	110	running	0	25	0
+19	9	37	Chris Buescher	Kingsford / Clorox / Bush's / Scott   (JTG-Daugherty Racing)	Chevrolet	110	running	4	18	0
+20	38	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	110	running	0	25	0
+21	29	72	Cole Whitt	RTIC Coolers   (Mark Smith)	Chevrolet	110	running	0	16	0
+22	26	43	Billy Johnson	Smithfield   (Richard Petty Motorsports)	Ford	110	running	0	15	0
+23	27	32	Matt DiBenedetto	Can-Am / Kappa   (Archie St. Hilaire)	Ford	110	running	0	14	0
+24	21	5	Kasey Kahne	Microsoft Windows 10   (Rick Hendrick)	Chevrolet	109	crash	0	15	0
+25	30	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	109	running	0	12	0
+26	1	42	Kyle Larson	Target / Coca-Cola   (Chip Ganassi)	Chevrolet	109	running	9	19	0
+27	25	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	109	running	0	14	0
+28	35	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	109	running	0	9	0
+29	34	33	Boris Said	HendrickCars.com   (Joe Falk)	Chevrolet	109	running	0	8	0
+30	31	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	109	running	0	7	0
+31	28	38	David Ragan	Shriners Hospitals for Children   (Bob Jenkins)	Ford	109	running	0	6	0
+32	32	23	Alon Day	Earthwater   (BK Racing)	Toyota	108	running	0	5	0
+33	36	15	Kevin O'Connell	SBC Contractors / Apollo Opening Roof System   (Jay Robinson)	Chevrolet	108	running	0	4	0
+34	37	55	Tommy Regan	OscaroParts.com / Capri Tools   (Jay Robinson)	Chevrolet	107	running	0	3	0
+35	5	47	A.J. Allmendinger	Kroger ClickList / Cheerios / Crisco   (JTG-Daugherty Racing)	Chevrolet	104	running	4	11	0
+36	33	51	Josh Bilicki	Marriott Drywall / Climate Fieldview   (Rick Ware)	Chevrolet	100	running	0	0	0
+37	3	78	Martin Truex, Jr.	Furniture Row / Denver Mattress   (Barney Visser)	Toyota	86	engine	25	11	1
+38	22	17	Ricky Stenhouse, Jr.	Fastenal / Louisville Ladders   (Jack Roush)	Ford	30	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: Toyota_Owners_400_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY "Toyota_Owners_400_2017" ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	5	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	400	running	25	17	0
+2	15	2	Brad Keselowski	Detroit Genuine Parts   (Roger Penske)	Ford	400	running	110	50	1
+3	16	11	Denny Hamlin	FedEx Ground   (Joe Gibbs)	Toyota	400	running	59	47	0
+4	4	17	Ricky Stenhouse, Jr.	Fifth Third Bank   (Jack Roush)	Ford	400	running	0	33	0
+5	6	4	Kevin Harvick	Busch Light   (Stewart Haas Racing)	Ford	400	running	11	47	0
+6	10	1	Jamie McMurray	GearWrench   (Chip Ganassi)	Chevrolet	400	running	0	38	0
+7	13	31	Ryan Newman	Okuma   (Richard Childress)	Chevrolet	400	running	25	39	0
+8	9	41	Kurt Busch	Mobil 1 Annual Protection   (Stewart Haas Racing)	Ford	400	running	0	29	0
+9	25	43	Aric Almirola	Smithfield   (Richard Petty Motorsports)	Ford	400	running	0	28	0
+10	3	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	400	running	0	35	0
+11	17	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	400	running	0	26	0
+12	11	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	400	running	0	25	0
+13	29	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	400	running	0	24	0
+14	18	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	400	running	5	38	0
+15	8	14	Clint Bowyer	Haas Automation Demo Day   (Stewart Haas Racing)	Ford	400	running	0	27	0
+16	7	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	400	running	1	21	0
+17	23	37	Chris Buescher	Kingsford / Bush's Beans / Dawn / Scott   (JTG-Daugherty Racing)	Chevrolet	400	running	0	20	0
+18	21	10	Danica Patrick	Code 3 Associates   (Stewart Haas Racing)	Ford	400	running	0	19	0
+19	30	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	400	running	0	18	0
+20	38	3	Austin Dillon	AAA.com   (Richard Childress)	Chevrolet	400	running	0	17	0
+21	28	34	Landon Cassill	The Pete Store   (Bob Jenkins)	Ford	400	running	0	16	0
+22	19	5	Kasey Kahne	AARP Drive to End Hunger   (Rick Hendrick)	Chevrolet	400	running	0	15	0
+23	1	20	Matt Kenseth	Circle K   (Joe Gibbs)	Toyota	400	running	164	33	1
+24	14	24	Chase Elliott	NAPA Brakes   (Rick Hendrick)	Chevrolet	400	running	0	13	0
+25	26	27	Paul Menard	Rockstar Energy / Menards   (Richard Childress)	Chevrolet	400	running	0	12	0
+26	24	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	400	running	0	13	0
+27	36	72	Cole Whitt	TriStar Motorsports   (Mark Smith)	Chevrolet	400	running	0	10	0
+28	32	32	Matt DiBenedetto	E.J. Wade Construction   (Archie St. Hilaire)	Ford	400	running	0	9	0
+29	27	95	Michael McDowell	WRL General Contractors   (Leavine Family Racing)	Chevrolet	399	running	0	8	0
+30	12	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	398	running	0	7	0
+31	31	23	Gray Gaulding	SweetFrog   (BK Racing)	Toyota	398	running	0	6	0
+32	34	83	Corey LaJoie	E.J. Wade Construction   (BK Racing)	Toyota	396	running	0	5	0
+33	33	15	Reed Sorenson	Premium Motorsports   (Jay Robinson)	Chevrolet	395	running	0	4	0
+34	37	51	Timmy Hill	SleepFresh Mattress   (Rick Ware)	Chevrolet	393	running	0	0	0
+35	35	33	Jeffrey Earnhardt	Towne Bank   (Joe Falk)	Chevrolet	392	running	0	2	0
+36	2	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	378	crash	0	1	0
+37	22	47	A.J. Allmendinger	Kroger ClickList / Butterfinger / Cheerios   (JTG-Daugherty Racing)	Chevrolet	333	running	0	1	0
+38	20	77	Erik Jones	GameStop / Prey   (Barney Visser)	Toyota	4	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: daytona_500_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY daytona_500_2017 ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	8	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	200	running	1	48	5
+2	36	21	Ryan Blaney	Motorcraft / Quick Lane Tire & Auto Center   (Wood Brothers)	Ford	200	running	2	44	0
+3	38	47	A.J. Allmendinger	Kroger ClickList / Stouffer's / Cheez-It   (JTG-Daugherty Racing)	Chevrolet	200	running	2	39	0
+4	13	43	Aric Almirola	Smithfield Foods   (Richard Petty Motorsports)	Ford	200	running	2	33	0
+5	33	27	Paul Menard	Menards / Peak   (Richard Childress)	Chevrolet	200	running	0	32	0
+6	15	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	200	running	16	40	0
+7	26	5	Kasey Kahne	Farmers Insurance   (Rick Hendrick)	Chevrolet	200	running	7	30	0
+8	30	15	Michael Waltrip	Aaron's "Thanks, Mikey!"   (Jay Robinson)	Toyota	200	running	0	29	0
+9	25	32	Matt DiBenedetto	E.J. Wade Foundation   (Archie St. Hilaire)	Ford	200	running	0	28	0
+10	11	6	Trevor Bayne	AdvoCare   (Jack Roush)	Ford	200	running	0	27	0
+11	39	75	Brendan Gaughan	Beard Oil Distributing   (Mark Beard)	Chevrolet	200	running	0	0	0
+12	16	42	Kyle Larson	Target / Cottonelle   (Chip Ganassi)	Chevrolet	200	running	16	33	0
+13	35	78	Martin Truex, Jr.	Bass Pro Shops / Tracker Boats   (Barney Visser)	Toyota	200	running	2	24	0
+14	1	24	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	200	running	39	23	0
+15	22	95	Michael McDowell	K-LOVE Radio   (Leavine Family Racing)	Chevrolet	200	running	0	22	0
+16	27	34	Landon Cassill	Love's Travel Stops   (Bob Jenkins)	Ford	199	running	0	21	0
+17	4	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	199	running	0	23	0
+18	17	72	Cole Whitt	Florida Lottery   (Mark Smith)	Ford	199	running	3	19	0
+19	10	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	199	running	7	18	0
+20	40	7	Elliott Sadler	Golden Corral   (Tommy Baldwin, Jr.)	Chevrolet	199	running	5	0	0
+21	14	31	Ryan Newman	Caterpillar   (Richard Childress)	Chevrolet	198	running	0	18	0
+22	5	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	197	running	50	34	1
+23	29	23	Joey Gase	Best Home Furnishings   (BK Racing)	Toyota	196	running	0	0	0
+24	31	83	Corey LaJoie	Dustless Blasting   (BK Racing)	Toyota	193	running	0	13	0
+25	20	38	David Ragan	Camping World / Good Sam   (Bob Jenkins)	Ford	188	running	0	12	0
+26	32	33	Jeffrey Earnhardt	Starter   (Joe Falk)	Chevrolet	145	crash	0	11	0
+27	7	2	Brad Keselowski	Miller Lite   (Roger Penske)	Ford	143	crash	2	24	0
+28	3	1	Jamie McMurray	Cessna / McDonald's   (Chip Ganassi)	Chevrolet	141	crash	13	13	0
+29	19	19	Daniel Suarez	Arris High-Speed Modems   (Joe Gibbs)	Toyota	141	crash	0	8	0
+30	18	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	140	crash	0	7	0
+31	23	17	Ricky Stenhouse, Jr.	Fastenal / Wypall   (Jack Roush)	Ford	133	crash	0	6	0
+32	6	14	Clint Bowyer	Mobil 1   (Stewart Haas Racing)	Ford	128	crash	0	9	0
+33	12	10	Danica Patrick	Aspen Dental   (Stewart Haas Racing)	Ford	128	crash	0	11	0
+34	24	48	Jimmie Johnson	Lowe's   (Rick Hendrick)	Chevrolet	127	crash	7	5	0
+35	37	37	Chris Buescher	Cottonelle MegaRoll / Scott Products   (JTG-Daugherty Racing)	Chevrolet	127	crash	0	2	0
+36	28	96	D.J. Kennington	Lordco Auto Parts / Castrol   (Gaunt Brothers)	Toyota	127	crash	0	1	0
+37	2	88	Dale Earnhardt, Jr.	Nationwide Insurance   (Rick Hendrick)	Chevrolet	106	crash	8	7	0
+38	21	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	103	crash	18	11	1
+39	34	77	Erik Jones	5-hour Energy Extra Strength   (Barney Visser)	Toyota	103	crash	0	1	0
+40	9	20	Matt Kenseth	DeWalt FlexVolt   (Joe Gibbs)	Toyota	103	crash	0	1	0
+\.
+
+
+--
+-- Data for Name: daytona_500_2018; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY daytona_500_2018 ("Fin", "St", "#", "Driver", "Sponsor / Owner", "Car", "Laps", "Status", "Led", "Pts", "PPts") FROM stdin;
+1	14	3	Austin Dillon	Dow   (Richard Childress)	Chevrolet	207	running	1	42	5
+2	7	43	Darrell Wallace, Jr.	Click n' Close   (Richard Petty Motorsports)	Chevrolet	207	running	0	39	0
+3	2	11	Denny Hamlin	FedEx Express   (Joe Gibbs)	Toyota	207	running	22	35	0
+4	5	22	Joey Logano	Shell / Pennzoil   (Roger Penske)	Ford	207	running	3	41	0
+5	21	37	Chris Buescher	Kleenex / Cottonelle / Bush's Beans   (JTG-Daugherty Racing)	Chevrolet	207	running	0	32	0
+6	16	21	Paul Menard	Omnicraft Auto Parts / Quick Lane Tire & Auto   (Wood Brothers)	Ford	207	running	1	42	0
+7	3	12	Ryan Blaney	Menards / Peak   (Roger Penske)	Ford	207	running	118	48	1
+8	13	31	Ryan Newman	Bass Pro Shops / Cabela's   (Richard Childress)	Chevrolet	207	running	0	29	0
+9	22	34	Michael McDowell	Love's Travel Stops / Speedco   (Bob Jenkins)	Ford	207	running	0	39	0
+10	20	47	A.J. Allmendinger	Kroger ClickList / Velveeta / Cheerios   (JTG-Daugherty Racing)	Chevrolet	207	running	1	27	0
+11	37	10	Aric Almirola	Smithfield   (Stewart Haas Racing)	Ford	206	running	1	33	0
+12	29	51	Justin Marks	Harry's   (Rick Ware)	Chevrolet	206	running	1	0	0
+13	18	6	Trevor Bayne	AdvoCare 25th Anniversary   (Jack Roush)	Ford	206	running	0	28	0
+14	39	92	David Gilliland	Black's Tire Service / Carquest Auto Parts   (Ricky Benton)	Ford	206	running	0	0	0
+15	10	14	Clint Bowyer	Rush Truck Centers / Mobil 1   (Stewart Haas Racing)	Ford	206	running	0	22	0
+16	19	1	Jamie McMurray	McDonald's / Cessna   (Chip Ganassi)	Chevrolet	205	running	0	21	0
+17	1	88	Alex Bowman	Nationwide   (Rick Hendrick)	Chevrolet	205	running	13	29	0
+18	24	78	Martin Truex, Jr.	Bass Pro Shops / 5-hour Energy   (Barney Visser)	Toyota	205	running	4	30	0
+19	38	42	Kyle Larson	Credit One Bank   (Chip Ganassi)	Chevrolet	204	running	0	18	0
+20	34	23	Gray Gaulding	Earthwater   (BK Racing)	Toyota	204	running	0	17	0
+21	27	0	Jeffrey Earnhardt	VRX Simulators   (StarCom Racing)	Chevrolet	204	running	0	16	0
+22	40	66	Mark Thompson	Phoenix Air Racing   (Carl Long)	Ford	203	running	0	15	0
+23	33	24	William Byron	Axalta   (Rick Hendrick)	Chevrolet	203	running	0	14	0
+24	30	96	D.J. Kennington	Lordco Auto Parts / Castrol   (Gaunt Brothers)	Toyota	201	running	0	13	0
+25	12	18	Kyle Busch	M&M's   (Joe Gibbs)	Toyota	200	running	0	12	0
+26	11	41	Kurt Busch	Haas Automation / Monster Energy   (Stewart Haas Racing)	Ford	198	crash	16	21	1
+27	36	32	Matt DiBenedetto	The Hurricane Heist   (Archie St. Hilaire)	Ford	198	crash	0	10	0
+28	25	62	Brendan Gaughan	Beard Oil / South Point Hotel & Casino   (Mark Beard)	Chevrolet	198	crash	0	9	0
+29	9	17	Ricky Stenhouse, Jr.	3M / Fastenal   (Jack Roush)	Ford	197	crash	11	15	0
+30	15	38	David Ragan	Speedco / Love's Travel Stops   (Bob Jenkins)	Ford	107	crash	0	7	0
+31	6	4	Kevin Harvick	Jimmy John's   (Stewart Haas Racing)	Ford	105	crash	0	10	0
+32	31	2	Brad Keselowski	Discount Tire / Bruce Halle 1930-2018   (Roger Penske)	Ford	102	crash	0	5	0
+33	4	9	Chase Elliott	NAPA Auto Parts   (Rick Hendrick)	Chevrolet	101	crash	4	7	0
+34	26	95	Kasey Kahne	Procore   (Leavine Family Racing)	Chevrolet	101	crash	0	3	0
+35	28	7	Danica Patrick	GoDaddy / Warrior by Danica Patrick   (Jay Robinson)	Chevrolet	101	crash	0	2	0
+36	8	20	Erik Jones	DeWalt   (Joe Gibbs)	Toyota	59	crash	11	1	0
+37	17	19	Daniel Suarez	Arris   (Joe Gibbs)	Toyota	59	crash	0	1	0
+38	35	48	Jimmie Johnson	Lowe's for Pros   (Rick Hendrick)	Chevrolet	59	crash	0	1	0
+39	23	13	Ty Dillon	GEICO   (Germain Racing)	Chevrolet	59	crash	0	1	0
+40	32	72	Corey LaJoie	Schluter Systems   (Bryan Smith)	Chevrolet	8	engine	0	1	0
+\.
+
+
+--
+-- Data for Name: roster_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY roster_2017 ("Team", "Driver") FROM stdin;
+GatorMom	A.J. Allmendinger
+LazyDogMom	Aric Almirola
+SlobberRacing	Austin Dillon
+GatorMom	B.J. McLeod
+Chug	Boris Said
+GatorDad	Brad Keselowski
+LazyDogMom	Chase Elliott
+JulianGangsta	Chris Buescher
+Chug	Clint Bowyer
+SlobberRacing	Cole Whitt
+JulianGangsta	Corey LaJoie
+LazyDogDad	Dale Earnhardt, Jr.
+GatorDad	Danica Patrick
+LazyDogMom	Daniel Suarez
+JulianGangsta	David Ragan
+GatorDad	Denny Hamlin
+Chug	Derrike Cope
+Chug	Erik Jones
+LazyDogMom	Gray Gaulding
+JulianGangsta	Jamie McMurray
+RidgeRacing	Jeffrey Earnhardt
+SlobberRacing	Jimmie Johnson
+RidgeRacing	Joey Logano
+GatorMom	Kasey Kahne
+SlobberRacing	Kevin Harvick
+RidgeRacing	Kurt Busch
+GatorMom	Kyle Busch
+GatorDad	Kyle Larson
+GatorDad	Landon Cassill
+LazyDogDad	Martin Truex, Jr.
+JulianGangsta	Matt DiBenedetto
+RidgeRacing	Matt Kenseth
+GatorMom	Michael McDowell
+LazyDogDad	Paul Menard
+Chug	Reed Sorenson
+LazyDogDad	Ricky Stenhouse, Jr.
+LazyDogDad	Ryan Blaney
+RidgeRacing	Ryan Newman
+LazyDogMom	Trevor Bayne
+SlobberRacing	Ty Dillon
+\.
+
+
+--
+-- Data for Name: roster_2018; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY roster_2018 ("Team", "Driver") FROM stdin;
+Curd Burglar	A.J. Allmendinger
+Baby Got Track	Alex Bowman
+Chasing Cletus	Aric Almirola
+J-Town Throw Down	Austin Dillon
+Curd Burglar	Brad Keselowski
+Field	Brendan Gaughan
+Chasing Cletus	Chase Elliott
+Redneck Ghoster	Chris Buescher
+Baby Got Track	Clint Bowyer
+Field	Corey LaJoie
+Field	D.J. Kennington
+Field	Danica Patrick
+Chasing Cletus	Daniel Suarez
+Up Front	Darrell Wallace, Jr.
+Field	David Gilliland
+Field	David Ragan
+Hollywood High Life	Denny Hamlin
+Up Front	Erik Jones
+Field	Gray Gaulding
+Curd Burglar	Jamie McMurray
+Field	Jeffrey Earnhardt
+Don't Beat My Johnson	Jimmie Johnson
+Gator Dad	Joey Logano
+Field	Justin Marks
+Redneck Ghoster	Kasey Kahne
+Baby Got Track	Kevin Harvick
+Don't Beat My Johnson	Kurt Busch
+Killer B's	Kyle Busch
+Gator Dad	Kyle Larson
+Field	Mark Thompson
+Up Front	Martin Truex, Jr.
+J-Town Throw Down	Matt DiBenedetto
+Hollywood High Life	Michael McDowell
+Don't Beat My Johnson	Paul Menard
+Hollywood High Life	Ricky Stenhouse, Jr.
+J-Town Throw Down	Ryan Blaney
+Gator Dad	Ryan Newman
+Killer B's	Trevor Bayne
+Redneck Ghoster	Ty Dillon
+Killer B's	William Byron
+\.
+
+
+--
+-- Data for Name: season_2017; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY season_2017 ("Driver", "Races", "Win", "T5", "T10", "Pole", "Laps", "Led", "AvSt", "AvFn", "RAF", "Miles", "LLF", "Points", "Diff", "Ppts") FROM stdin;
+Martin Truex, Jr.	36	8	19	26	3	10368	2253	6.79999999999999982	9.40000000000000036	30	13512.8899999999994	29	5040		54
+Kyle Busch	36	5	14	22	8	10284	2023	7.20000000000000018	11.5	32	13530.25	28	5035	-5	39
+Kevin Harvick	36	2	14	23	4	10155	850	8.80000000000000071	11.0999999999999996	32	13389.7299999999996	29	5033	-7	16
+Brad Keselowski	36	3	15	21	2	9493	778	8.80000000000000071	12.4000000000000004	31	12538.5100000000002	28	5030	-10	23
+Chase Elliott	36	0	12	21	1	10034	560	10.8000000000000007	12	32	13058.7600000000002	27	2377	-2,663	2
+Denny Hamlin	36	2	15	22	2	10359	710	8.40000000000000036	11.5999999999999996	32	13727.4300000000003	28	2353	-2,687	9
+Matt Kenseth	36	1	10	18	2	10113	421	10.4000000000000004	14.1999999999999993	30	13388.7700000000004	27	2344	-2,696	8
+Kyle Larson	36	4	15	20	3	9776	1352	11.3000000000000007	13.3000000000000007	29	13095.4899999999998	25	2320	-2,720	28
+Ryan Blaney	36	1	4	14	2	10395	301	10.3000000000000007	17.1999999999999993	31	13776.3999999999996	21	2305	-2,735	9
+Jimmie Johnson	36	3	4	11	0	9955	217	16.8999999999999986	16.8000000000000007	29	12909.2099999999991	25	2260	-2,780	16
+Austin Dillon	36	1	3	4	0	10146	12	19.1000000000000014	18.6000000000000014	31	13498.5400000000009	21	2224	-2,816	5
+Jamie McMurray	36	0	3	17	0	9824	21	10.0999999999999996	14.5999999999999996	31	12973.0599999999995	26	2224	-2,816	0
+Ricky Stenhouse, Jr.	36	2	4	9	1	9979	56	15.9000000000000004	17.1000000000000014	30	13119.6200000000008	24	2222	-2,818	10
+Kurt Busch	36	1	6	15	1	9837	16	11.8000000000000007	16.5	29	13302.7700000000004	22	2217	-2,823	5
+Kasey Kahne	36	1	3	6	0	10068	41	17.8999999999999986	19.3999999999999986	29	13226.3899999999994	20	2198	-2,842	5
+Ryan Newman	36	1	7	13	0	10075	46	17.1000000000000014	15.8000000000000007	32	13268.6900000000005	23	2196	-2,844	5
+Joey Logano	36	1	10	17	2	10346	376	12.4000000000000004	15.1999999999999993	32	13583.9099999999999	23	930	-4,110	1
+Clint Bowyer	36	0	6	13	0	10056	22	13.1999999999999993	15.5	32	13175.0300000000007	25	871	-4,169	1
+Erik Jones	36	0	5	14	1	9538	310	14.5999999999999996	17.1000000000000014	28	12555.0499999999993	22	863	-4,177	0
+Daniel Suarez	36	0	1	12	0	10084	40	13.9000000000000004	16.1999999999999993	30	13239.6900000000005	26	777	-4,263	1
+Dale Earnhardt, Jr.	36	0	1	8	2	9747	47	17	20	29	12738.1200000000008	20	668	-4,372	0
+Trevor Bayne	36	0	2	6	0	10227	8	21.1000000000000014	19.5	31	13512.7000000000007	20	660	-4,380	0
+Paul Menard	36	0	2	3	0	10405	5	21.6999999999999993	19.6000000000000014	33	13803.7700000000004	20	631	-4,409	0
+Ty Dillon	36	0	0	0	0	10210	40	26.1999999999999993	20.6999999999999993	33	13526.4699999999993	20	593	-4,447	0
+Chris Buescher	36	0	0	4	0	9948	5	25.3000000000000007	21.3999999999999986	32	13479.4200000000001	14	564	-4,476	0
+Michael McDowell	36	0	1	1	0	10446	10	23.8999999999999986	22.1999999999999993	34	13798.2700000000004	12	542	-4,498	0
+A.J. Allmendinger	36	0	1	5	0	9941	7	23.8999999999999986	22	31	13506.5499999999993	15	531	-4,509	0
+Danica Patrick	36	0	0	1	0	9888	7	22.1000000000000014	23.8000000000000007	25	13049.75	13	511	-4,529	0
+Aric Almirola	29	0	3	6	0	8509	2	22.3999999999999986	18.8000000000000007	26	10606.6399999999994	19	502	-4,538	0
+David Ragan	36	0	0	3	0	10188	4	29	24.8999999999999986	32	13397.25	7	447	-4,593	0
+Landon Cassill	36	0	0	0	0	9815	12	29.3999999999999986	26.5	30	13307.7900000000009	5	382	-4,658	0
+Matt DiBenedetto	36	0	0	2	0	9617	12	28.8999999999999986	27.1000000000000014	30	12831.6700000000001	9	363	-4,677	0
+Cole Whitt	36	0	0	0	0	9724	3	32.1000000000000014	28.1999999999999993	27	12735.2099999999991	4	322	-4,718	0
+Gray Gaulding	27	0	0	1	0	7787	0	34.6000000000000014	31.1999999999999993	21	9597.10000000000036	2	164	-4,876	0
+Reed Sorenson	28	0	0	0	0	7959	1	34.7999999999999972	32.1000000000000014	23	9740.57999999999993	1	150	-4,890	0
+Jeffrey Earnhardt	34	0	0	0	0	7806	0	36.1000000000000014	33.5	20	10023.8199999999997	0	145	-4,895	0
+Derrike Cope	15	0	0	0	0	3681	0	37.2000000000000028	35.1000000000000014	11	4791.22000000000025	0	42	-4,998	0
+Michael Waltrip	1	0	0	1	0	200	0	30	8	1	500	1	29	-5,011	0
+D.J. Kennington	4	0	0	0	0	612	0	36.2000000000000028	33.2000000000000028	1	1095.74000000000001	0	17	-5,023	0
+Billy Johnson	1	0	0	0	0	110	0	26	22	1	218.900000000000006	1	15	-5,025	0
+Boris Said	2	0	0	0	0	198	0	34.5	29.5	2	434.95999999999998	0	15	-5,025	0
+Gary Klutt	1	0	0	0	0	89	0	34	31	1	218.050000000000011	0	6	-5,034	0
+Cody Ware	5	0	0	0	0	610	0	38.3999999999999986	37.7999999999999972	0	759.450000000000045	0	6	-5,034	0
+Alon Day	1	0	0	0	0	108	0	32	32	1	214.919999999999987	0	5	-5,035	0
+Kyle Weatherman	2	0	0	0	0	782	0	38.5	34.5	2	550.67999999999995	0	5	-5,035	0
+Kevin O'Connell	1	0	0	0	0	108	0	36	33	1	214.919999999999987	0	4	-5,036	0
+Tommy Regan	1	0	0	0	0	107	0	37	34	1	212.930000000000007	0	3	-5,037	0
+Hermie Sadler	1	0	0	0	0	494	0	40	34	1	259.839999999999975	0	3	-5,037	0
+Corey LaJoie	32	0	0	0	0	8668	0	34.1000000000000014	30.1999999999999993	27	11049.2299999999996	1	\N		0
+Timmy Hill	15	0	0	0	0	3940	0	37.2999999999999972	32.6000000000000014	11	4807.10000000000036	1	\N		0
+Joey Gase	9	0	0	0	0	1948	0	35.2000000000000028	30.1999999999999993	5	3079.5	1	\N		0
+B.J. McLeod	8	0	0	0	0	2325	0	37	33.3999999999999986	7	2820.90000000000009	0	\N		0
+Brett Moffitt	7	0	0	0	0	1554	0	35.7000000000000028	33.7000000000000028	6	2189.09999999999991	0	\N		0
+Ryan Sieg	5	0	0	0	0	1167	0	34	31.6000000000000014	4	1523.77999999999997	0	\N		0
+Brendan Gaughan	4	0	0	1	0	723	6	34.5	15.8000000000000007	3	1865.09999999999991	2	\N		0
+Darrell Wallace, Jr.	4	0	0	0	0	795	0	22.5	17.8000000000000007	4	1614.5	2	\N		0
+J.J. Yeley	4	0	0	0	0	1288	0	30.8000000000000007	30	3	1525.25999999999999	0	\N		0
+Elliott Sadler	3	0	0	0	0	553	7	36	19.3000000000000007	3	1413.05999999999995	2	\N		0
+Carl Long	3	0	0	0	0	1050	0	39.7000000000000028	33.2999999999999972	2	1095.6400000000001	0	\N		0
+David Starr	3	0	0	0	0	717	0	35.7000000000000028	34	1	923	0	\N		0
+Ray Black, Jr.	3	0	0	0	0	605	0	36.2999999999999972	37.2999999999999972	2	907.5	0	\N		0
+Regan Smith	2	0	0	0	0	728	0	27.5	28	1	927.5	0	\N		0
+Ross Chastain	2	0	0	0	0	751	0	34	29	2	751	0	\N		0
+Josh Bilicki	2	0	0	0	0	390	0	35.5	36	2	505.819999999999993	0	\N		0
+Stephen Leicht	1	0	0	0	0	153	0	36	32	1	382.5	0	\N		0
+Mark Thompson	1	0	0	0	0	25	0	36	39	0	66.5	0	\N		0
+Justin Marks	1	0	0	0	0	16	0	31	40	0	42.5600000000000023	0	\N		0
+\.
+
+
+--
+-- Data for Name: season_2018; Type: TABLE DATA; Schema: public; Owner: mgaither
+--
+
+COPY season_2018 ("Driver", "Races", "Win", "T5", "T10", "Pole", "Laps", "Led", "AvSt", "AvFn", "RAF", "Miles", "LLF", "Points", "Diff", "Ppts") FROM stdin;
+Ryan Blaney	1	0	0	1	0	207	118	3	7	1	517.5	1	58	\N	1
+Joey Logano	1	0	1	1	0	207	3	5	4	1	517.5	1	50	-8	0
+Austin Dillon	1	1	1	1	0	207	1	14	1	1	517.5	1	47	-11	5
+Darrell Wallace, Jr.	1	0	1	1	0	207	0	7	2	1	517.5	1	47	-11	0
+Paul Menard	1	0	0	1	0	207	1	16	6	1	517.5	1	46	-12	0
+Michael McDowell	1	0	0	1	0	207	0	22	9	1	517.5	1	39	-19	0
+Denny Hamlin	1	0	1	1	0	207	22	2	3	1	517.5	1	37	-21	0
+Ryan Newman	1	0	0	1	0	207	0	13	8	1	517.5	1	34	-24	0
+Chris Buescher	1	0	1	1	0	207	0	21	5	1	517.5	1	33	-25	0
+Aric Almirola	1	0	0	0	0	206	1	37	11	1	515	0	33	-25	0
+Trevor Bayne	1	0	0	0	0	206	0	18	13	1	515	0	31	-27	0
+Martin Truex, Jr.	1	0	0	0	0	205	4	24	18	1	512.5	0	30	-28	0
+Clint Bowyer	1	0	0	0	0	206	0	10	15	1	515	0	29	-29	0
+Alex Bowman	1	0	0	0	1	205	13	1	17	1	512.5	0	29	-29	0
+A.J. Allmendinger	1	0	0	1	0	207	1	20	10	1	517.5	1	28	-30	0
+Kurt Busch	1	0	0	0	0	198	16	11	26	0	495	0	27	-31	1
+Jamie McMurray	1	0	0	0	0	205	0	19	16	1	512.5	0	23	-35	0
+Ricky Stenhouse, Jr.	1	0	0	0	0	197	11	9	29	0	492.5	0	22	-36	0
+Kevin Harvick	1	0	0	0	0	105	0	6	31	0	262.5	0	19	-39	0
+Kyle Larson	1	0	0	0	0	204	0	38	19	1	510	0	18	-40	0
+Kyle Busch	1	0	0	0	0	200	0	12	25	1	500	0	18	-40	0
+Gray Gaulding	1	0	0	0	0	204	0	34	20	1	510	0	17	-41	0
+Chase Elliott	1	0	0	0	0	101	4	4	33	0	252.5	0	17	-41	0
+Jeffrey Earnhardt	1	0	0	0	0	204	0	27	21	1	510	0	16	-42	0
+Mark Thompson	1	0	0	0	0	203	0	40	22	1	507.5	0	15	-43	0
+William Byron	1	0	0	0	0	203	0	33	23	1	507.5	0	14	-44	0
+D.J. Kennington	1	0	0	0	0	201	0	30	24	1	502.5	0	13	-45	0
+David Ragan	1	0	0	0	0	107	0	15	30	0	267.5	0	11	-47	0
+Matt DiBenedetto	1	0	0	0	0	198	0	36	27	0	495	0	10	-48	0
+Brendan Gaughan	1	0	0	0	0	198	0	25	28	0	495	0	9	-49	0
+Erik Jones	1	0	0	0	0	59	11	8	36	0	147.5	0	9	-49	0
+Brad Keselowski	1	0	0	0	0	102	0	31	32	0	255	0	5	-53	0
+Daniel Suarez	1	0	0	0	0	59	0	17	37	0	147.5	0	4	-54	0
+Kasey Kahne	1	0	0	0	0	101	0	26	34	0	252.5	0	3	-55	0
+Danica Patrick	1	0	0	0	0	101	0	28	35	0	252.5	0	2	-56	0
+Jimmie Johnson	1	0	0	0	0	59	0	35	38	0	147.5	0	1	-57	0
+Ty Dillon	1	0	0	0	0	59	0	23	39	0	147.5	0	1	-57	0
+Corey LaJoie	1	0	0	0	0	8	0	32	40	0	20	0	1	-57	0
+Justin Marks	1	0	0	0	0	206	1	29	12	1	515	0	\N	\N	0
+David Gilliland	1	0	0	0	0	206	0	39	14	1	515	0	\N	\N	0
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
