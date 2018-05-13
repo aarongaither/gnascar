@@ -91,3 +91,26 @@ a.draft-btn > i {
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+#photos {
+  line-height: 0;  
+  -webkit-column-count: 2;
+  -webkit-column-gap:   16px;
+  -moz-column-count:    2;
+  -moz-column-gap:      16px;
+  column-count:         2;
+  column-gap:           16px;
+}
+
+#photos img {
+ width: 100% !important;
+ height: auto !important;
+}
+
+@media (max-width: 400px) {
+ #photos {
+ -moz-column-count:    1;
+ -webkit-column-count: 1;
+ column-count:         1;
+ }
+}
