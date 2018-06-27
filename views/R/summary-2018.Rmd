@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">Next Stop: Sonoma Raceway</h1>
+<h1 class="header center">Next Stop: Chicagoland Speedway</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/sonomaraceway.jpg">
+<img src="../../public/images/chicagoland.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">"Toyota / Save Mart 350 on June 24 @1500 PM ET on FS1"</h5>
+<h5 class="header col s12 light">"Overton's 400 on Sunday, July 1st @ 1430 on NBCSN"</h5>
 </div>  
 </div>
 </div>
