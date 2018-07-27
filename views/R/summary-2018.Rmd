@@ -36,7 +36,7 @@ roster2018 <- dbGetQuery(con, "SELECT * from roster_2018")
 
 # 2018 Roster Standings
 xform <- list(categoryorder = "array",
-              categoryarray = c("Baby Got Track", "Gator Dad", "Don't Beat My Johnson", "Killer B's", "Up Front", "Chasing Cletus", "Hollywood High Life", "J-Town Throw Down", "Ricky Bobby", "Field", "Redneck Ghoster"))
+              categoryarray = c("Baby Got Track", "Gator Dad", "Don't Beat My Johnson", "Up Front", "Killer B's", "Chasing Cletus", "Hollywood High Life", "J-Town Throw Down", "Ricky Bobby", "Redneck Ghoster", "Field" ))
 
 seasonstandings2018 <- merge(season2018, roster2018,by=c("Driver"))
 
@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">Next Stop: Chicagoland Speedway</h1>
+<h1 class="header center">Next Stop: Pocono Raceway</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/chicagoland.jpg">
+<img src="../../public/images/pocono.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">"Overton's 400 on Sunday, July 1st @ 1430 on NBCSN"</h5>
+<h5 class="header col s12 light">Pocono Raceway this Sunday, July 29th @ 1430 ET on NBCSN</h5>
 </div>  
 </div>
 </div>
