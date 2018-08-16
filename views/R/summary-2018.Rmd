@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">Next Stop: Michigan International Speedway</h1>
+<h1 class="header center">Next Stop: Bristol Motor Speedway</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/michiganintlspeedway.jpg">
+<img src="../../public/images/bristol-motor-speedway.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">Michigan International Speedway this Sunday, August 12th @ 1430 ET on NBCSN</h5>
+<h5 class="header col s12 light">Bristol Motor Speedway this Saturday, August 18th @ 1930 ET on NBCSN</h5>
 </div>  
 </div>
 </div>
