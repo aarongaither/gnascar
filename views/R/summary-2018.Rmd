@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">First Playoff Race: Las Vegas Motor Speedway</h1>
+<h1 class="header center">Second Playoff Race: Richmond Raceway</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/LasVegas_Motor_Speedway.jpg">
+<img src="../../public/images/richmond-raceway.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">Las Vegas Motor Speedway | September 16th @ 1500 ET on NBCSN</h5>
+<h5 class="header col s12 light">Richmond Raceway | September 22nd @ 1930 ET on NBCSN</h5>
 </div>  
 </div>
 </div>
