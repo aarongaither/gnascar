@@ -36,7 +36,7 @@ roster2018 <- dbGetQuery(con, "SELECT * from roster_2018")
 
 # 2018 Roster Standings
 xform <- list(categoryorder = "array",
-              categoryarray = c("Baby Got Track", "Gator Dad", "Don't Beat My Johnson", "Chasing Cletus", "Up Front", "J-Town Throw Down", "Hollywood High Life", "Killer B's", "Ricky Bobby", "Redneck Ghoster", "Field" ))
+              categoryarray = c("Baby Got Track", "Gator Dad", "Chasing Cletus", "Don't Beat My Johnson", "Up Front", "J-Town Throw Down", "Killer B's", "Ricky Bobby", "Hollywood High Life", "Redneck Ghoster", "Field" ))
 
 seasonstandings2018 <- merge(season2018, roster2018,by=c("Driver"))
 
@@ -83,7 +83,7 @@ a <- list(
 p_team <- plot_ly(seasonstandings2018, x = ~Team, y = ~Points, type = 'bar', text=~Driver, 
               color = ~Team, colors = "Pastel1", 
               textposition = 'auto', marker = list(line = list(color = 'gray36', width = 1))) %>% 
-    layout(yaxis = list(title = 'Points', dtick = 100), xaxis = list(title = ' '), barmode = 'stack') %>%
+    layout(yaxis = list(title = 'Points', dtick = 250), xaxis = list(title = ' '), barmode = 'stack') %>%
   layout(xaxis = xform)
 
 p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter', mode = 'markers',
@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">Second Playoff Race: Richmond Raceway</h1>
+<h1 class="header center">First Race of the Second Playoff Round</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/richmond-raceway.jpg">
+<img src="../../public/images/doverspeedway.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">Richmond Raceway | September 22nd @ 1930 ET on NBCSN</h5>
+<h5 class="header col s12 light">Dover International Speedway | October 7th @ 1400 ET on NBCSN</h5>
 </div>  
 </div>
 </div>
