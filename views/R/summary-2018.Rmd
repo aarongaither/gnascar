@@ -107,14 +107,14 @@ p_driver <- plot_ly(seasonstandings2018, x = ~Points, y = ~AvSt, type = 'scatter
 
 <div class="section no-pad-bot" id="index-banner">
 <div class="container">
-<h1 class="header center">First Race of the Second Playoff Round</h1>
+<h1 class="header center">Final Race of the Second Playoff Round</h1>
 <div class="row center">
 <div class="card">
 <div class="card-image">
-<img src="../../public/images/doverspeedway.jpg">
+<img src="../../public/images/kansas_speedway.jpg">
 </div>
 <div class="card-content"
-<h5 class="header col s12 light">Dover International Speedway | October 7th @ 1400 ET on NBCSN</h5>
+<h5 class="header col s12 light">Kansas Speedway | October 21st @ 1430 ET on NBC</h5>
 </div>  
 </div>
 </div>
