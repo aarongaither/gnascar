@@ -1,0 +1,70 @@
+
+```{r libraries, warning=FALSE, message=FALSE, echo=FALSE, results='hide'}
+if (!require("pacman")) install.packages("pacman"); library(pacman)
+p_load("ggplot2","XLConnect","plotly","knitr","corrplot","PerformanceAnalytics")
+
+require(rvest)
+require(stringr)
+require(tidyr)
+require("RPostgreSQL")
+require("XLConnect")
+require("plotly")
+
+pw <- {""}
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname = "gnascar",
+                 host = "localhost", port = 5432,
+                 user = "mgaither", password = pw)
+
+# query the data from postgreSQL 
+season2017 <- dbGetQuery(con, "SELECT * from season_2017")
+
+# query the data from postgreSQL 
+standings2017 <- dbGetQuery(con, "SELECT * from standings_2017")
+
+# 2017 Roster Standings
+xform <- list(categoryorder = "array",
+              categoryarray = c("LazyDogDad", 
+                                "GatorDad", 
+                                "SlobberRacing",
+                                "GatorMom",
+                                "RidgeRacing",
+                                "LazyDogMom",
+                                "JulianGangsta",
+                                "Chug",
+                                "Field"))
+
+# p1 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', text = ~Driver, textposition = 'auto', marker = list(color = 'rgb(158,202,225)',line = list(color = 'rgb(8,48,107)', width = 1.5))) %>%
+# layout(xaxis = list(title = "", tickangle = 0), barmode = 'stack', paper_bgcolor = 'rgba(245, 246, 249, 1)', plot_bgcolor = 'rgba(245, 246, 249, 1)', showlegend = FALSE) %>%
+#    layout(xaxis = xform)
+
+p1 <- plot_ly(standings2017, x = ~Owner, y = ~Points, type = 'bar', text = ~Driver, textposition = 'auto', marker = list(color = 'rgb(158,202,225)',line = list(color = 'rgb(8,48,107)', width = 1.5))) %>%
+layout(xaxis = list(title = "", tickangle = 0), barmode = 'stack', paper_bgcolor = 'rgba(245, 246, 249, 1)', plot_bgcolor = 'rgba(245, 246, 249, 1)', showlegend = FALSE) %>%
+   layout(xaxis = xform)
+
+p2 <- plot_ly(
+  season2017, x = ~AvSt, y = ~AvFn, type = 'scatter', mode = 'markers', text = ~Driver,
+  #text = ~paste("Driver: ", ~Driver, '$<br>Points:', ~Points),
+  color = ~Win, size = ~Win
+    )
+
+```
+
+
+## 2017 Driver Standings
+```{r, results = 'asis', echo=FALSE}
+knitr::kable(standings2017[order(standings2017$Rank),])
+```
+
+## 2017 Driver Start/Finish Scatter
+```{r, results='asis', echo=FALSE}
+htmltools::tagList(list(p2))
+```
+
+## 2017 GNASCAR Team Standings
+```{r, results='asis', echo=FALSE}
+htmltools::tagList(list(p1))
+```
+
+
+
