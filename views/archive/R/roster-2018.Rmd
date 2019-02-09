@@ -1,0 +1,46 @@
+---
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    css: ['../../public/css/style.css','../../public/css/materialize.css','../../public/css/materialize.min.css']
+---
+
+<style>
+
+body {
+  padding-top:0px
+}
+
+.navbar{
+  visibility: hidden
+}
+
+</style>
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+require("RPostgreSQL")
+require("plotly")
+require("DT")
+
+### load roster 2018
+pw <- {""}
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname = "gnascar",
+                 host = "localhost", port = 5432,
+                 user = "mgaither", password = pw)
+
+# query the data from postgreSQL 
+roster2018 <- dbGetQuery(con, "SELECT * from roster_2018")
+
+```
+
+Column
+-----------------------------------------------------------------------
+
+###
+
+```{r}
+datatable(roster2018, options = list(pageLength = 50, dom = 't'))
+```
