@@ -1,0 +1,109 @@
+﻿Number,Season,Date,Site,Race,Latitude,Longitude
+1,2019,2/17/19,Daytona," ""Daytona 500""  FOX 2:30 PM",29.20706,-81.020737
+2,2019,2/24/19,Atlanta," ""Folds of Honor QuikTrip 500""  FOX 2:00 PM",33.748997,-84.387985
+3,2019,3/3/19,Las Vegas," ""Pennzoil 400 Presented by Jiffy Lube""  FOX 3:30 PM",36.169941,-115.139832
+4,2019,3/10/19,Phoenix," ""Ticket Guardian 500""  FOX 3:30 PM",33.448376,-112.074036
+5,2019,3/17/19,Fontana," ""Auto Club 400""  FOX 3:30 PM",34.10289,-117.43576
+6,2019,3/24/19,Martinsville," ""STP 500""  FS1 2:00 PM",39.42786,-86.428581
+7,2019,3/31/19,Fort Worth," ""O'Reilly Auto Parts 500""  FOX 3:00 PM",32.755489,-97.330765
+8,2019,4/7/19,Bristol," ""Food City 500""  FS1 2:00 PM",51.454514,-2.58791
+9,2019,4/13/19,Richmond," ""Toyota Owners 400""  FOX 7:30 PM",37.540726,-77.43605
+10,2019,4/28/19,Talladega," ""GEICO 500""  FOX 2:00 PM",33.43494,-86.106201
+11,2019,5/5/19,Dover," ""Dover 400""  FS1 2:00 PM",39.158169,-75.524368
+12,2019,5/11/19,Kansas," ""Kansas 400""  FS1 7:30 PM",39.011902,-98.484245
+13,2019,5/26/19,Charlotte," ""Coca-Cola 600""  FOX 6:00 PM",35.227085,-80.843124
+14,2019,6/2/19,Pocono," ""Gander Outdoors 400""  FS1 2:00 PM",41.27517,-75.397
+15,2019,6/9/19,Michigan," ""FireKeepers Casino 400""  FS1 2:00 PM",44.314842,-85.602364
+16,2019,6/23/19,Sonoma," ""Toyota / Save Mart 350""  FS1 3:00 PM",38.291962,-122.458
+17,2019,6/30/19,Chicago," ""Overton's 400""  NBCSN 3:00 PM",41.878113,-87.629799
+18,2019,7/6/19,Daytona," ""Coke Zero Sugar 400""  NBC 7:30 PM",29.20706,-81.020737
+19,2019,7/13/19,Kentucky," ""Quaker State 400 Presented by Walmart""  NBCSN 7:30 PM",37.839333,-84.27002
+20,2019,7/21/19,Loudon," ""Foxwoods Resort Casino 301""  NBCSN 3:00 PM",35.734089,-84.346268
+21,2019,7/29/19,Pocono," ""Gander Outdoors 400""  NBCSN 3:00 PM",41.27517,-75.397
+22,2019,8/4/19,Watkins Glen," ""Go Bowling at the Glen""  NBCSN 3:00 PM",42.38063,-76.873291
+23,2019,8/11/19,Michigan," ""Consumers Energy 400""  NBCSN 3:00 PM",44.314842,-85.602364
+24,2019,8/17/19,Bristol," ""Bass Pro Shops / NRA Night Race""  NBCSN 7:30 PM",51.454514,-2.58791
+25,2019,9/1/19,Darlington," ""Bojangles' Southern 500""  NBCSN 6:00 PM",54.528728,-1.55305
+26,2019,9/8/19,Indianapolis," ""Big Machine Vodka 400 at the Brickyard""  NBC 2:00 PM",39.768402,-86.158066
+27,2019,9/15/19,Las Vegas," ""South Point 400""  NBCSN 7:00 PM",36.169941,-115.139832
+28,2019,9/21/19,Richmond," ""Federated Auto Parts 400""  NBCSN 7:30 PM",37.540726,-77.43605
+29,2019,9/29/19,Charlotte," ""Bank of America ROVAL 400""  NBC 2:30 PM",35.227085,-80.843124
+30,2019,10/6/19,Dover," ""Delaware 400""  NBCSN 2:30 PM",39.158169,-75.524368
+31,2019,10/13/19,Talladega," ""1000bulbs.com 500""  NBC 2:00 PM",33.43494,-86.106201
+32,2019,10/20/19,Kansas," ""Hollywood Casino 400""  NBC 2:30 PM",39.011902,-98.484245
+33,2019,10/27/19,Martinsville," ""First Data 500""  NBCSN 3:00 PM",39.42786,-86.428581
+34,2019,11/3/19,Fort Worth," ""AAA Texas 500""  NBCSN 3:00 PM",32.755489,-97.330765
+35,2019,11/10/19,Phoenix," ""Can-Am 500""  NBC 2:30 PM",33.448376,-112.074036
+36,2019,11/17/19,Homestead," ""Ford EcoBoost 400""  NBC 3:00 PM",36.606701,-94.797096
+1,2018,2/18/18,Daytona,,,
+2,2018,2/25/18,Atlanta,,,
+3,2018,3/4/18,Las Vegas,,,
+4,2018,3/11/18,Phoenix,,,
+5,2018,3/18/18,Fontana,,,
+6,2018,3/26/18,Martinsville,,,
+7,2018,4/8/18,Fort Worth,,,
+8,2018,4/16/18,Bristol,,,
+9,2018,4/21/18,Richmond,,,
+10,2018,4/29/18,Talladega,,,
+11,2018,5/6/18,Dover,,,
+12,2018,5/12/18,Kansas,,,
+13,2018,5/27/18,Charlotte,,,
+14,2018,6/3/18,Pocono,,,
+15,2018,6/10/18,Michigan,,,
+16,2018,6/24/18,Sonoma,,,
+17,2018,7/1/18,Chicago,,,
+18,2018,7/7/18,Daytona,,,
+19,2018,7/14/18,Kentucky,,,
+20,2018,7/22/18,Loudon,,,
+21,2018,7/29/18,Pocono,,,
+22,2018,8/5/18,Watkins Glen,,,
+23,2018,8/12/18,Michigan,,,
+24,2018,8/18/18,Bristol,,,
+25,2018,9/2/18,Darlington,,,
+26,2018,9/10/18,Indianapolis,,,
+27,2018,9/16/18,Las Vegas,,,
+28,2018,9/22/18,Richmond,,,
+29,2018,9/30/18,Charlotte (Road),,,
+30,2018,10/7/18,Dover,,,
+31,2018,10/14/18,Talladega,,,
+32,2018,10/21/18,Kansas,,,
+33,2018,10/28/18,Martinsville,,,
+34,2018,11/4/18,Fort Worth,,,
+35,2018,11/11/18,Phoenix,,,
+36,2018,11/18/18,Homestead,,,
+1,2017,2/26/17,Daytona,,,
+2,2017,3/5/17,Atlanta,,,
+3,2017,3/12/17,Las Vegas,,,
+4,2017,3/19/17,Phoenix,,,
+5,2017,3/26/17,Fontana,,,
+6,2017,4/2/17,Martinsville,,,
+7,2017,4/9/17,Fort Worth,,,
+8,2017,4/24/17,Bristol,,,
+9,2017,4/30/17,Richmond,,,
+10,2017,5/7/17,Talladega,,,
+11,2017,5/13/17,Kansas,,,
+12,2017,5/28/17,Charlotte,,,
+13,2017,6/4/17,Dover,,,
+14,2017,6/11/17,Pocono,,,
+15,2017,6/18/17,Michigan,,,
+16,2017,6/25/17,Sonoma,,,
+17,2017,7/1/17,Daytona,,,
+18,2017,7/8/17,Kentucky,,,
+19,2017,7/16/17,Loudon,,,
+20,2017,7/23/17,Indianapolis,,,
+21,2017,7/30/17,Pocono,,,
+22,2017,8/6/17,Watkins Glen,,,
+23,2017,8/13/17,Michigan,,,
+24,2017,8/19/17,Bristol,,,
+25,2017,9/3/17,Darlington,,,
+26,2017,9/9/17,Richmond,,,
+27,2017,9/17/17,Chicago,,,
+28,2017,9/24/17,Loudon,,,
+29,2017,10/1/17,Dover,,,
+30,2017,10/8/17,Charlotte,,,
+31,2017,10/15/17,Talladega,,,
+32,2017,10/22/17,Kansas,,,
+33,2017,10/29/17,Martinsville,,,
+34,2017,11/5/17,Fort Worth,,,
+35,2017,11/12/17,Phoenix,,,
+36,2017,11/19/17,Homestead,,,

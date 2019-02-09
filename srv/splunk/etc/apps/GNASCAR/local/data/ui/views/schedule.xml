@@ -1,0 +1,33 @@
+<form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
+  <label>NASCAR_Schedule</label>
+  <fieldset submitButton="false">
+    <input type="dropdown" token="season_tok" searchWhenChanged="true">
+      <label>Select a Season</label>
+      <choice value="2019">2019</choice>
+      <choice value="2018">2018</choice>
+      <choice value="2017">2017</choice>
+      <default>2018</default>
+      <initialValue>2018</initialValue>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| inputlookup nascar_schedule.csv where (Season="$season_tok$") | table Date, Site</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>
