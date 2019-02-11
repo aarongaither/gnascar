@@ -6,15 +6,15 @@
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2018</default>
-      <initialValue>2018</initialValue>
+      <default>2019</default>
+      <initialValue>2019</initialValue>
     </input>
   </fieldset>
   <row>
     <panel>
       <table>
         <search>
-          <query>| inputlookup gnascar_rosters.csv where (Season="$season_tok$" and Team != Field) | table Driver Team</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season="$season_tok$" and Team != Field) | table Driver Team | sort Team</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>

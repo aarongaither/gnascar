@@ -1,6 +1,6 @@
 <form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
   <label>NASCAR_Driver_Stats</label>
-  <fieldset submitButton="true" autoRun="false">
+  <fieldset submitButton="true" autoRun="true">
     <input type="dropdown" token="season_tok">
       <label>Season</label>
       <choice value="2019">2019</choice>

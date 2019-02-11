@@ -51,14 +51,14 @@ modtime = 1547011798.211285000
 [views/rosters]
 owner = admin
 version = 7.2.1
-modtime = 1549741646.001884000
+modtime = 1549861827.852993000
 
 [views/schedule]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1549743442.524294000
+modtime = 1549864552.977746000
 
 [views/leaguestandings]
 access = read : [ * ], write : [ admin ]
@@ -73,13 +73,6 @@ export = none
 owner = admin
 version = 7.2.1
 modtime = 1549743952.417316000
-
-[lookups/gnascar_rosters.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1549741568.139473000
 
 [lookups/gnascar_standings.csv]
 access = read : [ * ], write : [ admin ]
@@ -125,4 +118,11 @@ access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1549787966.692653000
+modtime = 1549836160.548947000
+
+[lookups/gnascar_rosters.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1549861654.416175000
