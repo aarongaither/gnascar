@@ -1,87 +1,87 @@
 <form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
-  <label>NASCAR_Driver_Stats</label>
-  <fieldset submitButton="true" autoRun="true">
-    <input type="dropdown" token="season_tok">
-      <label>Season</label>
+  <label>GNASCAR_Standings</label>
+  <fieldset submitButton="false">
+    <input type="dropdown" token="season_tok" searchWhenChanged="true">
+      <label>Select a Season</label>
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
       <default>2018</default>
       <initialValue>2018</initialValue>
     </input>
-    <input type="dropdown" token="xaxis_tok">
-      <label>X Axis</label>
-      <choice value="AvSt">Average Start</choice>
-      <choice value="AvFn">Average Finish</choice>
-      <choice value="Laps">Laps</choice>
-      <choice value="Led">Led</choice>
-      <choice value="LLF">Lead Laps Finished</choice>
-      <choice value="Miles">Miles</choice>
-      <choice value="Points">Points</choice>
-      <choice value="Pole">Pole</choice>
-      <choice value="Ppts">Playoff Points</choice>
-      <choice value="RAF">Running at Finish</choice>
-      <choice value="Races">Races</choice>
-      <choice value="Rank">Rank</choice>
-      <choice value="T5">Top 5</choice>
-      <choice value="T10">Top 10</choice>
-      <choice value="Win">Wins</choice>
-      <default>AvSt</default>
-      <initialValue>AvSt</initialValue>
-    </input>
-    <input type="dropdown" token="yaxis_tok">
-      <label>Y Axis</label>
-      <choice value="AvSt">Average Start</choice>
-      <choice value="AvFn">Average Finish</choice>
-      <choice value="Laps">Laps</choice>
-      <choice value="Led">Led</choice>
-      <choice value="LLF">Lead Laps Finished</choice>
-      <choice value="Miles">Miles</choice>
-      <choice value="Points">Points</choice>
-      <choice value="Pole">Pole</choice>
-      <choice value="Ppts">Playoff Points</choice>
-      <choice value="RAF">Running at Finish</choice>
-      <choice value="Races">Races</choice>
-      <choice value="Rank">Rank</choice>
-      <choice value="T5">Top 5</choice>
-      <choice value="T10">Top 10</choice>
-      <choice value="Win">Wins</choice>
-      <default>AvFn</default>
-      <initialValue>AvFn</initialValue>
-    </input>
-    <input type="dropdown" token="bubblesize_tok">
-      <label>Bubble Size</label>
-      <choice value="AvSt">Average Start</choice>
-      <choice value="AvFn">Average Finish</choice>
-      <choice value="Laps">Laps</choice>
-      <choice value="Led">Led</choice>
-      <choice value="LLF">Lead Laps Finished</choice>
-      <choice value="Miles">Miles</choice>
-      <choice value="Points">Points</choice>
-      <choice value="Pole">Pole</choice>
-      <choice value="Ppts">Playoff Points</choice>
-      <choice value="RAF">Running at Finish</choice>
-      <choice value="Races">Races</choice>
-      <choice value="Rank">Rank</choice>
-      <choice value="T5">Top 5</choice>
-      <choice value="T10">Top 10</choice>
-      <choice value="Win">Wins</choice>
-      <default>Points</default>
-      <initialValue>Points</initialValue>
-    </input>
   </fieldset>
+  <row>
+    <panel>
+      <html>
+           <h1>
+ Driver Points
+ </h1>
+      </html>
+    </panel>
+  </row>
   <row>
     <panel>
       <chart>
         <search>
-          <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$")| table Driver "$xaxis_tok$" "$yaxis_tok$" "$bubblesize_tok$"</query>
+          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team != Field)  | table Driver Team Points | sort -Points</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">-45</option>
+        <option name="charting.axisY.abbreviation">auto</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$") | table Rank Driver Team Points | sort Rank</query>
+          <earliest>0</earliest>
+          <latest></latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">10</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+        <format type="color" field="Rank">
+          <colorPalette type="minMidMax" maxColor="#FFFFFF" minColor="#53A051"></colorPalette>
+          <scale type="minMidMax" maxValue="5"></scale>
+        </format>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+           <h1>
+ Team Points
+ </h1>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>|inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | chart sum(Points) over Team by Driver limit=0  | addtotals fieldname=Points | sort -Points | fields - Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
         <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
-        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
         <option name="charting.axisTitleY.visibility">visible</option>
         <option name="charting.axisTitleY2.visibility">visible</option>
         <option name="charting.axisX.abbreviation">none</option>
@@ -91,65 +91,21 @@
         <option name="charting.axisY2.abbreviation">none</option>
         <option name="charting.axisY2.enabled">0</option>
         <option name="charting.axisY2.scale">inherit</option>
-        <option name="charting.chart">bubble</option>
-        <option name="charting.chart.bubbleMaximumSize">50</option>
-        <option name="charting.chart.bubbleMinimumSize">10</option>
-        <option name="charting.chart.bubbleSizeBy">area</option>
-        <option name="charting.chart.nullValueMode">gaps</option>
-        <option name="charting.chart.showDataLabels">none</option>
-        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
-        <option name="charting.chart.stackMode">default</option>
-        <option name="charting.chart.style">shiny</option>
-        <option name="charting.drilldown">none</option>
-        <option name="charting.layout.splitSeries">0</option>
-        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
-        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
-        <option name="charting.legend.mode">standard</option>
-        <option name="charting.legend.placement">right</option>
-        <option name="charting.lineWidth">2</option>
-        <option name="trellis.enabled">0</option>
-        <option name="trellis.scales.shared">1</option>
-        <option name="trellis.size">medium</option>
-      </chart>
-    </panel>
-  </row>
-  <row>
-    <panel>
-      <chart>
-        <title>Driver Wins</title>
-        <search>
-          <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$") AND where (Win &gt; 0) | table Driver Win</query>
-          <earliest>0</earliest>
-          <latest></latest>
-          <sampleRatio>1</sampleRatio>
-        </search>
-        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
-        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
-        <option name="charting.axisTitleX.visibility">visible</option>
-        <option name="charting.axisTitleY.visibility">visible</option>
-        <option name="charting.axisTitleY2.visibility">visible</option>
-        <option name="charting.axisX.abbreviation">none</option>
-        <option name="charting.axisX.scale">linear</option>
-        <option name="charting.axisY.abbreviation">none</option>
-        <option name="charting.axisY.scale">linear</option>
-        <option name="charting.axisY2.abbreviation">none</option>
-        <option name="charting.axisY2.enabled">0</option>
-        <option name="charting.axisY2.scale">inherit</option>
-        <option name="charting.chart">pie</option>
+        <option name="charting.chart">column</option>
         <option name="charting.chart.bubbleMaximumSize">50</option>
         <option name="charting.chart.bubbleMinimumSize">10</option>
         <option name="charting.chart.bubbleSizeBy">area</option>
         <option name="charting.chart.nullValueMode">gaps</option>
         <option name="charting.chart.showDataLabels">all</option>
         <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
-        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.stackMode">stacked</option>
         <option name="charting.chart.style">shiny</option>
         <option name="charting.drilldown">none</option>
         <option name="charting.layout.splitSeries">0</option>
         <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
         <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
         <option name="charting.legend.mode">standard</option>
-        <option name="charting.legend.placement">right</option>
+        <option name="charting.legend.placement">none</option>
         <option name="charting.lineWidth">2</option>
         <option name="refresh.display">progressbar</option>
         <option name="trellis.enabled">0</option>
@@ -161,20 +117,92 @@
   <row>
     <panel>
       <table>
-        <title>Race Statistics</title>
         <search>
-          <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$")</query>
+          <query>|inputlookup gnascar_standings.csv where (Season="$season_tok$") | stats sum(Points) by Team | rename sum(Points) as Points | sort - Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
-        <option name="count">20</option>
-        <option name="dataOverlayMode">none</option>
-        <option name="drilldown">row</option>
+        <option name="count">100</option>
+        <option name="dataOverlayMode">highlow</option>
+        <option name="drilldown">none</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+           <h1>
+ Team DNFs
+ </h1>
+      </html>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <search>
+          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | eval DNF=Races-RAF| chart sum(DNF) over Team by Driver limit=0 | addtotals fieldname=DNF | sort -DNF | fields - DNF</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.abbreviation">none</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.abbreviation">none</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.abbreviation">none</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">stacked</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.mode">standard</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.lineWidth">2</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | eval DNF=Races-RAF| stats sum(DNF) by Team | rename sum(DNF) as DNF | sort - DNF</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="dataOverlayMode">highlow</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">true</option>
+        <option name="totalsRow">true</option>
         <option name="wrap">true</option>
       </table>
     </panel>
