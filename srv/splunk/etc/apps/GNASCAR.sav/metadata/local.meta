@@ -48,11 +48,6 @@ owner = admin
 version = 7.2.1
 modtime = 1547011798.211285000
 
-[views/rosters]
-owner = admin
-version = 7.2.1
-modtime = 1549861827.852993000
-
 [views/schedule]
 access = read : [ * ], write : [ admin, power ]
 export = none
@@ -108,21 +103,23 @@ export = none
 version = 7.2.1
 modtime = 1549756671.772912000
 
-[views/test_gnascar_analytics]
-owner = admin
-version = 7.2.1
-modtime = 1549786552.201506000
-
 [views/nascar_driver_stats]
 access = read : [ * ], write : [ * ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1549836160.548947000
+modtime = 1549949260.930866000
 
 [lookups/gnascar_rosters.csv]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1549861654.416175000
+modtime = 1549947938.981377000
+
+[views/nascar_schedule]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1549949692.617385000

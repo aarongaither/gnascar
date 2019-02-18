@@ -19,12 +19,12 @@
       <choice value="Miles">Miles</choice>
       <choice value="Points">Points</choice>
       <choice value="Pole">Pole</choice>
-      <choice value="Playoff Points">Ppts</choice>
-      <choice value="Running At Finish">RAF</choice>
+      <choice value="Ppts">Playoff Points</choice>
+      <choice value="RAF">Running at Finish</choice>
       <choice value="Races">Races</choice>
       <choice value="Rank">Rank</choice>
-      <choice value="Top 5">T5</choice>
-      <choice value="Top 10">T10</choice>
+      <choice value="T5">Top 5</choice>
+      <choice value="T10">Top 10</choice>
       <choice value="Win">Wins</choice>
       <default>AvSt</default>
       <initialValue>AvSt</initialValue>
@@ -39,12 +39,12 @@
       <choice value="Miles">Miles</choice>
       <choice value="Points">Points</choice>
       <choice value="Pole">Pole</choice>
-      <choice value="Playoff Points">Ppts</choice>
-      <choice value="Running At Finish">RAF</choice>
+      <choice value="Ppts">Playoff Points</choice>
+      <choice value="RAF">Running at Finish</choice>
       <choice value="Races">Races</choice>
       <choice value="Rank">Rank</choice>
-      <choice value="Top 5">T5</choice>
-      <choice value="Top 10">T10</choice>
+      <choice value="T5">Top 5</choice>
+      <choice value="T10">Top 10</choice>
       <choice value="Win">Wins</choice>
       <default>AvFn</default>
       <initialValue>AvFn</initialValue>
@@ -59,12 +59,12 @@
       <choice value="Miles">Miles</choice>
       <choice value="Points">Points</choice>
       <choice value="Pole">Pole</choice>
-      <choice value="Playoff Points">Ppts</choice>
-      <choice value="Running At Finish">RAF</choice>
+      <choice value="Ppts">Playoff Points</choice>
+      <choice value="RAF">Running at Finish</choice>
       <choice value="Races">Races</choice>
       <choice value="Rank">Rank</choice>
-      <choice value="Top 5">T5</choice>
-      <choice value="Top 10">T10</choice>
+      <choice value="T5">Top 5</choice>
+      <choice value="T10">Top 10</choice>
       <choice value="Win">Wins</choice>
       <default>Points</default>
       <initialValue>Points</initialValue>

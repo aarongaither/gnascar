@@ -6,8 +6,8 @@
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2018</default>
-      <initialValue>2018</initialValue>
+      <default>2019</default>
+      <initialValue>2019</initialValue>
     </input>
   </fieldset>
   <row>
@@ -34,6 +34,7 @@
         <option name="charting.drilldown">none</option>
         <option name="charting.legend.placement">none</option>
         <option name="refresh.display">progressbar</option>
+        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
@@ -54,6 +55,7 @@
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
+        <option name="link.visible">false</option>
         <format type="color" field="Rank">
           <colorPalette type="minMidMax" maxColor="#FFFFFF" minColor="#53A051"></colorPalette>
           <scale type="minMidMax" maxValue="5"></scale>
@@ -111,6 +113,7 @@
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
+        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
@@ -131,6 +134,7 @@
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
+        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>
@@ -184,6 +188,7 @@
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
+        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
@@ -204,6 +209,7 @@
         <option name="rowNumbers">true</option>
         <option name="totalsRow">true</option>
         <option name="wrap">true</option>
+        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>
