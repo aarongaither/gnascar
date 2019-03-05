@@ -86,51 +86,37 @@ modtime = 1550302364.346085000
 version = 7.2.1
 modtime = 1549955019.237506000
 
-[lookups/nascar_schedule.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1550462256.264252000
-
-[lookups/nascar_2019_02_atlanta.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1551076950.296726000
-
-[lookups/nascar_2019_01_daytona.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1551077015.059531000
-
 [lookups/gnascar_rosters.csv]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1551679477.895905000
+modtime = 1550462123.327297000
 
 [lookups/gnascar_standings.csv]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1551765988.044760000
+modtime = 1550462159.539074000
 
 [lookups/nascar_driver_stats.csv]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1551766033.550625000
+modtime = 1550462195.240903000
 
 [lookups/nascar_race_stats.csv]
 access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1551766068.737008000
+modtime = 1550462226.692199000
+
+[lookups/nascar_schedule.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550462256.264252000

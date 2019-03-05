@@ -1,0 +1,34 @@
+<form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
+  <label>GNASCAR_Rosters</label>
+  <fieldset submitButton="false">
+    <input type="dropdown" token="season_tok" searchWhenChanged="true">
+      <label>Select a Season</label>
+      <choice value="2019">2019</choice>
+      <choice value="2018">2018</choice>
+      <choice value="2017">2017</choice>
+      <default>2019</default>
+      <initialValue>2019</initialValue>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>| inputlookup gnascar_rosters.csv where (Season="$season_tok$" and Team != Field) | table Driver Team | sort Team</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">100</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+        <option name="link.visible">false</option>
+      </table>
+    </panel>
+  </row>
+</form>
