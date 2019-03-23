@@ -1,0 +1,136 @@
+[app/ui]
+version = 7.1.0
+modtime = 1527999820.990709000
+
+[app/launcher]
+version = 7.1.0
+modtime = 1527999820.995020000
+
+[savedsearches/Gnascar_RaceResults_AvgCautions]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1547012015.771080000
+
+[savedsearches/Gnascar_RaceResults_Table]
+access = read : [ * ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1547012634.992419000
+
+[savedsearches/Gnascar_RaceResults_AvgLapsLed]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1547011908.583255000
+
+[savedsearches/Gnascar_RaceResults_DriverWins]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1546927962.727260000
+
+[savedsearches/Gnascar_RaceResults_LeadChangesCautions]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1547012168.366435000
+
+[savedsearches/Gnascar_RaceResults_MakeModel]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1547011798.211285000
+
+[views/leaguestandings]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550462423.126252000
+
+[views/raceresults]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550462562.578820000
+
+[]
+access = read : [ * ], write : [ * ]
+export = none
+version = 7.2.1
+modtime = 1549756671.772912000
+
+[views/nascar_driver_stats]
+access = read : [ * ], write : [ * ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550462475.593648000
+
+[views/nascar_schedule]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550302364.346085000
+
+[views/rosters]
+version = 7.2.1
+modtime = 1549955019.237506000
+
+[lookups/nascar_schedule.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1550462256.264252000
+
+[lookups/nascar_2019_02_atlanta.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551076950.296726000
+
+[lookups/nascar_2019_01_daytona.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551077015.059531000
+
+[lookups/gnascar_rosters.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551679477.895905000
+
+[lookups/gnascar_standings.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551765988.044760000
+
+[lookups/nascar_driver_stats.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551766033.550625000
+
+[lookups/nascar_race_stats.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1551766068.737008000
