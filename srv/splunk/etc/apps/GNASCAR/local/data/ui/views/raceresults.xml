@@ -55,9 +55,27 @@
         <option name="link.visible">false</option>
       </chart>
     </panel>
+  </row>
+  <row>
     <panel>
       <single>
-        <title>Average Laps Led by Race Winner</title>
+        <title>Average Number of Lead Changes</title>
+        <search>
+          <query>| inputlookup nascar_race_stats.csv where (Season="$season_tok$")
+| stats avg(LC) as AvgLeads</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="rangeColors">["0x53a051","0xdc4e41"]</option>
+        <option name="rangeValues">[100]</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="useColors">1</option>
+      </single>
+    </panel>
+    <panel>
+      <single>
+        <title>Average Number of Caution Laps</title>
         <search>
           <query>| inputlookup nascar_race_stats.csv where (Season="$season_tok$")| stats avg(Laps) as AvgLaps</query>
           <earliest>-24h@h</earliest>
@@ -68,9 +86,10 @@
         <option name="colorMode">none</option>
         <option name="drilldown">none</option>
         <option name="height">115</option>
+        <option name="link.visible">0</option>
         <option name="numberPrecision">0</option>
-        <option name="rangeColors">["0x53a051","0x53a051","0x53a051","0xf1813f","0xdc4e41"]</option>
-        <option name="rangeValues">[0,30,70,100]</option>
+        <option name="rangeColors">["0x53a051","0xffff00","0xdc4e41"]</option>
+        <option name="rangeValues">[0,100]</option>
         <option name="refresh.display">progressbar</option>
         <option name="showSparkline">1</option>
         <option name="showTrendIndicator">1</option>
@@ -82,7 +101,6 @@
         <option name="unitPosition">after</option>
         <option name="useColors">1</option>
         <option name="useThousandSeparators">1</option>
-        <option name="link.visible">false</option>
       </single>
     </panel>
     <panel>
@@ -125,7 +143,7 @@
           <query>| inputlookup nascar_race_stats.csv where (Season="$season_tok$") 
 | table Site, LC, Cau, Number 
 | sort Number 
-| fields - Number</query>
+| fields - Number | reverse</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -174,7 +192,7 @@
         <search>
           <query>| inputlookup nascar_race_stats.csv where (Season="$season_tok$")
 |  table #, Date, Site, Winner(s), Make/Model,Cars, Laps, LC, Cau, Len,  Miles, Pole,  Speed, St
-| rename Laps as LapsLed, Make/Model as Manufacturer, Winner(s) as Winner, Speed as AvgSpeed, Pole as QualSpeed, St as StartPos, Cau as Cautions, LC as LeadChanges
+| rename Laps as LapsCaution, Make/Model as Manufacturer, Winner(s) as Winner, Speed as AvgSpeed, Pole as QualSpeed, St as StartPos, Cau as Cautions, LC as LeadChanges
 |  sort Number</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
@@ -183,12 +201,12 @@
         <option name="count">20</option>
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">row</option>
+        <option name="link.visible">0</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>

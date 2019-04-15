@@ -14,8 +14,12 @@
     <panel>
       <html>
            <h1>
- Driver Points
- </h1>
+            Driver Points
+          </h1>
+            <h2>
+            Team with driver in first place is awarded Cletus
+          </h2>
+  
       </html>
     </panel>
   </row>
@@ -23,7 +27,7 @@
     <panel>
       <chart>
         <search>
-          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team != Field)  | table Driver Team Points | sort -Points</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" |table Driver Team Points | sort -Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
         </search>
@@ -33,8 +37,8 @@
         <option name="charting.chart.showDataLabels">all</option>
         <option name="charting.drilldown">none</option>
         <option name="charting.legend.placement">none</option>
+        <option name="link.visible">0</option>
         <option name="refresh.display">progressbar</option>
-        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
@@ -42,7 +46,7 @@
     <panel>
       <table>
         <search>
-          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$") | table Rank Driver Team Points | sort Rank</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | table Rank Driver Team Points | sort Rank</query>
           <earliest>0</earliest>
           <latest></latest>
           <sampleRatio>1</sampleRatio>
@@ -50,12 +54,12 @@
         <option name="count">10</option>
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
+        <option name="link.visible">0</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <option name="link.visible">false</option>
         <format type="color" field="Rank">
           <colorPalette type="minMidMax" maxColor="#FFFFFF" minColor="#53A051"></colorPalette>
           <scale type="minMidMax" maxValue="5"></scale>
@@ -67,8 +71,14 @@
     <panel>
       <html>
            <h1>
- Team Points
- </h1>
+            Team Points
+          </h1>
+          <h2>
+            First place team receives the Dual Pistons
+          </h2>
+          <h2>
+            Last place team is awarded the Toilet
+          </h2>
       </html>
     </panel>
   </row>
@@ -76,7 +86,7 @@
     <panel>
       <chart>
         <search>
-          <query>|inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | chart sum(Points) over Team by Driver limit=0  | addtotals fieldname=Points | sort -Points | fields - Points</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" | chart sum(Points) over Team by Driver limit=0  | addtotals fieldname=Points | sort -Points | fields - Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -121,20 +131,20 @@
     <panel>
       <table>
         <search>
-          <query>|inputlookup gnascar_standings.csv where (Season="$season_tok$") | stats sum(Points) by Team | rename sum(Points) as Points | sort - Points</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" | stats sum(Points) by Team | rename sum(Points) as Points | sort - Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
         <option name="count">100</option>
-        <option name="dataOverlayMode">highlow</option>
+        <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
+        <option name="link.visible">0</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>
@@ -144,6 +154,9 @@
            <h1>
  Team DNFs
  </h1>
+ <h2>
+            Team with most DNFs is awarded the Burnt Spark Plug
+          </h2>
       </html>
     </panel>
   </row>
@@ -151,7 +164,7 @@
     <panel>
       <chart>
         <search>
-          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | eval DNF=Races-RAF| chart sum(DNF) over Team by Driver limit=0 | addtotals fieldname=DNF | sort -DNF | fields - DNF</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" | eval DNF=Races-RAF| chart sum(DNF) over Team by Driver limit=0 | addtotals fieldname=DNF | sort -DNF | fields - DNF</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -196,20 +209,20 @@
     <panel>
       <table>
         <search>
-          <query>| inputlookup gnascar_standings.csv where (Season="$season_tok$" and Team!=Field) | eval DNF=Races-RAF| stats sum(DNF) by Team | rename sum(DNF) as DNF | sort - DNF</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" | eval DNF=Races-RAF| stats sum(DNF) by Team | rename sum(DNF) as DNF | sort - DNF</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
         <option name="count">100</option>
-        <option name="dataOverlayMode">highlow</option>
+        <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
+        <option name="link.visible">0</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">true</option>
-        <option name="totalsRow">true</option>
+        <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>
