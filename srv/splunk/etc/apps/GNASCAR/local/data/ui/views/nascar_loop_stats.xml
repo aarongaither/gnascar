@@ -1,0 +1,114 @@
+<form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
+  <label>NASCAR_Loop_Stats</label>
+  <fieldset submitButton="true" autoRun="true">
+    <input type="checkbox" token="season_tok" searchWhenChanged="true">
+      <label>Season</label>
+      <choice value="2019">2019</choice>
+      <default>2019</default>
+      <initialValue>2019</initialValue>
+      <delimiter> </delimiter>
+    </input>
+    <input type="dropdown" token="race_tok" searchWhenChanged="true">
+      <label>Race</label>
+      <choice value="9">9.) Richmond</choice>
+      <choice value="8">8.) Bristol</choice>
+      <choice value="7">7.) Texas</choice>
+      <choice value="6">6.) Martinsville</choice>
+      <choice value="5">5.) Fontana</choice>
+      <choice value="4">4.) Phoenix</choice>
+      <choice value="3">3.) Las Vegas</choice>
+      <choice value="2">2.) Atlanta</choice>
+      <choice value="1">1.) Daytona</choice>
+      <default>9</default>
+      <initialValue>9</initialValue>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <chart>
+        <title>Driver Rating by Finish</title>
+        <search>
+          <query>| inputlookup nascar_loop_stats.csv where (Season="$season_tok$") and where (Race="$race_tok$") | table  Driver Finish "Driver Rating"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">0</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.text">Driver Rating</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.abbreviation">none</option>
+        <option name="charting.axisX.scale">linear</option>
+        <option name="charting.axisY.abbreviation">none</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.abbreviation">none</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
+        <option name="charting.chart">scatter</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.mode">standard</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="charting.lineWidth">2</option>
+        <option name="link.visible">0</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Driver Rating by Driver</title>
+        <search>
+          <query>| inputlookup nascar_loop_stats.csv where (Season="$season_tok$") and where (Race="$race_tok$") | table  Driver "Driver Rating"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.rotation">45</option>
+        <option name="charting.axisTitleX.visibility">collapsed</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.drilldown">none</option>
+        <option name="charting.legend.placement">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <table>
+        <title>Loop Data</title>
+        <search>
+          <query>| inputlookup nascar_loop_stats.csv where (Season="$season_tok$") and where (Race="$race_tok$") | table "Driver Rating" Driver Start "Avg. Pos." Finish "Fastest Lap" "Green Flag Times Passed" "High Pos." "Laps Led" "Low Pos." "Mid Race" "Pass Diff." "Pct. Laps Led" "Pct. Quality Passes" "Pct. Top 15 Laps" "Quality Passes" "Top 15 Laps" "Total Laps"</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="count">10</option>
+        <option name="dataOverlayMode">none</option>
+        <option name="drilldown">row</option>
+        <option name="link.visible">0</option>
+        <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
+        <option name="rowNumbers">false</option>
+        <option name="totalsRow">false</option>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+</form>
