@@ -1,4 +1,8 @@
 ﻿#,Season,Date,Site,Cars,Winner(s),St,Make/Model,Len,Sfc,Miles,Purse,Pole,Cau,Laps,Speed,LC
+21,2019,7/28/19,Pocono,38,Denny Hamlin,9,Toyota,2.5,P,408,,174.058,7,24,133.804,9
+20,2019,7/21/19,Loudon,37,Kevin Harvick,14,Ford,1,P,318,,136.384,9,48,104.062,14
+19,2019,7/13/19,Kentucky,36,Kurt Busch,4,Chevrolet,1.5,P,404,,184.59,7,35,141.07,15
+18,2019,7/7/19,Daytona,40,Justin Haley,34,Chevrolet,2.5,P,318,,NTT,6,25,141.146,24
 17,2019,6/30/19,Chicago,38,Alex Bowman,8,Chevrolet,1.5,P,401,,176.263,5,25,140.677,23
 16,2019,6/23/19,Sonoma,38,"Martin Truex, Jr.",8,Toyota,2.52,P,227,,95.712,2,6,83.922,7
 15,2019,6/10/19,Michigan,36,Joey Logano,1,Ford,2,P,406,,187.139,7,35,140.945,20
