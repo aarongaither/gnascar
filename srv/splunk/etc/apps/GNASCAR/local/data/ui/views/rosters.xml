@@ -1,6 +1,6 @@
 <form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
   <label>GNASCAR_Rosters</label>
-  <fieldset submitButton="false">
+  <fieldset submitButton="false" autoRun="true">
     <input type="dropdown" token="season_tok" searchWhenChanged="true">
       <label>Select a Season</label>
       <choice value="2019">2019</choice>
@@ -14,20 +14,19 @@
     <panel>
       <table>
         <search>
-          <query>| inputlookup gnascar_rosters.csv where (Season="$season_tok$" and Team != Field) | table Driver Team | sort Team</query>
+          <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$ and Team != Field) | table Driver Team | sort Team</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
-        <option name="count">100</option>
+        <option name="count">50</option>
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
-        <option name="wrap">true</option>
-        <option name="link.visible">false</option>
+        <option name="wrap">false</option>
       </table>
     </panel>
   </row>

@@ -1,6 +1,6 @@
 <form theme="light" hideChrome="true" hideTitle="true" hideEdit="true">
   <label>GNASCAR_Standings</label>
-  <fieldset submitButton="false">
+  <fieldset submitButton="false" autoRun="false">
     <input type="dropdown" token="season_tok" searchWhenChanged="true">
       <label>Select a Season</label>
       <choice value="2019">2019</choice>
@@ -30,15 +30,40 @@
           <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$) | join type=inner Driver [|inputlookup nascar_driver_stats.csv where (Season=$season_tok$)] | where Team != "Field" |table Driver Team Points | sort -Points</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
         </search>
+        <option name="charting.axisLabelsX.majorLabelStyle.overflowMode">ellipsisNone</option>
         <option name="charting.axisLabelsX.majorLabelStyle.rotation">-45</option>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.axisTitleY.visibility">visible</option>
+        <option name="charting.axisTitleY2.visibility">visible</option>
+        <option name="charting.axisX.abbreviation">none</option>
+        <option name="charting.axisX.scale">linear</option>
         <option name="charting.axisY.abbreviation">auto</option>
+        <option name="charting.axisY.scale">linear</option>
+        <option name="charting.axisY2.abbreviation">none</option>
+        <option name="charting.axisY2.enabled">0</option>
+        <option name="charting.axisY2.scale">inherit</option>
         <option name="charting.chart">column</option>
+        <option name="charting.chart.bubbleMaximumSize">50</option>
+        <option name="charting.chart.bubbleMinimumSize">10</option>
+        <option name="charting.chart.bubbleSizeBy">area</option>
+        <option name="charting.chart.nullValueMode">gaps</option>
         <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
+        <option name="charting.chart.stackMode">default</option>
+        <option name="charting.chart.style">shiny</option>
         <option name="charting.drilldown">none</option>
+        <option name="charting.layout.splitSeries">0</option>
+        <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
+        <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
+        <option name="charting.legend.mode">standard</option>
         <option name="charting.legend.placement">none</option>
-        <option name="link.visible">0</option>
+        <option name="charting.lineWidth">2</option>
         <option name="refresh.display">progressbar</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
       </chart>
     </panel>
   </row>
@@ -60,10 +85,6 @@
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <format type="color" field="Rank">
-          <colorPalette type="minMidMax" maxColor="#FFFFFF" minColor="#53A051"></colorPalette>
-          <scale type="minMidMax" maxValue="5"></scale>
-        </format>
       </table>
     </panel>
   </row>
@@ -119,11 +140,11 @@
         <option name="charting.legend.mode">standard</option>
         <option name="charting.legend.placement">none</option>
         <option name="charting.lineWidth">2</option>
+        <option name="link.visible">0</option>
         <option name="refresh.display">progressbar</option>
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
-        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
@@ -152,9 +173,9 @@
     <panel>
       <html>
            <h1>
- Team DNFs
- </h1>
- <h2>
+            Team DNFs
+          </h1>
+          <h2>
             Team with most DNFs is awarded the Burnt Spark Plug
           </h2>
       </html>
@@ -197,11 +218,11 @@
         <option name="charting.legend.mode">standard</option>
         <option name="charting.legend.placement">none</option>
         <option name="charting.lineWidth">2</option>
+        <option name="link.visible">0</option>
         <option name="refresh.display">progressbar</option>
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
-        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>
