@@ -10,6 +10,8 @@
     </input>
     <input type="dropdown" token="race_tok" searchWhenChanged="false">
       <label>Race</label>
+      <choice value="25">25.) Darlington</choice>
+      <choice value="24">24.) Bristol</choice>
       <choice value="23">23.) Michigan</choice>
       <choice value="22">22.) Watkins Glen</choice>
       <choice value="21">21.) Pocono</choice>
@@ -33,8 +35,8 @@
       <choice value="3">3.) Las Vegas</choice>
       <choice value="2">2.) Atlanta</choice>
       <choice value="1">1.) Daytona</choice>
-      <default>23</default>
-      <initialValue>23</initialValue>
+      <default>25</default>
+      <initialValue>25</initialValue>
     </input>
   </fieldset>
   <row>

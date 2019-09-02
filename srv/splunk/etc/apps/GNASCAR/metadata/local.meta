@@ -53,7 +53,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1565458491.492991000
+modtime = 1565757110.897911000
 
 [views/raceresults]
 access = read : [ * ], write : [ admin ]
@@ -73,7 +73,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1565458986.341810000
+modtime = 1565753764.128014000
 
 [views/nascar_schedule]
 access = read : [ * ], write : [ admin ]
@@ -101,7 +101,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1565632955.994972000
+modtime = 1567461326.418381000
 
 [lookups/gnascar_standings.csv]
 access = read : [ * ], write : [ admin ]
@@ -151,3 +151,10 @@ export = none
 owner = admin
 version = 7.2.1
 modtime = 1565456826.498292000
+
+[lookups/nascar_points_after_race.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1565672692.229073000

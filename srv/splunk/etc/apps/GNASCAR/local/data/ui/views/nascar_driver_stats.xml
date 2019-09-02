@@ -118,6 +118,21 @@
   <row>
     <panel>
       <chart>
+        <title>Driver Points By Race</title>
+        <search>
+          <query>| inputlookup nascar_points_after_race.csv | table Race Driver Points | chart max("Points") over Race by Driver useother=false limit=25</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="height">600</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
         <title>Driver Wins</title>
         <search>
           <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$") AND where (Win &gt; 0) | table Driver Win</query>
