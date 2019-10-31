@@ -101,7 +101,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1571115545.272338000
+modtime = 1572482130.232417000
 
 [lookups/gnascar_standings.csv]
 access = read : [ * ], write : [ admin ]
@@ -158,3 +158,8 @@ export = none
 owner = admin
 version = 7.2.1
 modtime = 1565672692.229073000
+
+[html/gnascar_standings_html]
+owner = admin
+version = 7.2.1
+modtime = 1571376239.821275000
