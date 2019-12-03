@@ -73,6 +73,7 @@
   <row>
     <panel>
       <chart>
+        <title>Bubble Plot</title>
         <search>
           <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$")| table Driver "$xaxis_tok$" "$yaxis_tok$" "$bubblesize_tok$"</query>
           <earliest>-24h@h</earliest>
@@ -107,10 +108,25 @@
         <option name="charting.legend.mode">standard</option>
         <option name="charting.legend.placement">right</option>
         <option name="charting.lineWidth">2</option>
+        <option name="link.visible">0</option>
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
-        <option name="link.visible">false</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <chart>
+        <title>Driver Points By Race</title>
+        <search>
+          <query>| inputlookup nascar_points_after_race.csv | table Race Driver Points | chart max("Points") over Race by Driver useother=false limit=25</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.drilldown">none</option>
+        <option name="height">600</option>
       </chart>
     </panel>
   </row>
@@ -165,7 +181,7 @@
       <table>
         <title>Race Statistics</title>
         <search>
-          <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$")</query>
+          <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$") | table Rank Driver Win Points Ppts Diff AvFn AvSt LLF Laps Led Miles Pole RAF T10 T5 Races</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -173,12 +189,12 @@
         <option name="count">20</option>
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">row</option>
+        <option name="link.visible">0</option>
         <option name="percentagesRow">false</option>
         <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>
-        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>

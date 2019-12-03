@@ -53,7 +53,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1555364266.673767000
+modtime = 1565757110.897911000
 
 [views/raceresults]
 access = read : [ * ], write : [ admin ]
@@ -73,7 +73,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1555364259.258780000
+modtime = 1565753764.128014000
 
 [views/nascar_schedule]
 access = read : [ * ], write : [ admin ]
@@ -87,7 +87,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = nobody
 version = 7.2.1
-modtime = 1555364276.435427000
+modtime = 1565457991.871847000
 
 [lookups/nascar_schedule.csv]
 access = read : [ * ], write : [ admin ]
@@ -101,7 +101,7 @@ access = read : [ * ], write : [ admin ]
 export = none
 owner = admin
 version = 7.2.1
-modtime = 1555364945.372244000
+modtime = 1574115664.165953000
 
 [lookups/gnascar_standings.csv]
 access = read : [ * ], write : [ admin ]
@@ -112,10 +112,10 @@ modtime = 1553381347.691447000
 
 [lookups/nascar_race_stats.csv]
 access = read : [ * ], write : [ admin ]
-export = none
+export = system
 owner = admin
 version = 7.2.1
-modtime = 1553381434.534018000
+modtime = 1559455334.206451000
 
 [lookups/nascar_loop_stats.csv]
 access = read : [ * ], write : [ admin ]
@@ -126,10 +126,10 @@ modtime = 1553490554.067792000
 
 [lookups/nascar_driver_stats.csv]
 access = read : [ * ], write : [ admin ]
-export = none
+export = system
 owner = admin
 version = 7.2.1
-modtime = 1554531700.546304000
+modtime = 1559456072.067930000
 
 [lookups/gnascar_rosters.csv]
 access = read : [ * ], write : [ admin ]
@@ -137,3 +137,29 @@ export = none
 owner = admin
 version = 7.2.1
 modtime = 1554531708.547367000
+
+[savedsearches/Gnascar_Rosters]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1565456413.817880000
+
+[savedsearches/Gnascar_Standings_DriverPoints]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1565456826.498292000
+
+[lookups/nascar_points_after_race.csv]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1565672692.229073000
+
+[html/gnascar_standings_html]
+owner = admin
+version = 7.2.1
+modtime = 1571376239.821275000

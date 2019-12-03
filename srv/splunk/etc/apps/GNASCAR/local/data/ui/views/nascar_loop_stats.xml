@@ -8,8 +8,35 @@
       <initialValue>2019</initialValue>
       <delimiter> </delimiter>
     </input>
-    <input type="dropdown" token="race_tok" searchWhenChanged="true">
+    <input type="dropdown" token="race_tok" searchWhenChanged="false">
       <label>Race</label>
+      <choice value="36">36.) Homestead</choice>
+      <choice value="35">35.) Phoenix</choice>
+      <choice value="34">34.) Fort Worth</choice>
+      <choice value="33">33.) Martinsville</choice>
+      <choice value="32">32.) Kansas</choice>
+      <choice value="31">31.) Talladega</choice>
+      <choice value="30">30.) Dover</choice>
+      <choice value="29">29.) Charlotte (Road)</choice>
+      <choice value="28">28.) Richmond</choice>
+      <choice value="27">27.) Las Vegas</choice>
+      <choice value="26">26.) Indianapolis</choice>
+      <choice value="25">25.) Darlington</choice>
+      <choice value="24">24.) Bristol</choice>
+      <choice value="23">23.) Michigan</choice>
+      <choice value="22">22.) Watkins Glen</choice>
+      <choice value="21">21.) Pocono</choice>
+      <choice value="20">20.) Loudon</choice>
+      <choice value="19">19.) Kentucky</choice>
+      <choice value="18">18.) Daytona</choice>
+      <choice value="17">17.) Chicago</choice>
+      <choice value="16">16.) Sonoma</choice>
+      <choice value="15">15.) Michigan</choice>
+      <choice value="14">14.) Pocono</choice>
+      <choice value="13">13.) Charlotte</choice>
+      <choice value="12">12.) Kansas</choice>
+      <choice value="11">11.) Dover</choice>
+      <choice value="10">10.) Talladega</choice>
       <choice value="9">9.) Richmond</choice>
       <choice value="8">8.) Bristol</choice>
       <choice value="7">7.) Texas</choice>
@@ -19,8 +46,8 @@
       <choice value="3">3.) Las Vegas</choice>
       <choice value="2">2.) Atlanta</choice>
       <choice value="1">1.) Daytona</choice>
-      <default>9</default>
-      <initialValue>9</initialValue>
+      <default>36</default>
+      <initialValue>36</initialValue>
     </input>
   </fieldset>
   <row>
