@@ -3,9 +3,10 @@
   <fieldset submitButton="true" autoRun="true">
     <input type="checkbox" token="season_tok" searchWhenChanged="true">
       <label>Season</label>
+      <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
       <default>2019</default>
-      <initialValue>2019</initialValue>
+      <initialValue>2020</initialValue>
       <delimiter> </delimiter>
     </input>
     <input type="dropdown" token="race_tok" searchWhenChanged="false">

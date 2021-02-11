@@ -1,165 +1,29 @@
-[app/ui]
-version = 7.1.0
-modtime = 1527999820.990709000
-
-[app/launcher]
-version = 7.1.0
-modtime = 1527999820.995020000
-
-[savedsearches/Gnascar_RaceResults_AvgCautions]
-access = read : [ * ], write : [ admin, power ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1547012015.771080000
-
-[savedsearches/Gnascar_RaceResults_Table]
-access = read : [ * ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1547012634.992419000
-
-[savedsearches/Gnascar_RaceResults_AvgLapsLed]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1547011908.583255000
-
-[savedsearches/Gnascar_RaceResults_DriverWins]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1546927962.727260000
-
-[savedsearches/Gnascar_RaceResults_LeadChangesCautions]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1547012168.366435000
-
-[savedsearches/Gnascar_RaceResults_MakeModel]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1547011798.211285000
+[views/rosters]
+version = 8.0.5
+modtime = 1612935078.322498000
 
 [views/leaguestandings]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1565757110.897911000
-
-[views/raceresults]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1553488960.546373000
-
-[]
-access = read : [ * ], write : [ * ]
-export = none
-version = 7.2.1
-modtime = 1549756671.772912000
-
-[views/nascar_driver_stats]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1565753764.128014000
-
-[views/nascar_schedule]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1555364243.745988000
-
-[views/rosters]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = nobody
-version = 7.2.1
-modtime = 1565457991.871847000
-
-[lookups/nascar_schedule.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1552274042.770829000
-
-[views/nascar_loop_stats]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1574115664.165953000
-
-[lookups/gnascar_standings.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1553381347.691447000
-
-[lookups/nascar_race_stats.csv]
-access = read : [ * ], write : [ admin ]
-export = system
-owner = admin
-version = 7.2.1
-modtime = 1559455334.206451000
-
-[lookups/nascar_loop_stats.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1553490554.067792000
+version = 8.0.5
+modtime = 1604906443.958476000
 
 [lookups/nascar_driver_stats.csv]
-access = read : [ * ], write : [ admin ]
+access = read : [ * ], write : [ admin, power ]
 export = system
-owner = admin
-version = 7.2.1
-modtime = 1559456072.067930000
+owner = nobody
+version = 8.0.5
+modtime = 1604905751.205586000
+
+[views/nascar_driver_stats]
+version = 8.0.5
+modtime = 1613020244.464269000
+
+[views/nascar_loop_stats]
+version = 8.0.5
+modtime = 1604907970.792296000
 
 [lookups/gnascar_rosters.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1554531708.547367000
-
-[savedsearches/Gnascar_Rosters]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1565456413.817880000
-
-[savedsearches/Gnascar_Standings_DriverPoints]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1565456826.498292000
-
-[lookups/nascar_points_after_race.csv]
-access = read : [ * ], write : [ admin ]
-export = none
-owner = admin
-version = 7.2.1
-modtime = 1565672692.229073000
-
-[html/gnascar_standings_html]
-owner = admin
-version = 7.2.1
-modtime = 1571376239.821275000
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 8.0.5
+modtime = 1612935329.478990000

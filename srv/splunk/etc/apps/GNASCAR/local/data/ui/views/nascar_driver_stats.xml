@@ -3,11 +3,12 @@
   <fieldset submitButton="true" autoRun="true">
     <input type="dropdown" token="season_tok">
       <label>Season</label>
+      <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2019</default>
-      <initialValue>2019</initialValue>
+      <default>2020</default>
+      <initialValue>2020</initialValue>
     </input>
     <input type="dropdown" token="xaxis_tok">
       <label>X Axis</label>
@@ -179,7 +180,7 @@
   <row>
     <panel>
       <table>
-        <title>Race Statistics</title>
+        <title>Driver Statistics</title>
         <search>
           <query>| inputlookup nascar_driver_stats.csv where (Season="$season_tok$") | table Rank Driver Win Points Ppts Diff AvFn AvSt LLF Laps Led Miles Pole RAF T10 T5 Races</query>
           <earliest>-24h@h</earliest>

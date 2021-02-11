@@ -3,11 +3,12 @@
   <fieldset submitButton="false" autoRun="false">
     <input type="dropdown" token="season_tok" searchWhenChanged="true">
       <label>Select a Season</label>
+      <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2019</default>
-      <initialValue>2019</initialValue>
+      <default>2020</default>
+      <initialValue>2020</initialValue>
     </input>
   </fieldset>
   <row>
@@ -173,7 +174,7 @@
     <panel>
       <chart>
         <search>
-          <query>| inputlookup nascar_points_after_race.csv | join type=left Driver [|inputlookup gnascar_rosters.csv where (Season=2019)] | where Team != "Field" | table Race Driver Points Team | chart sum(Points) over Race by Team limit=0</query>
+          <query>| inputlookup nascar_points_after_race.csv | join type=left Driver [|inputlookup gnascar_rosters.csv where (Season=$season_tok$)] | where Team != "Field" | table Race Driver Points Team | chart sum(Points) over Race by Team limit=0</query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
