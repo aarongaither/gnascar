@@ -1,145 +1,146 @@
-﻿#,Season,Date,Site,Cars,Winner(s),St,Make/Model,Len,Sfc,Miles,Purse,Pole,Cau,Laps,Speed,LC,,,,
-36,2020,11/8/20,Phoenix,2/8/00,Chase Elliott,1,Chevrolet,1,P,312,,MQ,4,27,112.096,19,,,,
-35,2020,11/1/20,Martinsville,39,Chase Elliott,8,Chevrolet,0.526,P,263,,MQ,12,83,71.581,20,,,,
-34,2020,10/28/20,Fort Worth,40,Kyle Busch,9,Toyota,1.5,P,501,,MQ,8,47,135.263,23,,,,
-33,2020,10/18/20,Kansas,40,Joey Logano,2,Ford,1.5,P,401,,MQ,6,31,138.329,17,,,,
-32,2020,10/11/20,Charlotte (Road),38,Chase Elliott,2,Chevrolet,2.28,R,249,,MQ,9,16,76.948,17,,,,
-31,2020,10/4/20,Talladega,39,Denny Hamlin,1,Toyota,2.66,P,532,,MQ,13,54,129.774,58,,,,
-30,2020,9/27/20,Las Vegas,39,Kurt Busch,9,Chevrolet,1.5,P,402,,MQ,7,36,131.42,20,,,,
-29,2020,9/19/20,Bristol,40,Kevin Harvick,4,Ford,0.533,P,267,,MQ,5,50,95.911,14,,,,
-28,2020,9/12/20,Richmond,38,Brad Keselowski,9,Ford,0.75,P,300,,MQ,3,21,101.868,19,,,,
-27,2020,9/6/20,Darlington,39,Kevin Harvick,8,Ford,1.366,P,501,,MQ,7,34,132.256,18,,,,
-26,2020,8/29/20,Daytona,40,William Byron,6,Chevrolet,2.5,P,410,,MQ,6,21,153.766,35,,,,
-25,2020,8/23/20,Dover,40,Kevin Harvick,17,Ford,1,P,311,,NTT,7,40,110.994,15,,,,
-24,2020,8/22/20,Dover,40,Denny Hamlin,2,Toyota,1,P,311,,MQ,4,21,124.359,15,,,,
-23,2020,8/16/20,Daytona (Road),39,Chase Elliott,7,Chevrolet,3.61,R,235,,MQ,4,7,89.39,13,,,,
-22,2020,8/9/20,Michigan,39,Kevin Harvick,20,Ford,2,P,312,,NTT,5,24,144.463,10,,,,
-21,2020,8/8/20,Michigan,39,Kevin Harvick,3,Ford,2,P,322,,DFP,9,43,124.712,12,,,,
-20,2020,8/2/20,Loudon,38,Brad Keselowski,4,Ford,1.058,P,318,,DFP,11,52,100.372,22,,,,
-19,2020,7/23/20,Kansas,40,Denny Hamlin,10,Toyota,1.5,P,401,,DFP,11,47,121.835,21,,,,
-18,2020,7/19/20,Fort Worth,40,Austin Dillon,21,Chevrolet,1.5,P,501,,DFP,10,45,137.292,29,,,,
-17,2020,7/12/20,Kentucky,38,Cole Custer,29,Ford,1.5,P,401,,DFP,8,42,133.636,13,,,,
-16,2020,7/5/20,Indianapolis,40,Kevin Harvick,11,Ford,2.5,P,403,,DFP,9,43,123.162,11,,,,
-15,2020,6/28/20,Pocono,40,Denny Hamlin,19,Toyota,2.5,P,350,,NTT,8,32,122.879,12,,,,
-14,2020,6/27/20,Pocono,40,Kevin Harvick,9,Ford,2.5,P,325,,DFP,6,21,134.467,10,,,,
-13,2020,6/22/20,Talladega,40,Ryan Blaney,12,Ford,2.66,P,508,,DFP,8,33,146.933,57,,,,
-12,2020,6/14/20,Homestead,38,Denny Hamlin,1,Toyota,1.5,P,401,,DFP,6,27,127.751,17,,,,
-11,2020,6/10/20,Martinsville,39,"Martin Truex, Jr.",5,Toyota,0.526,P,263,,DFP,7,52,77.378,14,,,,
-10,2020,6/7/20,Atlanta,40,Kevin Harvick,9,Ford,1.54,P,501,,DFP,5,24,142.966,21,,,,
-9,2020,5/31/20,Bristol,40,Brad Keselowski,1,Ford,0.533,P,267,,DFP,17,102,80.338,21,,,,
-8,2020,5/28/20,Charlotte,40,Chase Elliott,19,Chevrolet,1.5,P,312,,NTT,7,37,125.315,14,,,,
-7,2020,5/24/20,Charlotte,40,Brad Keselowski,9,Ford,1.5,P,608,,181.269,8,52,135.042,20,,,,
-6,2020,5/20/20,Darlington,39,Denny Hamlin,16,Toyota,1.366,P,284,,NTT,11,54,104.984,17,,,,
-5,2020,5/17/20,Darlington,40,Kevin Harvick,6,Ford,1.366,P,400,,DFP,10,57,115.815,11,,,,
-4,2020,3/8/20,Phoenix,38,Joey Logano,13,Ford,1,P,316,,138.116,12,73,94.407,20,,,,
-3,2020,3/1/20,Fontana,38,Alex Bowman,3,Chevrolet,2,P,400,,179.614,3,13,152.753,16,,,,
-2,2020,2/23/20,Las Vegas,38,Joey Logano,5,Ford,1.5,P,401,,NTT,9,37,134.861,25,,,,
-1,2020,2/17/20,Daytona,40,Denny Hamlin,21,Toyota,2.5,P,523,,194.582,9,39,141.11,24,,,,
-36,2019,11/17/19,Homestead,40,Kyle Busch,4,Toyota,1.5,P,401,,NTT,3,15,142.654,14,,,,
-35,2019,11/10/19,Phoenix,39,Denny Hamlin,3,Toyota,1,P,312,,140.116,5,32,111.429,8,,,,
-34,2019,11/3/19,Fort Worth,40,Kevin Harvick,1,Ford,1.5,P,501,,189.707,11,56,133.759,26,,,,
-33,2019,10/27/19,Martinsville,38,"Martin Truex, Jr.",3,Toyota,0.526,P,263,,97.84,11,69,75.448,3,,,,
-32,2019,10/20/19,Kansas,40,Denny Hamlin,23,Toyota,1.5,P,416,,178.047,7,32,136.491,15,,,,
-31,2019,10/14/19,Talladega,40,Ryan Blaney,9,Ford,2.66,P,500,,192.707,9,43,136.644,46,,,,
-30,2019,10/6/19,Dover,38,Kyle Larson,2,Chevrolet,1,P,400,,166.984,3,17,135.734,14,,,,
-29,2019,9/29/19,Charlotte (Road),40,Chase Elliott,19,Chevrolet,2.28,R,249,,103.198,10,23,75.499,13,,,,
-28,2019,9/21/19,RIchmond,38,"Martin Truex, Jr.",8,Toyota,0.75,P,300,,127.185,5,32,101.437,6,,,,
-27,2019,9/15/19,Las Vegas,39,"Martin Truex, Jr.",24,Toyota,1.5,P,401,,178.926,4,22,142.555,24,,,,
-26,2019,9/8/19,Indianapolis,40,Kevin Harvick,1,Ford,2.5,P,400,,185.766,9,48,119.443,14,,,,
-25,2019,9/1/19,Darlington,39,Erik Jones,15,Toyota,1.366,P,501,,172.487,7,35,133.825,13,,,,
-24,2019,8/17/19,Bristol,39,Denny Hamlin,1,Toyota,0.533,P,267,,129.23,8,61,94.531,23,,,,
-23,2019,8/11/19,Michigan,38,Kevin Harvick,2,Ford,2.5,P,400,,190.471,6,24,149.084,19,,,,
-22,2019,8/4/19,Watkins Glen,37,Chase Elliott,1,Chevrolet,2.45,R,221,,127.297,4,13,98.523,5,,,,
-21,2019,7/28/19,Pocono,38,Denny Hamlin,9,Toyota,2.5,P,408,,174.058,7,24,133.804,9,,,,
-20,2019,7/21/19,Loudon,37,Kevin Harvick,14,Ford,1,P,318,,136.384,9,48,104.062,14,,,,
-19,2019,7/13/19,Kentucky,36,Kurt Busch,4,Chevrolet,1.5,P,404,,184.59,7,35,141.07,15,,,,
-18,2019,7/7/19,Daytona,40,Justin Haley,34,Chevrolet,2.5,P,318,,NTT,6,25,141.146,24,,,,
-17,2019,6/30/19,Chicago,38,Alex Bowman,8,Chevrolet,1.5,P,401,,176.263,5,25,140.677,23,,,,
-16,2019,6/23/19,Sonoma,38,"Martin Truex, Jr.",8,Toyota,2.52,P,227,,95.712,2,6,83.922,7,,,,
-15,2019,6/10/19,Michigan,36,Joey Logano,1,Ford,2,P,406,,187.139,7,35,140.945,20,,,,
-14,2019,6/2/19,Pocono,37,Kyle Busch,2,Toyota,2.5,P,400,,173.494,8,28,134.718,13,,,,
-13,2019,5/26/19,Charlotte,40,"Martin Truex, Jr.",14,Toyota,1.5,P,600,,183.424,16,80,124.074,30,,,,
-12,2019,5/11/19,Kansas,40,Brad Keselowski,4,Ford,1.5,P,407,,179.217,7,41,131.023,23,,,,
-11,2019,5/6/19,Dover,37,"Martin Truex, Jr.",13,Toyota,1,P,400,,165.96,6,21,127.242,15,,,,
-10,2019,4/28/19,Talladega,40,Chase Elliott,11,Chevrolet,2.66,P,500,,192.544,6,31,161.331,38,,,,
-9,2019,4/13/19,Richmond,37,"Martin Truex, Jr.",5,Toyota,0.75,P,300,,124.298,5,41,99.852,8,,,,
-8,2019,4/7/19,Bristol,37,Kyle Busch,17,Toyota,0.533,P,267,,131.713,11,77,90.527,21,,,,
-7,2019,3/31/19,Fort Worth,39,Denny Hamlin,6,Toyota,1.5,P,501,,188.89,5,29,153.224,26,,,,
-6,2019,3/24/19,Martinsville,36,Brad Keselowski,3,Ford,0.526,P,263,,97.83,7,56,78.158,3,,,,
-5,2019,3/17/19,Fontana,38,Kyle Busch,4,Toyota,2,P,400,,0,4,22,143.113,18,,,,
-4,2019,3/10/19,Phoenix,36,Kyle Busch,4,Toyota,1,P,312,,141.287,9,57,101.693,17,,,,
-3,2019,3/3/19,Las Vegas,38,Joey Logano,10,Ford,1.5,P,401,,180.517,2,12,154.849,19,,,,
-2,2019,2/24/19,Atlanta,37,Brad Keselowski,19,Ford,1.54,P,501,,181.473,5,30,142.626,26,,,,
-1,2019,2/17/19,Daytona,40,Denny Hamlin,10,Toyota,2.5,P,518,,194.305,12,47,137.44,15,,,,
-1,2018,2/18/18,Daytona,40,Austin Dillon,14,Chevrolet,2.5,P,518,,195.644,8,37,150.545,24,,,,
-2,2018,2/25/18,Atlanta,36,Kevin Harvick,3,Ford,1.54,P,501,,184.652,5,28,143.068,24,,,,
-3,2018,3/4/18,Las Vegas,37,Kevin Harvick,2,Ford,1.5,P,401,,191.489,4,29,141.756,11,,,,
-4,2018,3/11/18,Phoenix,37,Kevin Harvick,10,Ford,1,P,312,,136.945,6,36,108.073,15,,,,
-5,2018,3/18/18,Fontana,37,"Martin Truex, Jr.",1,Toyota,2,P,400,,186.567,5,21,147.526,16,,,,
-6,2018,3/26/18,Martinsville,38,Clint Bowyer,9,Ford,0.526,P,263,,NTT,4,33,81.663,11,,,,
-7,2018,4/8/18,Fort Worth,37,Kyle Busch,8,Toyota,1.5,P,501,,197.368,8,48,141.714,16,,,,
-8,2018,4/16/18,Bristol,39,Kyle Busch,1,Toyota,0.533,P,267,,128.822,13,114,77.465,18,,,,
-9,2018,4/21/18,Richmond,38,Kyle Busch,32,Toyota,0.75,P,302,,123.859,6,46,96.215,16,,,,
-10,2018,4/29/18,Talladega,40,Joey Logano,9,Ford,2.66,P,500,,194.448,6,29,152.489,25,,,,
-11,2018,5/6/18,Dover,38,Kevin Harvick,2,Ford,1,P,400,,158.103,8,48,115.044,17,,,,
-12,2018,5/12/18,Kansas,38,Kevin Harvick,1,Ford,1.5,P,401,,188.811,6,31,128.395,13,,,,
-13,2018,5/27/18,Charlotte,40,Kyle Busch,1,Toyota,1.5,P,600,,191.836,11,54,136.692,9,,,,
-14,2018,6/3/18,Pocono,38,"Martin Truex, Jr.",4,Toyota,2.5,P,400,,176.897,6,23,139.535,11,,,,
-15,2018,6/10/18,Michigan,39,Clint Bowyer,12,Ford,2,P,266,,203.361,8,30,132.723,9,,,,
-16,2018,6/24/18,Sonoma,38,"Martin Truex, Jr.",2,Toyota,1.99,R,219,,94.597,3,8,82.882,11,,,,
-17,2018,7/1/18,Chicago,39,Kyle Busch,16,Toyota,1.5,P,401,,180.012,5,23,140.636,24,,,,
-18,2018,7/7/18,Daytona,40,Erik Jones,29,Toyota,2.5,P,420,,194.045,10,46,130.435,25,,,,
-19,2018,7/14/18,Kentucky,39,"Martin Truex, Jr.",1,Toyota,1.5,P,401,,188.89,4,22,150.454,14,,,,
-20,2018,7/22/18,Loudon,37,Kevin Harvick,14,Ford,1.058,P,318,,133.591,7,31,110.49,10,,,,
-21,2018,7/29/18,Pocono,40,Kyle Busch,28,Toyota,2.5,P,410,,176.988,7,29,132.46,13,,,,
-22,2018,8/5/18,Watkins Glen,37,Chase Elliott,3,Chevrolet,2.45,R,221,,125.534,4,11,98.928,9,,,,
-23,2018,8/12/18,Michigan,40,Kevin Harvick,3,Ford,2,P,400,,202.794,8,37,140.474,15,,,,
-24,2018,8/18/18,Bristol,40,Kurt Busch,9,Ford,0.533,P,267,,127.792,9,70,89.538,19,,,,
-25,2018,9/2/18,Darlington,40,Brad Keselowski,13,Ford,1.366,P,501,,173.571,6,35,131.408,7,,,,
-26,2018,9/10/18,Indianapolis,40,Brad Keselowski,6,Ford,2.5,P,400,,NTT,10,39,128.629,14,,,,
-27,2018,9/16/18,Las Vegas,40,Brad Keselowski,13,Ford,1.5,P,408,,188.121,12,59,111.849,23,,,,
-28,2018,9/22/18,Richmond,40,Kyle Busch,11,Toyota,0.75,P,300,,121.88,3,23,103.152,16,,,,
-29,2018,9/30/18,Charlotte (Road),40,Ryan Blaney,9,Ford,2.28,R,249,,106.868,8,16,82.125,10,,,,
-30,2018,10/7/18,Dover,39,Chase Elliott,9,Chevrolet,1,P,404,,NTT,5,31,122.404,15,,,,
-31,2018,10/14/18,Talladega,40,Aric Almirola,4,Ford,2.66,P,513,,195.804,8,32,153.707,15,,,,
-32,2018,10/21/18,Kansas,40,Chase Elliott,13,Chevrolet,1.5,P,401,,191.646,3,17,152.057,11,,,,
-33,2018,10/28/18,Martinsville,40,Joey Logano,10,Ford,0.526,P,263,,96.254,8,68,75.31,11,,,,
-34,2018,11/4/18,Fort Worth,40,Kevin Harvick,3,Ford,1.5,P,506,,200.505,8,37,150.558,16,,,,
-35,2018,11/11/18,Phoenix,39,Kyle Busch,6,Toyota,1,P,312,,139.34,10,61,98.354,15,,,,
-36,2018,11/18/18,Homestead,39,Joey Logano,5,Ford,1.5,P,401,,173.863,5,26,133.056,22,,,,
-1,2017,2/26/17,Daytona,40,Kurt Busch,8,Ford,2.5,P,500,,192.872,8,40,143.187,37,,,,
-2,2017,3/5/17,Atlanta,39,Brad Keselowski,5,Ford,1.54,P,501,,190.398,6,32,140.898,9,,,,
-3,2017,3/12/17,Las Vegas,39,"Martin Truex, Jr.",2,Toyota,1.5,P,401,,193.68,6,34,136.032,14,,,,
-4,2017,3/19/17,Phoenix,39,Ryan Newman,22,Chevrolet,1,P,314,,137.321,8,45,104.271,15,,,,
-5,2017,3/26/17,Fontana,39,Kyle Larson,1,Chevrolet,2,P,404,,187.047,7,29,136.359,17,,,,
-6,2017,4/2/17,Martinsville,38,Brad Keselowski,4,Ford,0.526,P,263,,NTT,14,95,70.139,18,,,,
-7,2017,4/9/17,Fort Worth,40,Jimmie Johnson,24,Chevrolet,1.5,P,501,,198.405,8,35,147.137,16,,,,
-8,2017,4/24/17,Bristol,39,Jimmie Johnson,11,Chevrolet,0.533,P,267,,NTT,9,76,86.674,14,,,,
-9,2017,4/30/17,Richmond,38,Joey Logano,5,Ford,0.75,P,300,,121.076,9,53,93.685,18,,,,
-10,2017,5/7/17,Talladega,40,"Ricky Stenhouse, Jr.",1,Ford,2.66,P,508,,191.547,8,33,145.669,26,,,,
-11,2017,5/13/17,Kansas,40,"Martin Truex, Jr.",3,Toyota,1.5,P,401,,189.6,15,61,117.64,21,,,,
-12,2017,5/28/17,Charlotte,40,Austin Dillon,22,Chevrolet,1.5,P,600,,193.424,9,53,138.8,23,,,,
-13,2017,6/4/17,Dover,39,Jimmie Johnson,14,Chevrolet,1,P,406,,158.954,15,72,104.955,17,,,,
-14,2017,6/11/17,Pocono,39,Ryan Blaney,4,Ford,2.5,P,400,,179.151,4,18,142.292,13,,,,
-15,2017,6/18/17,Michigan,37,Kyle Larson,1,Chevrolet,2,P,400,,202.156,8,34,143.369,10,,,,
-16,2017,6/25/17,Sonoma,38,Kevin Harvick,12,Ford,1.99,R,219,,95.295,6,12,78.71,13,,,,
-17,2017,7/1/17,Daytona,40,"Ricky Stenhouse, Jr.",6,Ford,2.5,P,408,,190.973,14,51,123.986,33,,,,
-18,2017,7/8/17,Kentucky,40,"Martin Truex, Jr.",2,Toyota,1.5,P,411,,190.282,9,39,138.604,9,,,,
-19,2017,7/16/17,Loudon,39,Denny Hamlin,8,Toyota,1.058,P,318,,133.077,7,34,105.8,11,,,,
-20,2017,7/23/17,Indianapolis,40,Kasey Kahne,19,Chevrolet,2.5,P,418,,187.301,14,55,114.384,10,,,,
-21,2017,7/30/17,Pocono,38,Kyle Busch,1,Toyota,2.5,P,400,,179.372,5,21,141.08,16,,,,
-22,2017,8/6/17,Watkins Glen,37,"Martin Truex, Jr.",3,Toyota,2.45,R,221,,126.925,3,8,104.132,9,,,,
-23,2017,8/13/17,Michigan,39,Kyle Larson,9,Chevrolet,2,P,404,,203.097,5,28,150.903,14,,,,
-24,2017,8/19/17,Bristol,40,Kyle Busch,18,Toyota,0.533,P,267,,128.082,8,53,95.969,21,,,,
-25,2017,9/3/17,Darlington,40,Denny Hamlin,9,Toyota,1.366,P,501,,177.73,8,38,132.761,20,,,,
-26,2017,9/9/17,Richmond,39,Kyle Larson,4,Chevrolet,0.75,P,303,,122.421,7,38,99.417,13,,,,
-27,2017,9/17/17,Chicago,40,"Martin Truex, Jr.",3,Toyota,1.5,P,401,,187.963,4,21,145.401,12,,,,
-28,2017,9/24/17,Loudon,39,Kyle Busch,1,Toyota,1.058,P,317,,135.049,6,32,108.958,6,,,,
-29,2017,10/1/17,Dover,40,Kyle Busch,2,Toyota,1,P,400,,160.664,4,24,129.171,15,,,,
-30,2017,10/8/17,Charlotte,40,"Martin Truex, Jr.",17,Toyota,1.5,P,506,,191.598,10,44,139.128,14,,,,
-31,2017,10/15/17,Talladega,40,Brad Keselowski,6,Ford,2.66,P,500,,190.544,11,47,131.677,30,,,,
-32,2017,10/22/17,Kansas,40,"Martin Truex, Jr.",1,Toyota,1.5,P,401,,188.029,10,49,125.189,14,,,,
-33,2017,10/29/17,Martinsville,40,Kyle Busch,14,Toyota,0.526,P,266,,96.504,11,74,74.902,16,,,,
-34,2017,11/5/17,Fort Worth,40,Kevin Harvick,3,Ford,1.5,P,501,,200.915,8,40,143.234,27,,,,
-35,2017,11/12/17,Phoenix,40,Matt Kenseth,7,Toyota,1,P,312,,137.942,7,41,105.534,9,,,,
-36,2017,11/19/17,Homestead,39,"Martin Truex, Jr.",2,Toyota,1.5,P,401,,173.98,5,26,131.9,13,,,,
+﻿#,Season,Date,Site,Cars,Winner(s),St,Make/Model,Len,Sfc,Miles,Purse,Pole,Cau,Laps,Speed,LC
+1,2021,2/14/21,Daytona,40,Michael McDowell,17,Ford,2.5,P,500,,191.261,7,40,144.416,22
+36,2020,11/8/20,Phoenix,39,Chase Elliott,1,Chevrolet,1,P,312,,MQ,4,27,112.096,19
+35,2020,11/1/20,Martinsville,39,Chase Elliott,8,Chevrolet,0.526,P,263,,MQ,12,83,71.581,20
+34,2020,10/28/20,Fort Worth,40,Kyle Busch,9,Toyota,1.5,P,501,,MQ,8,47,135.263,23
+33,2020,10/18/20,Kansas,40,Joey Logano,2,Ford,1.5,P,401,,MQ,6,31,138.329,17
+32,2020,10/11/20,Charlotte (Road),38,Chase Elliott,2,Chevrolet,2.28,R,249,,MQ,9,16,76.948,17
+31,2020,10/4/20,Talladega,39,Denny Hamlin,1,Toyota,2.66,P,532,,MQ,13,54,129.774,58
+30,2020,9/27/20,Las Vegas,39,Kurt Busch,9,Chevrolet,1.5,P,402,,MQ,7,36,131.42,20
+29,2020,9/19/20,Bristol,40,Kevin Harvick,4,Ford,0.533,P,267,,MQ,5,50,95.911,14
+28,2020,9/12/20,Richmond,38,Brad Keselowski,9,Ford,0.75,P,300,,MQ,3,21,101.868,19
+27,2020,9/6/20,Darlington,39,Kevin Harvick,8,Ford,1.366,P,501,,MQ,7,34,132.256,18
+26,2020,8/29/20,Daytona,40,William Byron,6,Chevrolet,2.5,P,410,,MQ,6,21,153.766,35
+25,2020,8/23/20,Dover,40,Kevin Harvick,17,Ford,1,P,311,,NTT,7,40,110.994,15
+24,2020,8/22/20,Dover,40,Denny Hamlin,2,Toyota,1,P,311,,MQ,4,21,124.359,15
+23,2020,8/16/20,Daytona (Road),39,Chase Elliott,7,Chevrolet,3.61,R,235,,MQ,4,7,89.39,13
+22,2020,8/9/20,Michigan,39,Kevin Harvick,20,Ford,2,P,312,,NTT,5,24,144.463,10
+21,2020,8/8/20,Michigan,39,Kevin Harvick,3,Ford,2,P,322,,DFP,9,43,124.712,12
+20,2020,8/2/20,Loudon,38,Brad Keselowski,4,Ford,1.058,P,318,,DFP,11,52,100.372,22
+19,2020,7/23/20,Kansas,40,Denny Hamlin,10,Toyota,1.5,P,401,,DFP,11,47,121.835,21
+18,2020,7/19/20,Fort Worth,40,Austin Dillon,21,Chevrolet,1.5,P,501,,DFP,10,45,137.292,29
+17,2020,7/12/20,Kentucky,38,Cole Custer,29,Ford,1.5,P,401,,DFP,8,42,133.636,13
+16,2020,7/5/20,Indianapolis,40,Kevin Harvick,11,Ford,2.5,P,403,,DFP,9,43,123.162,11
+15,2020,6/28/20,Pocono,40,Denny Hamlin,19,Toyota,2.5,P,350,,NTT,8,32,122.879,12
+14,2020,6/27/20,Pocono,40,Kevin Harvick,9,Ford,2.5,P,325,,DFP,6,21,134.467,10
+13,2020,6/22/20,Talladega,40,Ryan Blaney,12,Ford,2.66,P,508,,DFP,8,33,146.933,57
+12,2020,6/14/20,Homestead,38,Denny Hamlin,1,Toyota,1.5,P,401,,DFP,6,27,127.751,17
+11,2020,6/10/20,Martinsville,39,"Martin Truex, Jr.",5,Toyota,0.526,P,263,,DFP,7,52,77.378,14
+10,2020,6/7/20,Atlanta,40,Kevin Harvick,9,Ford,1.54,P,501,,DFP,5,24,142.966,21
+9,2020,5/31/20,Bristol,40,Brad Keselowski,1,Ford,0.533,P,267,,DFP,17,102,80.338,21
+8,2020,5/28/20,Charlotte,40,Chase Elliott,19,Chevrolet,1.5,P,312,,NTT,7,37,125.315,14
+7,2020,5/24/20,Charlotte,40,Brad Keselowski,9,Ford,1.5,P,608,,181.269,8,52,135.042,20
+6,2020,5/20/20,Darlington,39,Denny Hamlin,16,Toyota,1.366,P,284,,NTT,11,54,104.984,17
+5,2020,5/17/20,Darlington,40,Kevin Harvick,6,Ford,1.366,P,400,,DFP,10,57,115.815,11
+4,2020,3/8/20,Phoenix,38,Joey Logano,13,Ford,1,P,316,,138.116,12,73,94.407,20
+3,2020,3/1/20,Fontana,38,Alex Bowman,3,Chevrolet,2,P,400,,179.614,3,13,152.753,16
+2,2020,2/23/20,Las Vegas,38,Joey Logano,5,Ford,1.5,P,401,,NTT,9,37,134.861,25
+1,2020,2/17/20,Daytona,40,Denny Hamlin,21,Toyota,2.5,P,523,,194.582,9,39,141.11,24
+36,2019,11/17/19,Homestead,40,Kyle Busch,4,Toyota,1.5,P,401,,NTT,3,15,142.654,14
+35,2019,11/10/19,Phoenix,39,Denny Hamlin,3,Toyota,1,P,312,,140.116,5,32,111.429,8
+34,2019,11/3/19,Fort Worth,40,Kevin Harvick,1,Ford,1.5,P,501,,189.707,11,56,133.759,26
+33,2019,10/27/19,Martinsville,38,"Martin Truex, Jr.",3,Toyota,0.526,P,263,,97.84,11,69,75.448,3
+32,2019,10/20/19,Kansas,40,Denny Hamlin,23,Toyota,1.5,P,416,,178.047,7,32,136.491,15
+31,2019,10/14/19,Talladega,40,Ryan Blaney,9,Ford,2.66,P,500,,192.707,9,43,136.644,46
+30,2019,10/6/19,Dover,38,Kyle Larson,2,Chevrolet,1,P,400,,166.984,3,17,135.734,14
+29,2019,9/29/19,Charlotte (Road),40,Chase Elliott,19,Chevrolet,2.28,R,249,,103.198,10,23,75.499,13
+28,2019,9/21/19,RIchmond,38,"Martin Truex, Jr.",8,Toyota,0.75,P,300,,127.185,5,32,101.437,6
+27,2019,9/15/19,Las Vegas,39,"Martin Truex, Jr.",24,Toyota,1.5,P,401,,178.926,4,22,142.555,24
+26,2019,9/8/19,Indianapolis,40,Kevin Harvick,1,Ford,2.5,P,400,,185.766,9,48,119.443,14
+25,2019,9/1/19,Darlington,39,Erik Jones,15,Toyota,1.366,P,501,,172.487,7,35,133.825,13
+24,2019,8/17/19,Bristol,39,Denny Hamlin,1,Toyota,0.533,P,267,,129.23,8,61,94.531,23
+23,2019,8/11/19,Michigan,38,Kevin Harvick,2,Ford,2.5,P,400,,190.471,6,24,149.084,19
+22,2019,8/4/19,Watkins Glen,37,Chase Elliott,1,Chevrolet,2.45,R,221,,127.297,4,13,98.523,5
+21,2019,7/28/19,Pocono,38,Denny Hamlin,9,Toyota,2.5,P,408,,174.058,7,24,133.804,9
+20,2019,7/21/19,Loudon,37,Kevin Harvick,14,Ford,1,P,318,,136.384,9,48,104.062,14
+19,2019,7/13/19,Kentucky,36,Kurt Busch,4,Chevrolet,1.5,P,404,,184.59,7,35,141.07,15
+18,2019,7/7/19,Daytona,40,Justin Haley,34,Chevrolet,2.5,P,318,,NTT,6,25,141.146,24
+17,2019,6/30/19,Chicago,38,Alex Bowman,8,Chevrolet,1.5,P,401,,176.263,5,25,140.677,23
+16,2019,6/23/19,Sonoma,38,"Martin Truex, Jr.",8,Toyota,2.52,P,227,,95.712,2,6,83.922,7
+15,2019,6/10/19,Michigan,36,Joey Logano,1,Ford,2,P,406,,187.139,7,35,140.945,20
+14,2019,6/2/19,Pocono,37,Kyle Busch,2,Toyota,2.5,P,400,,173.494,8,28,134.718,13
+13,2019,5/26/19,Charlotte,40,"Martin Truex, Jr.",14,Toyota,1.5,P,600,,183.424,16,80,124.074,30
+12,2019,5/11/19,Kansas,40,Brad Keselowski,4,Ford,1.5,P,407,,179.217,7,41,131.023,23
+11,2019,5/6/19,Dover,37,"Martin Truex, Jr.",13,Toyota,1,P,400,,165.96,6,21,127.242,15
+10,2019,4/28/19,Talladega,40,Chase Elliott,11,Chevrolet,2.66,P,500,,192.544,6,31,161.331,38
+9,2019,4/13/19,Richmond,37,"Martin Truex, Jr.",5,Toyota,0.75,P,300,,124.298,5,41,99.852,8
+8,2019,4/7/19,Bristol,37,Kyle Busch,17,Toyota,0.533,P,267,,131.713,11,77,90.527,21
+7,2019,3/31/19,Fort Worth,39,Denny Hamlin,6,Toyota,1.5,P,501,,188.89,5,29,153.224,26
+6,2019,3/24/19,Martinsville,36,Brad Keselowski,3,Ford,0.526,P,263,,97.83,7,56,78.158,3
+5,2019,3/17/19,Fontana,38,Kyle Busch,4,Toyota,2,P,400,,0,4,22,143.113,18
+4,2019,3/10/19,Phoenix,36,Kyle Busch,4,Toyota,1,P,312,,141.287,9,57,101.693,17
+3,2019,3/3/19,Las Vegas,38,Joey Logano,10,Ford,1.5,P,401,,180.517,2,12,154.849,19
+2,2019,2/24/19,Atlanta,37,Brad Keselowski,19,Ford,1.54,P,501,,181.473,5,30,142.626,26
+1,2019,2/17/19,Daytona,40,Denny Hamlin,10,Toyota,2.5,P,518,,194.305,12,47,137.44,15
+1,2018,2/18/18,Daytona,40,Austin Dillon,14,Chevrolet,2.5,P,518,,195.644,8,37,150.545,24
+2,2018,2/25/18,Atlanta,36,Kevin Harvick,3,Ford,1.54,P,501,,184.652,5,28,143.068,24
+3,2018,3/4/18,Las Vegas,37,Kevin Harvick,2,Ford,1.5,P,401,,191.489,4,29,141.756,11
+4,2018,3/11/18,Phoenix,37,Kevin Harvick,10,Ford,1,P,312,,136.945,6,36,108.073,15
+5,2018,3/18/18,Fontana,37,"Martin Truex, Jr.",1,Toyota,2,P,400,,186.567,5,21,147.526,16
+6,2018,3/26/18,Martinsville,38,Clint Bowyer,9,Ford,0.526,P,263,,NTT,4,33,81.663,11
+7,2018,4/8/18,Fort Worth,37,Kyle Busch,8,Toyota,1.5,P,501,,197.368,8,48,141.714,16
+8,2018,4/16/18,Bristol,39,Kyle Busch,1,Toyota,0.533,P,267,,128.822,13,114,77.465,18
+9,2018,4/21/18,Richmond,38,Kyle Busch,32,Toyota,0.75,P,302,,123.859,6,46,96.215,16
+10,2018,4/29/18,Talladega,40,Joey Logano,9,Ford,2.66,P,500,,194.448,6,29,152.489,25
+11,2018,5/6/18,Dover,38,Kevin Harvick,2,Ford,1,P,400,,158.103,8,48,115.044,17
+12,2018,5/12/18,Kansas,38,Kevin Harvick,1,Ford,1.5,P,401,,188.811,6,31,128.395,13
+13,2018,5/27/18,Charlotte,40,Kyle Busch,1,Toyota,1.5,P,600,,191.836,11,54,136.692,9
+14,2018,6/3/18,Pocono,38,"Martin Truex, Jr.",4,Toyota,2.5,P,400,,176.897,6,23,139.535,11
+15,2018,6/10/18,Michigan,39,Clint Bowyer,12,Ford,2,P,266,,203.361,8,30,132.723,9
+16,2018,6/24/18,Sonoma,38,"Martin Truex, Jr.",2,Toyota,1.99,R,219,,94.597,3,8,82.882,11
+17,2018,7/1/18,Chicago,39,Kyle Busch,16,Toyota,1.5,P,401,,180.012,5,23,140.636,24
+18,2018,7/7/18,Daytona,40,Erik Jones,29,Toyota,2.5,P,420,,194.045,10,46,130.435,25
+19,2018,7/14/18,Kentucky,39,"Martin Truex, Jr.",1,Toyota,1.5,P,401,,188.89,4,22,150.454,14
+20,2018,7/22/18,Loudon,37,Kevin Harvick,14,Ford,1.058,P,318,,133.591,7,31,110.49,10
+21,2018,7/29/18,Pocono,40,Kyle Busch,28,Toyota,2.5,P,410,,176.988,7,29,132.46,13
+22,2018,8/5/18,Watkins Glen,37,Chase Elliott,3,Chevrolet,2.45,R,221,,125.534,4,11,98.928,9
+23,2018,8/12/18,Michigan,40,Kevin Harvick,3,Ford,2,P,400,,202.794,8,37,140.474,15
+24,2018,8/18/18,Bristol,40,Kurt Busch,9,Ford,0.533,P,267,,127.792,9,70,89.538,19
+25,2018,9/2/18,Darlington,40,Brad Keselowski,13,Ford,1.366,P,501,,173.571,6,35,131.408,7
+26,2018,9/10/18,Indianapolis,40,Brad Keselowski,6,Ford,2.5,P,400,,NTT,10,39,128.629,14
+27,2018,9/16/18,Las Vegas,40,Brad Keselowski,13,Ford,1.5,P,408,,188.121,12,59,111.849,23
+28,2018,9/22/18,Richmond,40,Kyle Busch,11,Toyota,0.75,P,300,,121.88,3,23,103.152,16
+29,2018,9/30/18,Charlotte (Road),40,Ryan Blaney,9,Ford,2.28,R,249,,106.868,8,16,82.125,10
+30,2018,10/7/18,Dover,39,Chase Elliott,9,Chevrolet,1,P,404,,NTT,5,31,122.404,15
+31,2018,10/14/18,Talladega,40,Aric Almirola,4,Ford,2.66,P,513,,195.804,8,32,153.707,15
+32,2018,10/21/18,Kansas,40,Chase Elliott,13,Chevrolet,1.5,P,401,,191.646,3,17,152.057,11
+33,2018,10/28/18,Martinsville,40,Joey Logano,10,Ford,0.526,P,263,,96.254,8,68,75.31,11
+34,2018,11/4/18,Fort Worth,40,Kevin Harvick,3,Ford,1.5,P,506,,200.505,8,37,150.558,16
+35,2018,11/11/18,Phoenix,39,Kyle Busch,6,Toyota,1,P,312,,139.34,10,61,98.354,15
+36,2018,11/18/18,Homestead,39,Joey Logano,5,Ford,1.5,P,401,,173.863,5,26,133.056,22
+1,2017,2/26/17,Daytona,40,Kurt Busch,8,Ford,2.5,P,500,,192.872,8,40,143.187,37
+2,2017,3/5/17,Atlanta,39,Brad Keselowski,5,Ford,1.54,P,501,,190.398,6,32,140.898,9
+3,2017,3/12/17,Las Vegas,39,"Martin Truex, Jr.",2,Toyota,1.5,P,401,,193.68,6,34,136.032,14
+4,2017,3/19/17,Phoenix,39,Ryan Newman,22,Chevrolet,1,P,314,,137.321,8,45,104.271,15
+5,2017,3/26/17,Fontana,39,Kyle Larson,1,Chevrolet,2,P,404,,187.047,7,29,136.359,17
+6,2017,4/2/17,Martinsville,38,Brad Keselowski,4,Ford,0.526,P,263,,NTT,14,95,70.139,18
+7,2017,4/9/17,Fort Worth,40,Jimmie Johnson,24,Chevrolet,1.5,P,501,,198.405,8,35,147.137,16
+8,2017,4/24/17,Bristol,39,Jimmie Johnson,11,Chevrolet,0.533,P,267,,NTT,9,76,86.674,14
+9,2017,4/30/17,Richmond,38,Joey Logano,5,Ford,0.75,P,300,,121.076,9,53,93.685,18
+10,2017,5/7/17,Talladega,40,"Ricky Stenhouse, Jr.",1,Ford,2.66,P,508,,191.547,8,33,145.669,26
+11,2017,5/13/17,Kansas,40,"Martin Truex, Jr.",3,Toyota,1.5,P,401,,189.6,15,61,117.64,21
+12,2017,5/28/17,Charlotte,40,Austin Dillon,22,Chevrolet,1.5,P,600,,193.424,9,53,138.8,23
+13,2017,6/4/17,Dover,39,Jimmie Johnson,14,Chevrolet,1,P,406,,158.954,15,72,104.955,17
+14,2017,6/11/17,Pocono,39,Ryan Blaney,4,Ford,2.5,P,400,,179.151,4,18,142.292,13
+15,2017,6/18/17,Michigan,37,Kyle Larson,1,Chevrolet,2,P,400,,202.156,8,34,143.369,10
+16,2017,6/25/17,Sonoma,38,Kevin Harvick,12,Ford,1.99,R,219,,95.295,6,12,78.71,13
+17,2017,7/1/17,Daytona,40,"Ricky Stenhouse, Jr.",6,Ford,2.5,P,408,,190.973,14,51,123.986,33
+18,2017,7/8/17,Kentucky,40,"Martin Truex, Jr.",2,Toyota,1.5,P,411,,190.282,9,39,138.604,9
+19,2017,7/16/17,Loudon,39,Denny Hamlin,8,Toyota,1.058,P,318,,133.077,7,34,105.8,11
+20,2017,7/23/17,Indianapolis,40,Kasey Kahne,19,Chevrolet,2.5,P,418,,187.301,14,55,114.384,10
+21,2017,7/30/17,Pocono,38,Kyle Busch,1,Toyota,2.5,P,400,,179.372,5,21,141.08,16
+22,2017,8/6/17,Watkins Glen,37,"Martin Truex, Jr.",3,Toyota,2.45,R,221,,126.925,3,8,104.132,9
+23,2017,8/13/17,Michigan,39,Kyle Larson,9,Chevrolet,2,P,404,,203.097,5,28,150.903,14
+24,2017,8/19/17,Bristol,40,Kyle Busch,18,Toyota,0.533,P,267,,128.082,8,53,95.969,21
+25,2017,9/3/17,Darlington,40,Denny Hamlin,9,Toyota,1.366,P,501,,177.73,8,38,132.761,20
+26,2017,9/9/17,Richmond,39,Kyle Larson,4,Chevrolet,0.75,P,303,,122.421,7,38,99.417,13
+27,2017,9/17/17,Chicago,40,"Martin Truex, Jr.",3,Toyota,1.5,P,401,,187.963,4,21,145.401,12
+28,2017,9/24/17,Loudon,39,Kyle Busch,1,Toyota,1.058,P,317,,135.049,6,32,108.958,6
+29,2017,10/1/17,Dover,40,Kyle Busch,2,Toyota,1,P,400,,160.664,4,24,129.171,15
+30,2017,10/8/17,Charlotte,40,"Martin Truex, Jr.",17,Toyota,1.5,P,506,,191.598,10,44,139.128,14
+31,2017,10/15/17,Talladega,40,Brad Keselowski,6,Ford,2.66,P,500,,190.544,11,47,131.677,30
+32,2017,10/22/17,Kansas,40,"Martin Truex, Jr.",1,Toyota,1.5,P,401,,188.029,10,49,125.189,14
+33,2017,10/29/17,Martinsville,40,Kyle Busch,14,Toyota,0.526,P,266,,96.504,11,74,74.902,16
+34,2017,11/5/17,Fort Worth,40,Kevin Harvick,3,Ford,1.5,P,501,,200.915,8,40,143.234,27
+35,2017,11/12/17,Phoenix,40,Matt Kenseth,7,Toyota,1,P,312,,137.942,7,41,105.534,9
+36,2017,11/19/17,Homestead,39,"Martin Truex, Jr.",2,Toyota,1.5,P,401,,173.98,5,26,131.9,13

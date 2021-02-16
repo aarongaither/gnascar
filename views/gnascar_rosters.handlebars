@@ -1,9 +1,28 @@
-<div class="container">
-  <h4 class="header center">GNASCAR Roster</h4>
-    <div style="position:relative;padding-top:100%;">
-      <iframe src="http://192.168.1.107:8000/account/insecurelogin?username=viewonly&password=viewonly&return_to=/app/GNASCAR/rosters" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-    </div>
-  </div>
+<head>
+<style>
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100$;
+}
+</style>
+</head>
+
+<h4 class="header center">GNASCAR Roster</h4>
+
+      <iframe class="iframe-container" loading="lazy" src="http://192.168.1.104:8000/account/insecurelogin?username=viewonly&password=viewonly&return_to=/app/GNASCAR/rosters" seamless frameborder="no" scrolling="no">
+
+      </iframe>
+
 
   <script>
    var disqus_config = function () {

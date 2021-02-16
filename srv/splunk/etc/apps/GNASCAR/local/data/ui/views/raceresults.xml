@@ -3,11 +3,13 @@
   <fieldset submitButton="false">
     <input type="dropdown" token="season_tok" searchWhenChanged="true">
       <label>Select a Season</label>
+      <choice value="2021">2021</choice>
+      <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2019</default>
-      <initialValue>2019</initialValue>
+      <default>2021</default>
+      <initialValue>2021</initialValue>
     </input>
   </fieldset>
   <row>

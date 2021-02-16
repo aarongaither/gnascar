@@ -3,10 +3,11 @@
   <fieldset submitButton="true" autoRun="true">
     <input type="checkbox" token="season_tok" searchWhenChanged="true">
       <label>Season</label>
+      <choice value="2021">2021</choice>
       <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
-      <default>2019</default>
-      <initialValue>2020</initialValue>
+      <default>2021</default>
+      <initialValue>2021</initialValue>
       <delimiter> </delimiter>
     </input>
     <input type="dropdown" token="race_tok" searchWhenChanged="false">
@@ -47,8 +48,8 @@
       <choice value="3">3.) Las Vegas</choice>
       <choice value="2">2.) Atlanta</choice>
       <choice value="1">1.) Daytona</choice>
-      <default>36</default>
-      <initialValue>36</initialValue>
+      <default>1</default>
+      <initialValue>1</initialValue>
     </input>
   </fieldset>
   <row>

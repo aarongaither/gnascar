@@ -3,12 +3,13 @@
   <fieldset submitButton="true" autoRun="true">
     <input type="dropdown" token="season_tok">
       <label>Season</label>
+      <choice value="2021">2021</choice>
       <choice value="2020">2020</choice>
       <choice value="2019">2019</choice>
       <choice value="2018">2018</choice>
       <choice value="2017">2017</choice>
-      <default>2020</default>
-      <initialValue>2020</initialValue>
+      <default>2021</default>
+      <initialValue>2021</initialValue>
     </input>
     <input type="dropdown" token="xaxis_tok">
       <label>X Axis</label>
@@ -113,21 +114,6 @@
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
-      </chart>
-    </panel>
-  </row>
-  <row>
-    <panel>
-      <chart>
-        <title>Driver Points By Race</title>
-        <search>
-          <query>| inputlookup nascar_points_after_race.csv | table Race Driver Points | chart max("Points") over Race by Driver useother=false limit=25</query>
-          <earliest>-24h@h</earliest>
-          <latest>now</latest>
-        </search>
-        <option name="charting.chart">line</option>
-        <option name="charting.drilldown">none</option>
-        <option name="height">600</option>
       </chart>
     </panel>
   </row>
