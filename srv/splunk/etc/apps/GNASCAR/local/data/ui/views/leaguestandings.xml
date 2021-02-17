@@ -19,7 +19,7 @@
             Driver Points
           </h1>
             <h2>
-            Team with driver in first place is awarded Cletus
+            Team owner with driver in first place is awarded Cletus
           </h2>
   
       </html>
@@ -66,6 +66,7 @@
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>
+        <option name="link.visible">false</option>
       </chart>
     </panel>
   </row>

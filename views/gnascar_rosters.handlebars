@@ -4,36 +4,24 @@
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
+  width: 100%;
 }
 
-.iframe-container iframe {
+.responsive-iframe {
   border: 0;
   height: 100%;
   left: 0;
   position: absolute;
   top: 0;
-  width: 100$;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
 </style>
 </head>
 
 <h4 class="header center">GNASCAR Roster</h4>
-
-      <iframe class="iframe-container" loading="lazy" src="http://192.168.1.104:8000/account/insecurelogin?username=viewonly&password=viewonly&return_to=/app/GNASCAR/rosters" seamless frameborder="no" scrolling="no">
-
+<div class="iframe-container">
+      <iframe class="responsive-iframe" loading="lazy" src="http://localhost:8000/account/insecurelogin?username=viewonly&password=viewonly&return_to=/app/GNASCAR/rosters" seamless frameborder="yes" scrolling="yes">
       </iframe>
-
-
-  <script>
-   var disqus_config = function () {
-     this.page.url = 'http://gnascar.com';  // Replace PAGE_URL with your page's canonical URL variable
-     this.page.identifier = 'home';
-   };
-
-   (function() { // DON'T EDIT BELOW THIS LINE
-   var d = document, s = d.createElement('script');
-   s.src = 'https://gnascar-com.disqus.com/embed.js';
-   s.setAttribute('data-timestamp', +new Date());
-   (d.head || d.body).appendChild(s);
-   })();
-  </script>
+</div>

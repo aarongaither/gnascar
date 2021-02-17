@@ -29,6 +29,7 @@
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">false</option>
+        <option name="link.visible">false</option>
       </table>
     </panel>
   </row>
