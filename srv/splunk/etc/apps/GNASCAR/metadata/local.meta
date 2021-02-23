@@ -1,6 +1,6 @@
 [views/rosters]
 version = 8.0.5
-modtime = 1613536214.629308000
+modtime = 1613682577.070632000
 
 [views/leaguestandings]
 version = 8.0.5
@@ -31,3 +31,8 @@ modtime = 1612935329.478990000
 [views/raceresults]
 version = 8.0.5
 modtime = 1613453075.771511000
+
+[html/gnascar_rosters_html]
+owner = admin
+version = 8.0.5
+modtime = 1613682605.531870000

@@ -14,7 +14,7 @@
   </fieldset>
   <row>
     <panel>
-      <table>
+      <table id="customWidth">
         <search>
           <query>| inputlookup gnascar_rosters.csv where (Season=$season_tok$ and Team != Field) | table Driver Team | sort Team</query>
           <earliest>-24h@h</earliest>
